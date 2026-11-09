@@ -1,4 +1,5 @@
-# Nettoyage doublons - V4.2 - Domaine 04
+# Nettoyage doublons Aitif - V4.7
+# AITIF. - Data Aitif.
 # Detecte et fusionne les doublons dans stock, sans supprimer tes ventes
 import sqlite3, glob, os
 
@@ -6,7 +7,7 @@ DBS = glob.glob("/root/**/commerce.db", recursive=True)
 DB = DBS[0] if DBS else ""
 
 def nettoyer():
-    print("=== NETTOYAGE DOUBLONS - DATA - MADAGASCAR ===")
+    print("=== NETTOYAGE DOUBLONS AITIF. - V4.7 - MADAGASCAR ===")
     if not DB or not os.path.exists(DB):
         print("Pas de base trouvee.")
         return

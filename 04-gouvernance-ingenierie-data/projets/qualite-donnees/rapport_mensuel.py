@@ -1,4 +1,5 @@
-# Rapport data mensuel - V4.3 - Domaine 04
+# Rapport mensuel Aitif - V4.7
+# AITIF. - Data Aitif.
 # Bilan du mois : ventes, depenses, benefice, meilleur produit
 import sqlite3, glob, os
 from datetime import datetime
@@ -7,7 +8,7 @@ DBS = glob.glob("/root/**/commerce.db", recursive=True)
 DB = DBS[0] if DBS else ""
 
 def rapport():
-    print("=== RAPPORT DATA MENSUEL - MADAGASCAR ===")
+    print("=== RAPPORT MENSUEL AITIF. - V4.7 - MADAGASCAR ===")
     if not DB or not os.path.exists(DB):
         print("Pas de base trouvee.")
         return
@@ -27,8 +28,14 @@ def rapport():
     print(f"\n[VENTES] {nb_v} vente(s) : {total_v} Ar")
     print(f"[DEPENSES] {nb_d} depense(s) : {total_d} Ar")
     print(f"[BENEFICE] {total_v - total_d} Ar (ventes - depenses)")
+    MARGE = {"Riz": 700, "Cafe": 8033, "Miel": 11000}
+    def marge_pour(pr):
+        for k, v in MARGE.items():
+            if k.lower() in pr.lower():
+                return v
+        return 0
     if top:
-        print(f"\n[MEILLEUR PRODUIT] {top[0]} : {top[1]} vente(s), {top[2]} Ar")
+        print(f"\n[MEILLEUR PRODUIT] {top[0]} : {top[1]} vente(s), {top[2]} Ar | Vraie marge / vente : {marge_pour(top[0])} Ar")
     else:
         print("\n[MEILLEUR PRODUIT] Aucune vente ce mois.")
     if stock_bas:

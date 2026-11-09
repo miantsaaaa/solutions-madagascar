@@ -1,4 +1,5 @@
-# Export propre pour Excel - V4.4 - Domaine 04
+# Export propre Aitif - V4.7
+# AITIF. - Data Aitif.
 # Exporte seulement les donnees verifiees, avec en-tetes claires
 import sqlite3, glob, os, csv
 from datetime import datetime
@@ -7,7 +8,7 @@ DBS = glob.glob("/root/**/commerce.db", recursive=True)
 DB = DBS[0] if DBS else ""
 
 def export():
-    print("=== EXPORT PROPRE POUR EXCEL - MADAGASCAR ===")
+    print("=== EXPORT PROPRE AITIF. - V4.7 - MADAGASCAR ===")
     if not DB or not os.path.exists(DB):
         print("Pas de base trouvee.")
         return
