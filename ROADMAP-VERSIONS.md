@@ -64,6 +64,7 @@
 - [x] V1.7 : Commerce Aitif - refactor, fichier separe, stable
 - [x] V1.8 : Commerce Aitif - base dans db.py separe, stable
 - [x] V1.9 : Commerce Aitif - test de stabilite, preuve
+- [x] V1.10 : Commerce Aitif - README propre, structure expliquee
 - [ ] V2.6 : Surveillance Aitif - prochaine amelioration
 - [ ] V3.6 : IA Aitif
 - [ ] V4.6 : Data Aitif
