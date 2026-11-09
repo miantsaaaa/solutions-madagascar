@@ -95,5 +95,6 @@
 - [x] V6.10 : Cyber Aitif - rapport integre checklist, tout en 1 commande
 - [x] Domaine 06 - 2eme tour termine
 - [x] V7.6 : Metier Aitif - 8 regles corrigees, titres Aitif
+- [x] V7.7 : Metier Aitif - catalogue Produits Aitif avec vrais prix et marges
 - [ ] V8.10 : Fondation Aitif
 - [ ] V9.6 : Preuves Aitif
