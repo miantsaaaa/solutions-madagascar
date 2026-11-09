@@ -15,6 +15,13 @@
 - [x] V2.4 : rapport etat systeme
 - [x] V2.5 : alerte batterie / stockage
 
-## Domaine 03 a 07
+## Domaine 03 - Intelligence Artificielle (apres 02)
+- [x] V3.1 : prediction ventes commerce
+- [x] V3.2 : prediction avec jour de semaine
+- [x] V3.3 : alerte stock bas prevu
+- [ ] V3.4 : graphique evolution ventes
+- [ ] V3.5 : conseil achat auto
+
+## Domaine 04 a 07
 - Meme regle : 5 petites versions par domaine, avant de switcher.
 - 1 version = 1 test sur Redmi + 1 commit + 1 push.
