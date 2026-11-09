@@ -38,7 +38,7 @@
 
 ## Domaine 06 - Cybersecurite + Audit (apres 05)
 - [x] V6.1 : audit mot de passe
-- [ ] V6.2 : generateur mot de passe fort
+- [x] V6.2 : generateur mot de passe fort
 - [ ] V6.3 : audit fichiers sensibles
 - [ ] V6.4 : scan ports ouverts
 - [ ] V6.5 : rapport audit securite complet
