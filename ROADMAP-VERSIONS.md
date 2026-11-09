@@ -9,7 +9,7 @@
 - [x] V1.4 : export CSV / sauvegarde
 
 ## Domaine 02 - Admin Systeme (apres 01)
-- [ ] V2.1 : outil surveillance Redmi (batterie + stockage)
+- [x] V2.1 : outil surveillance Redmi (batterie + stockage)
 - [ ] V2.2 : sauvegarde auto
 - [ ] V2.3 : nettoyage auto
 - [ ] V2.4 : rapport etat systeme
