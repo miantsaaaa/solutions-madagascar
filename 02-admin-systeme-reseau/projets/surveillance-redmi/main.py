@@ -1,4 +1,5 @@
-# Surveillance Redmi - V2.1
+# Surveillance Aitif - V2.6
+# AITIF. - Aitif, pour faire evoluer Madagascar
 # Domaine 02 - Admin Systeme + Reseau
 # Par Miantsa - solutions-madagascar
 import shutil, socket, subprocess, os
@@ -52,7 +53,7 @@ def check_reseau():
         print(f"Ping : {e}")
 
 if __name__ == "__main__":
-    print("=== SURVEILLANCE REDMI - MADAGASCAR ===")
+    print("=== SURVEILLANCE AITIF. - MADAGASCAR ===")
     check_stockage()
     check_batterie()
     check_reseau()

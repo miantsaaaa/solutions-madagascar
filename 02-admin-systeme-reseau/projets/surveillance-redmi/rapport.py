@@ -1,11 +1,11 @@
-# Rapport etat systeme - V2.4 - Domaine 02
+# Rapport etat systeme - V2.6 Aitif - Domaine 02
 # Genere un rapport complet : stockage, reseau, projets, sauvegardes
 import shutil, socket, subprocess, os, glob
 from datetime import datetime
 
 def rapport():
     date = datetime.now().strftime("%Y-%m-%d %H:%M")
-    print(f"=== RAPPORT ETAT SYSTEME - {date} - FIANARANTSOA / MADAGASCAR ===")
+    print(f"=== RAPPORT ETAT SYSTEME AITIF. - {date} - FIANARANTSOA / MADAGASCAR ===")
     # Stockage
     total, used, free = shutil.disk_usage("/")
     print(f"\n[STOCKAGE] Total {total//(1024**3)} Go | Utilise {used//(1024**3)} Go ({used/total*100:.1f}%) | Libre {free//(1024**3)} Go")
