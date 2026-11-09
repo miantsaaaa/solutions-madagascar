@@ -100,5 +100,6 @@
 - [x] V7.9 : Metier Aitif - CSS fichier separe, plus de duplication
 - [x] V7.10 : Metier Aitif - portfolio raconte 2eme tour termine 01-06
 - [x] Domaine 07 - 2eme tour termine
-- [ ] V8.10 : Fondation Aitif
+- [x] V8.10 : Fondation Aitif - 70 versions, 9 domaines, 2eme tour termine
+- [x] Domaine 08 - 2eme tour termine
 - [ ] V9.6 : Preuves Aitif
