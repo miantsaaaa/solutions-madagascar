@@ -41,7 +41,7 @@
 - [x] V6.2 : generateur mot de passe fort
 - [x] V6.3 : audit fichiers sensibles
 - [x] V6.4 : scan ports ouverts
-- [ ] V6.5 : rapport audit securite complet
+- [x] V6.5 : rapport audit securite complet
 
 ## Domaine 07
 - Meme regle : 5 petites versions par domaine, avant de switcher.
