@@ -19,7 +19,7 @@
 - [x] V3.1 : prediction ventes commerce
 - [x] V3.2 : prediction avec jour de semaine
 - [x] V3.3 : alerte stock bas prevu
-- [ ] V3.4 : graphique evolution ventes
+- [x] V3.4 : graphique evolution ventes
 - [ ] V3.5 : conseil achat auto
 
 ## Domaine 04 a 07
