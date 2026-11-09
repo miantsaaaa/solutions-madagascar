@@ -31,6 +31,16 @@ def ajouter_vente():
         return
     conn = sqlite3.connect(DB)
     conn.execute("INSERT INTO ventes (produit, montant, date) VALUES (?, ?, ?)", (produit, montant, aujourd_hui()))
+    # V1.3 : stock diminue de 1 quand on vend
+    cur = conn.cursor()
+    cur.execute("SELECT quantite FROM stock WHERE produit=?", (produit,))
+    row = cur.fetchone()
+    if row:
+        new_qte = max(0, row[0] - 1)
+        conn.execute("UPDATE stock SET quantite=? WHERE produit=?", (new_qte, produit))
+        print(f"Stock {produit} : {row[0]} -> {new_qte}")
+    else:
+        print(f"Produit {produit} pas dans le stock, vente quand meme enregistree")
     conn.commit()
     conn.close()
     print(f"✅ Vente enregistree : {produit} - {montant} Ar")
