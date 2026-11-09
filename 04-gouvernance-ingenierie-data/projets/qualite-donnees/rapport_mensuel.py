@@ -3,6 +3,7 @@
 # Bilan du mois : ventes, depenses, benefice, meilleur produit
 import sqlite3, glob, os
 from datetime import datetime
+from marge_aitif import marge_pour
 
 DBS = glob.glob("/root/**/commerce.db", recursive=True)
 DB = DBS[0] if DBS else ""
@@ -28,12 +29,6 @@ def rapport():
     print(f"\n[VENTES] {nb_v} vente(s) : {total_v} Ar")
     print(f"[DEPENSES] {nb_d} depense(s) : {total_d} Ar")
     print(f"[BENEFICE] {total_v - total_d} Ar (ventes - depenses)")
-    MARGE = {"Riz": 700, "Cafe": 8033, "Miel": 11000}
-    def marge_pour(pr):
-        for k, v in MARGE.items():
-            if k.lower() in pr.lower():
-                return v
-        return 0
     if top:
         print(f"\n[MEILLEUR PRODUIT] {top[0]} : {top[1]} vente(s), {top[2]} Ar | Vraie marge / vente : {marge_pour(top[0])} Ar")
     else:
