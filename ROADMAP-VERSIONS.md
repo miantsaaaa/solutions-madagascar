@@ -85,6 +85,7 @@
 - [x] V5.6 : IoT Aitif - capteur + alerte + historique + tableau + MQTT en Aitif
 - [x] V5.7 : IoT Aitif - conseil stockage Riz + Cafe + Miel
 - [x] V5.8 : IoT Aitif - README propre, structure expliquee
+- [x] V5.9 : IoT Aitif - seuils fichier separe, plus de duplication
 - [ ] V6.6 : Cyber Aitif
 - [ ] V7.6 : Metier Aitif
 - [ ] V8.10 : Fondation Aitif
