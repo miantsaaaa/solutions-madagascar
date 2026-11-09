@@ -68,6 +68,7 @@
 - [ ] V1.10 : Commerce Aitif - prochaine vraie amelioration
 - [x] V2.6 : Surveillance Aitif - branding
 - [x] V2.7 : Surveillance Aitif - simulation nettoyage, voir avant de supprimer
+- [x] V2.8 : Surveillance Aitif - README propre, structure expliquee
 - [ ] V3.6 : IA Aitif
 - [ ] V4.6 : Data Aitif
 - [ ] V5.6 : IoT Aitif
