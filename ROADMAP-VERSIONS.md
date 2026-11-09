@@ -47,7 +47,7 @@
 - [x] V7.1 : portfolio entreprise
 - [x] V7.2 : CV / profil pro
 - [x] V7.3 : catalogue services / prix en Ariary
-- [ ] V7.4 : blog / journal de bord
+- [x] V7.4 : blog / journal de bord
 - [ ] V7.5 : site complet + fin entreprise V1
 - Meme regle : 5 petites versions par domaine, avant de switcher.
 - 1 version = 1 test sur Redmi + 1 commit + 1 push.
