@@ -2,17 +2,10 @@
 # AITIF. - IA Aitif, conseille avec la vraie marge.
 # Ton IA te dit quoi acheter, combien, et combien ca va couter
 import sqlite3, glob, os
+from marge_aitif import marge_pour
 
 DBS = glob.glob("/root/**/commerce.db", recursive=True)
 DB = DBS[0] if DBS else ""
-
-MARGE_REELLE = {"Riz": 700, "Cafe": 8033, "Miel": 11000}
-
-def marge_pour(produit):
-    for cle, val in MARGE_REELLE.items():
-        if cle.lower() in produit.lower():
-            return val
-    return 0
 
 def conseil():
     print("=== CONSEIL ACHAT AITIF. - V3.6 - MADAGASCAR ===")
