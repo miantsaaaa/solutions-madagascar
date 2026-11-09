@@ -34,7 +34,7 @@
 - [x] V5.2 : mesures toutes les heures + historique
 - [x] V5.3 : alerte si trop chaud / trop froid
 - [x] V5.4 : envoi MQTT (vrai objet connecte)
-- [ ] V5.5 : tableau de bord temperature du jour
+- [x] V5.5 : tableau de bord temperature du jour
 
 ## Domaine 06 a 07
 - Meme regle : 5 petites versions par domaine, avant de switcher.
