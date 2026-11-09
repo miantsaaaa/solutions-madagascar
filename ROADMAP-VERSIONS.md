@@ -62,6 +62,7 @@
 ## 2eme tour - Retour a V1 (apres 5 par domaine)
 - [x] V1.6 : Commerce devient Commerce Aitif - produits Aitif
 - [x] V1.7 : Commerce Aitif - refactor, fichier separe, stable
+- [x] V1.8 : Commerce Aitif - base dans db.py separe, stable
 - [ ] V2.6 : Surveillance Aitif - prochaine amelioration
 - [ ] V3.6 : IA Aitif
 - [ ] V4.6 : Data Aitif
