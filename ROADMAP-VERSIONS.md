@@ -45,7 +45,7 @@
 
 ## Domaine 07 - Metier Digital (apres 06)
 - [x] V7.1 : portfolio entreprise
-- [ ] V7.2 : CV / profil pro
+- [x] V7.2 : CV / profil pro
 - [ ] V7.3 : catalogue services / prix en Ariary
 - [ ] V7.4 : blog / journal de bord
 - [ ] V7.5 : site complet + fin entreprise V1
