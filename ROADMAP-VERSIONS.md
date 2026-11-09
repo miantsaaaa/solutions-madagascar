@@ -32,7 +32,7 @@
 ## Domaine 05 - Objets Connectes IoT (apres 04)
 - [x] V5.1 : capteur temperature simule
 - [x] V5.2 : mesures toutes les heures + historique
-- [ ] V5.3 : alerte si trop chaud / trop froid
+- [x] V5.3 : alerte si trop chaud / trop froid
 - [ ] V5.4 : envoi MQTT (vrai objet connecte)
 - [ ] V5.5 : tableau de bord temperature du jour
 
