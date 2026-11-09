@@ -1,4 +1,5 @@
-# Qualite Donnees - V4.1 - Domaine 04 Gouvernance Data
+# Qualite Donnees Aitif - V4.6
+# AITIF. - Data Aitif, pour faire evoluer Madagascar
 # Controle tes donnees commerce et donne un score / 100
 import sqlite3, glob, os
 
@@ -6,7 +7,7 @@ DBS = glob.glob("/root/**/commerce.db", recursive=True)
 DB = DBS[0] if DBS else ""
 
 def controle():
-    print("=== QUALITE DONNEES - MADAGASCAR ===")
+    print("=== QUALITE DONNEES AITIF. - V4.6 - MADAGASCAR ===")
     if not DB or not os.path.exists(DB):
         print("Pas de base trouvee.")
         return
