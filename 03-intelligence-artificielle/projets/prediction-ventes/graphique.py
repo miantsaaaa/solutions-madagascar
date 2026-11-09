@@ -1,4 +1,5 @@
-# Graphique evolution ventes - V3.4 - Domaine 03 IA
+# Graphique Aitif - V3.8
+# AITIF. - IA Aitif, voir la courbe pour decider.
 # Genere une image PNG que tu peux ouvrir sur ton Redmi
 import sqlite3, glob, os
 import matplotlib
@@ -9,7 +10,7 @@ DBS = glob.glob("/root/**/commerce.db", recursive=True)
 DB = DBS[0] if DBS else ""
 
 def graphique():
-    print("=== GRAPHIQUE VENTES - IA - MADAGASCAR ===")
+    print("=== GRAPHIQUE VENTES AITIF. - V3.8 - MADAGASCAR ===")
     if not DB or not os.path.exists(DB):
         print("Pas de base trouvee.")
         return
@@ -25,7 +26,7 @@ def graphique():
     montants = [r[1] for r in rows]
     plt.figure(figsize=(8, 4))
     plt.plot(dates, montants, marker="o", linewidth=2)
-    plt.title("Evolution des ventes - Madagascar (Ar)")
+    plt.title("Evolution des ventes Aitif. - Madagascar (Ar)")
     plt.xlabel("Date")
     plt.ylabel("Ventes (Ar)")
     plt.grid(True)
