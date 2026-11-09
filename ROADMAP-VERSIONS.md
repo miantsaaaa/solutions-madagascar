@@ -94,6 +94,6 @@
 - [x] V6.9 : Cyber Aitif - checks fichier separe, plus de duplication
 - [x] V6.10 : Cyber Aitif - rapport integre checklist, tout en 1 commande
 - [x] Domaine 06 - 2eme tour termine
-- [ ] V7.6 : Metier Aitif
+- [x] V7.6 : Metier Aitif - 8 regles corrigees, titres Aitif
 - [ ] V8.10 : Fondation Aitif
 - [ ] V9.6 : Preuves Aitif
