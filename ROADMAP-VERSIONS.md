@@ -58,3 +58,15 @@
 - [x] V8.3 : Identite simple Aitif
 - [x] V8.4 : Charte
 - [x] V8.5 : Dossier produits locaux + fin Trimestre 1 La Boite
+
+## 2eme tour - Retour a V1 (apres 5 par domaine)
+- [x] V1.6 : Commerce devient Commerce Aitif - produits Aitif
+- [ ] V1.7 : Commerce Aitif - prochaine amelioration
+- [ ] V2.6 : Surveillance Aitif - prochaine amelioration
+- [ ] V3.6 : IA Aitif
+- [ ] V4.6 : Data Aitif
+- [ ] V5.6 : IoT Aitif
+- [ ] V6.6 : Cyber Aitif
+- [ ] V7.6 : Metier Aitif
+- [ ] V8.10 : Fondation Aitif
+- [ ] V9.6 : Preuves Aitif
