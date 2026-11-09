@@ -1,4 +1,4 @@
-# Qualite Donnees Aitif - V4.6
+# Qualite Donnees Aitif - V4.10
 # AITIF. - Data Aitif, pour faire evoluer Madagascar
 # Controle tes donnees commerce et donne un score / 100
 import sqlite3, glob, os
@@ -80,3 +80,15 @@ def controle():
 
 if __name__ == "__main__":
     controle()
+    print("\n--- DOUBLONS AITIF. ---")
+    try:
+        from nettoyage_doublons import nettoyer
+        nettoyer()
+    except Exception as e:
+        print(f"Doublons non lisibles ici : {e}")
+    print("\n--- RAPPORT AITIF. ---")
+    try:
+        from rapport_mensuel import rapport
+        rapport()
+    except Exception as e:
+        print(f"Rapport non lisible ici : {e}")
