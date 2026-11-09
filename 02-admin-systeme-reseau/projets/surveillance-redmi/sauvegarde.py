@@ -1,4 +1,5 @@
-# Sauvegarde auto - V2.2 - Domaine 02
+# Sauvegarde Aitif - V2.9
+# AITIF. - Sauvegarde complete, tous les domaines, pas seulement 01 et 02.
 # Sauvegarde les fichiers importants de l'entreprise
 import shutil, os
 from datetime import datetime
@@ -14,7 +15,7 @@ def sauvegarder():
             shutil.copy(src, dest)
             print(f"OK : {f}")
     # Projets
-    for domaine in ["01-genie-logiciel-et-bdd","02-admin-systeme-reseau"]:
+    for domaine in ["01-genie-logiciel-et-bdd","02-admin-systeme-reseau","03-intelligence-artificielle","04-gouvernance-ingenierie-data","05-objets-connectes-iot","06-cybersecurite-audit","07-metier-digital","08-fondation-aitif","09-preuves-aitif"]:
         src = f"/root/{domaine}/projets"
         if os.path.exists(src):
             shutil.copytree(src, f"{dest}/{domaine}-projets", dirs_exist_ok=True, ignore=shutil.ignore_patterns("*.db","__pycache__","*.csv","venv"))
