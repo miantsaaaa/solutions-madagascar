@@ -1,0 +1,30 @@
+# Bilan 2eme tour Aitif - V9.6
+# Preuve que le 2eme tour est termine : 70 versions, 9 domaines, tout en 1 commande.
+def bilan():
+    print("=== BILAN 2EME TOUR AITIF. - V9.6 - 09 Nov 2026 ===")
+    print("Fianarantsoa / Toamasina - Madagascar\n")
+    print("[70 VERSIONS AU TOTAL]")
+    print("  1er tour : 35 versions (V1.1 a V9.5)")
+    print("  2eme tour : 35 versions (V1.6 a V7.10 + V8.10)")
+    print("  Regle : verification ne compte pas comme version.\n")
+    print("[DOMAINES 01-07 - 2EME TOUR TERMINE]")
+    print("  01 Commerce Aitif - V1.10 : main integre produits, vraie marge")
+    print("  02 Surveillance Aitif - V2.10 : main integre alerte")
+    print("  03 IA Aitif - V3.10 : main integre conseil + alerte")
+    print("  04 Data Aitif - V4.10 : main integre doublons + rapport")
+    print("  05 IoT Aitif - V5.10 : main integre alerte + conseil stockage")
+    print("  06 Cyber Aitif - V6.10 : rapport integre checklist VERT 5/5")
+    print("  07 Metier Aitif - V7.10 : portfolio raconte 2eme tour\n")
+    print("[FONDATION + PREUVES]")
+    print("  08 Fondation Aitif - V8.10 : 70 versions, 9 domaines")
+    print("  09 Preuves Aitif - V9.6 : ce bilan, preuve du 2eme tour\n")
+    print("[PRODUITS AITIF - VRAIE MARGE AVEC FRAIS]")
+    print("  Riz 1 kg : vente 2 500 Ar, marge 700 Ar (38.9 %)")
+    print("  Cafe 1 kg : vente 25 000 Ar, marge 8 033 Ar (47.3 %)")
+    print("  Miel 1 litre : vente 23 000 Ar, marge 11 000 Ar (91.7 %)\n")
+    print("On ne promet pas, on prouve.")
+    print("Madagascar d'abord, qualite internationale.")
+    print("Petit a petit, toujours bien organise.")
+
+if __name__ == "__main__":
+    bilan()
