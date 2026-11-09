@@ -1,4 +1,5 @@
-# Gestion Commerce Madagascar - V1
+# Gestion Commerce Aitif - V1.6
+# AITIF. - Aitif, pour faire evoluer Madagascar
 # Outil pour petits commerces partout a Madagascar
 # 100% sur Redmi, hors-ligne, en Ariary, base SQLite
 # Par Miantsa - solutions-madagascar
@@ -129,18 +130,28 @@ def exporter_csv():
     conn.close()
     print("Sauvegarde CSV terminee. Tu peux ouvrir dans Excel.")
 
+
+def produits_aitif():
+    print("\n--- PRODUITS AITIF - PRIX OBSERVES 09 Nov 2026 ---")
+    print("Riz Aitif - Fianarantsoa : 2500 Ar / kg - a verifier au marche")
+    print("Cafe Aitif - Fianarantsoa / Toamasina : 25000 Ar / kg")
+    print("Miel Aitif - Vatovavy : 23000 Ar / litre")
+    print("Regle Aitif : Internet donne la tendance, le marche donne le vrai prix.")
+    print("----------------------------------")
+
 def menu():
     init_db()
     while True:
-        print(f"\n=== GESTION COMMERCE - {VILLE.upper()} / MADAGASCAR ===")
+        print(f"\n=== GESTION COMMERCE AITIF. - {VILLE.upper()} / MADAGASCAR ===")
         print("1. Ajouter une vente")
         print("2. Ajouter une depense")
         print("3. Ajouter / Mettre a jour stock")
         print("4. Voir bilan du jour + stock")
         print("5. Voir rapport 7 jours")
         print("6. Exporter CSV / Sauvegarde")
-        print("7. Quitter")
-        choix = input("Ton choix (1-7) : ")
+        print("7. Voir produits Aitif")
+        print("8. Quitter")
+        choix = input("Ton choix (1-8) : ")
         if choix == "1":
             ajouter_vente()
         elif choix == "2":
@@ -154,10 +165,12 @@ def menu():
         elif choix == "6":
             exporter_csv()
         elif choix == "7":
+            produits_aitif()
+        elif choix == "8":
             print("Misaotra ! A demain. Donnees sauvegardees.")
             break
         else:
-            print("Choix invalide, mets 1 a 7.")
+            print("Choix invalide, mets 1 a 8.")
 
 if __name__ == "__main__":
     menu()
