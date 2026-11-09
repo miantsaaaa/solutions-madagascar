@@ -92,6 +92,8 @@
 - [x] V6.7 : Cyber Aitif - checklist rapide 5 checks avant de pousser
 - [x] V6.8 : Cyber Aitif - README propre, structure expliquee
 - [x] V6.9 : Cyber Aitif - checks fichier separe, plus de duplication
+- [x] V6.10 : Cyber Aitif - rapport integre checklist, tout en 1 commande
+- [x] Domaine 06 - 2eme tour termine
 - [ ] V7.6 : Metier Aitif
 - [ ] V8.10 : Fondation Aitif
 - [ ] V9.6 : Preuves Aitif
