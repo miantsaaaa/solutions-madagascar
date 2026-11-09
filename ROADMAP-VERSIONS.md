@@ -36,6 +36,13 @@
 - [x] V5.4 : envoi MQTT (vrai objet connecte)
 - [x] V5.5 : tableau de bord temperature du jour
 
-## Domaine 06 a 07
+## Domaine 06 - Cybersecurite + Audit (apres 05)
+- [x] V6.1 : audit mot de passe
+- [ ] V6.2 : generateur mot de passe fort
+- [ ] V6.3 : audit fichiers sensibles
+- [ ] V6.4 : scan ports ouverts
+- [ ] V6.5 : rapport audit securite complet
+
+## Domaine 07
 - Meme regle : 5 petites versions par domaine, avant de switcher.
 - 1 version = 1 test sur Redmi + 1 commit + 1 push.
