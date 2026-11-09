@@ -1,42 +1,53 @@
-# Prediction Ventes - V3.1 - Domaine 03 IA
-# Lit commerce.db du Domaine 01 et predit demain
-import sqlite3, os
+# Prediction Ventes - V3.2 - Domaine 03 IA
+# Prediction avec jour de semaine : samedi != lundi
+import sqlite3, glob, os
 from datetime import datetime, timedelta
 
-import glob
-DB = glob.glob("/root/**/commerce.db", recursive=True)[0] if glob.glob("/root/**/commerce.db", recursive=True) else ""
+DBS = glob.glob("/root/**/commerce.db", recursive=True)
+DB = DBS[0] if DBS else ""
+
+JOURS = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"]
 
 def prediction():
-    print("=== PREDICTION VENTES - IA - MADAGASCAR ===")
-    if not os.path.exists(DB):
-        print("Pas de base trouvee. Lance d'abord ton commerce (Domaine 01).")
+    print("=== PREDICTION VENTES V3.2 - IA - MADAGASCAR ===")
+    if not DB or not os.path.exists(DB):
+        print("Pas de base trouvee.")
         return
     conn = sqlite3.connect(DB)
     cur = conn.cursor()
-    # Ventes des 7 derniers jours
-    cur.execute("SELECT date, SUM(montant) FROM ventes GROUP BY date ORDER BY date DESC LIMIT 7")
+    cur.execute("SELECT date, SUM(montant) FROM ventes GROUP BY date ORDER BY date")
     rows = cur.fetchall()
     conn.close()
     if not rows:
-        print("Pas encore de ventes. Ajoute des ventes dans ton commerce, puis relance.")
-        print("Exemple : Riz 5000 Ar, puis relance cette IA.")
+        print("Pas encore de ventes.")
         return
-    print("\n[Ventes des derniers jours]")
+    print("\n[Ventes passees]")
     total = 0
-    for date, montant in reversed(rows):
-        print(f" - {date} : {montant} Ar")
+    par_jour = {}
+    for date, montant in rows:
+        try:
+            d = datetime.strptime(date, "%Y-%m-%d")
+            jour = JOURS[d.weekday()]
+        except:
+            jour = "?"
+        print(f" - {date} ({jour}) : {montant} Ar")
         total += montant
+        par_jour.setdefault(jour, []).append(montant)
     moyenne = total / len(rows)
-    demain = (datetime.now() + timedelta(days=1)).strftime("%Y-%m-%d")
-    print(f"\n[IA] Moyenne sur {len(rows)} jour(s) : {moyenne:.0f} Ar")
-    print(f"[IA] Prediction pour demain ({demain}) : {moyenne:.0f} Ar")
-    if moyenne < 10000:
-        print("Conseil IA : ventes faibles. Ne rachete pas trop de stock demain.")
-    elif moyenne < 50000:
-        print("Conseil IA : ventes moyennes. Garde ton stock normal.")
+    demain = datetime.now() + timedelta(days=1)
+    jour_demain = JOURS[demain.weekday()]
+    print(f"\n[Moyenne generale] {moyenne:.0f} Ar")
+    print(f"[Moyenne par jour de semaine]")
+    for j, vals in par_jour.items():
+        print(f" - {j} : {sum(vals)/len(vals):.0f} Ar ({len(vals)} jour(s))")
+    if jour_demain in par_jour:
+        pred = sum(par_jour[jour_demain]) / len(par_jour[jour_demain])
+        print(f"\n[IA] Demain c'est {jour_demain} ({demain.strftime('%Y-%m-%d')})")
+        print(f"[IA] Prediction basee sur les {jour_demain}s : {pred:.0f} Ar")
     else:
-        print("Conseil IA : bonnes ventes ! Pense a recharger ton stock.")
-    print("\nTon IA apprend de TES vraies ventes. Plus tu vends, plus elle devient juste.")
+        print(f"\n[IA] Demain c'est {jour_demain}, pas encore de {jour_demain} dans tes ventes.")
+        print(f"[IA] Prediction avec moyenne generale : {moyenne:.0f} Ar")
+    print("\nPlus tu vends chaque jour, plus ton IA connait chaque jour de semaine.")
 
 if __name__ == "__main__":
     prediction()
