@@ -83,6 +83,7 @@
 - [x] V4.10 : Data Aitif - main integre doublons + rapport, tout en 1 commande
 - [x] Domaine 04 - 2eme tour termine
 - [x] V5.6 : IoT Aitif - capteur + alerte + historique + tableau + MQTT en Aitif
+- [x] V5.7 : IoT Aitif - conseil stockage Riz + Cafe + Miel
 - [ ] V6.6 : Cyber Aitif
 - [ ] V7.6 : Metier Aitif
 - [ ] V8.10 : Fondation Aitif
