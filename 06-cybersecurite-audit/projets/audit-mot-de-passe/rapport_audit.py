@@ -1,4 +1,4 @@
-# Rapport audit securite complet Aitif - V6.6
+# Rapport audit securite complet Aitif - V6.10
 # AITIF. - Cyber Aitif.
 # Reprend les 4 audits precedents en 1 rapport
 import os, glob, socket
@@ -66,3 +66,9 @@ def rapport():
 
 if __name__ == "__main__":
     rapport()
+    print("\n--- CHECKLIST AITIF. ---")
+    try:
+        from checklist_aitif import checklist
+        checklist()
+    except Exception as e:
+        print(f"Checklist non lisible ici : {e}")
