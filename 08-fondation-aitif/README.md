@@ -1,30 +1,36 @@
-# Solutions Madagascar 🇲🇬
-### Solutions pour faire evoluer Madagascar - construites 100% sur 【entity-Redmi¦canonical_name=Redmi】
+# AITIF - Fondation de l'entreprise
+## Nom
+Aitif
 
-Par Miantsa, depuis Fianarantsoa, en Master 2 Informatique.
-Objectif : devenir entrepreneur pour faire evoluer Madagascar avec la technologie.
+## Vision (10 ans)
+Hisser Aitif au plus haut a Madagascar.
+Etre un pilier autre que la politique.
+Avoir une valeur que l'international aime travailler avec.
 
-## Vision
-Pas attendre d'avoir un PC, un bureau, un financement.
-Commencer avec ce que j'ai : un Redmi Note 14 Pro, Termux, Ubuntu, et mes 7 domaines.
+## Mission (maintenant)
+Faire evoluer Madagascar, ameliorer l'ile, petit a petit.
+Donner de la valeur aux produits locaux.
 
-Tout ce que je cree doit etre :
-- Intelligent : ca resout un vrai probleme de Madagascar
-- Structure : ca peut passer de 1 utilisateur a 1000 utilisateurs
-- Mobile-first : ca marche sur telephone, hors-ligne, en Ariary, en Malagasy / Francais
+## Ce qu'Aitif deviendra, petit a petit
+- Aujourd'hui : des outils logiciels qui marchent sur Redmi (deja fait, 35 versions)
+- Demain : nos propres produits, a partir des produits locaux de Madagascar
+- Apres-demain : un restaurant Aitif, un hotel Aitif
+- Toujours : montrer le travail, ne pas courir apres les clients
 
-## Mes 7 departements
-- **01 - Genie Logiciel + BDD** : Construire les solutions
-- **02 - Admin Systeme + Reseau** : Faire tenir les solutions
-- **03 - IA** : Rendre les solutions intelligentes
-- **04 - Gouvernance + Data** : Rendre les donnees utiles
-- **05 - IoT** : Connecter le reel (agriculture, meteo, energie)
-- **06 - Cybersecurite + Audit** : Creer la confiance
-- **07 - Metier Digital** : Faire connaitre les solutions
+## Regles Aitif
+1. Petit a petit, toujours bien organise.
+2. 1 version = 1 test sur Redmi + 1 commit + 1 push.
+3. On ne promet pas, on prouve.
+4. On ne cherche pas les clients, on construit, ils nous trouvent.
+5. Madagascar d'abord, mais avec une qualite internationale.
+6. Produits locaux = valeur. On ne copie pas, on valorise.
+7. Pas de politique. On construit, on ne parle pas.
 
-## Fichiers principaux
-- `MON-ENTREPRISE.md` : ma mission complete
-- `PROBLEMES-MADAGASCAR.md` : les problemes que je veux resoudre
+## Ce qu'on ne fait PAS encore
+- Pas d'entreprise legale pour l'instant. C'est pas facile, on prepare la base.
+- Pas de mise en ligne en masse. On ameliore la visibilite petit a petit.
+- Objectif 1 an : avoir quelque chose de puissant, propre, credible.
 
-## Premier bureau
-【entity-Redmi¦canonical_name=Redmi】 Note 14 Pro - Termux + Ubuntu - Fianarantsoa, Madagascar
+## Structure
+- 01 a 07 : les 7 domaines deja construits (Commerce, Surveillance, IA, Data, IoT, Cyber, Metier)
+- 08 : fondation Aitif (ce dossier)
