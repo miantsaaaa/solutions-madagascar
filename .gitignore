@@ -3,3 +3,10 @@ __pycache__/
 *.pyc
 *.log
 *.db
+.bashrc
+.cache/
+.config/
+.gitconfig
+.lesshst
+.profile
+menu.sh
