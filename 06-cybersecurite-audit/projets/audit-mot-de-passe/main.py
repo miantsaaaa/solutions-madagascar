@@ -1,11 +1,12 @@
-# Audit Mot de Passe - V6.1 - Domaine 06 Cybersecurite
+# Audit Mot de Passe Aitif - V6.6
+# AITIF. - Cyber Aitif.
 # Teste la force, 100% hors-ligne, ne sauvegarde JAMAIS le mot de passe
 import getpass, re
 
 FAIBLES = ["123456", "12345678", "password", "motdepasse", "madagascar", "fianarantsoa", "1234", "azerty", "000000", "admin"]
 
 def audit():
-    print("=== AUDIT MOT DE PASSE - CYBERSECURITE - MADAGASCAR ===")
+    print("=== AUDIT MOT DE PASSE AITIF. - V6.6 - MADAGASCAR ===")
     print("Ton mot de passe ne sera JAMAIS sauvegarde, ni envoye.")
     print("Il reste dans ta tete et dans ce test, c'est tout.")
     mdp = getpass.getpass("Tape un mot de passe a tester (il sera cache) : ")

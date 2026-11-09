@@ -1,4 +1,5 @@
-# Audit fichiers sensibles - V6.3 - Domaine 06
+# Audit fichiers sensibles Aitif - V6.6
+# AITIF. - Cyber Aitif.
 # Verifie que tu n'as pas de .env, cles, mots de passe dans ton depot
 import os, glob, re
 
@@ -6,7 +7,7 @@ DANGEREUX = [".env", "id_rsa", "id_ed25519", ".pem", "credentials.json", "passwo
 MOTS = [r"password\s*=", r"api[_-]?key\s*=", r"secret\s*=", r"token\s*=", r"AKIA[0-9A-Z]{16}"]
 
 def audit():
-    print("=== AUDIT FICHIERS SENSIBLES - CYBERSECURITE - MADAGASCAR ===")
+    print("=== AUDIT FICHIERS SENSIBLES AITIF. - V6.6 - MADAGASCAR ===")
     print("On cherche les fichiers qu'il ne faut JAMAIS pousser sur GitHub.\n")
     problemes = 0
     # 1. Noms de fichiers dangereux

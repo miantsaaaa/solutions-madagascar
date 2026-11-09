@@ -1,10 +1,11 @@
-# Rapport audit securite complet - V6.5 - Domaine 06
+# Rapport audit securite complet Aitif - V6.6
+# AITIF. - Cyber Aitif.
 # Reprend les 4 audits precedents en 1 rapport
 import os, glob, socket
 from datetime import datetime
 
 def rapport():
-    print("=== RAPPORT AUDIT SECURITE COMPLET - MADAGASCAR ===")
+    print("=== RAPPORT AUDIT SECURITE COMPLET AITIF. - V6.6 - MADAGASCAR ===")
     print(f"Date : {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     print("Perimetre : ton Redmi + ton depot /root\n")
     score = 100

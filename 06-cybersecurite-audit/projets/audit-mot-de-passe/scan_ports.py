@@ -1,9 +1,10 @@
-# Scan ports ouverts - V6.4 - Domaine 06
+# Scan ports ouverts Aitif - V6.6
+# AITIF. - Cyber Aitif.
 # Scan TON propre Redmi / localhost, jamais celui des autres sans autorisation
 import socket
 
 def scan():
-    print("=== SCAN PORTS OUVERTS - AUDIT - MADAGASCAR ===")
+    print("=== SCAN PORTS OUVERTS AITIF. - V6.6 - MADAGASCAR ===")
     print("On scanne uniquement localhost (ton propre Redmi).")
     print("Ne scanne JAMAIS le reseau de quelqu'un d'autre sans son accord.\n")
     ports = {

@@ -1,9 +1,10 @@
-# Generateur mot de passe fort - V6.2 - Domaine 06
+# Generateur mot de passe fort Aitif - V6.6
+# AITIF. - Cyber Aitif.
 # Genere un mot de passe fort, hors-ligne, que tu copies une fois
 import secrets, string
 
 def generer(longueur=16):
-    print("=== GENERATEUR MOT DE PASSE FORT - MADAGASCAR ===")
+    print("=== GENERATEUR MOT DE PASSE FORT AITIF. - V6.6 - MADAGASCAR ===")
     alphabet = string.ascii_letters + string.digits + "!@#$%^&*"
     # On s'assure qu'il y a au moins 1 de chaque type
     mdp = [
