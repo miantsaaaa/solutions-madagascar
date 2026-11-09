@@ -1,4 +1,4 @@
-# Capteur Temperature Aitif - V5.6
+# Capteur Temperature Aitif - V5.10
 # AITIF. - IoT Aitif.
 # Simule un capteur ESP32 a Fianarantsoa, sans materiel
 import random, csv, os
@@ -42,3 +42,15 @@ def mesurer():
 
 if __name__ == "__main__":
     mesurer()
+    print("\n--- ALERTE AITIF. ---")
+    try:
+        from alerte import alerte
+        alerte()
+    except Exception as e:
+        print(f"Alerte non lisible ici : {e}")
+    print("\n--- CONSEIL STOCKAGE AITIF. ---")
+    try:
+        from conseil_stock_aitif import conseil_stock
+        conseil_stock()
+    except Exception as e:
+        print(f"Conseil non lisible ici : {e}")
