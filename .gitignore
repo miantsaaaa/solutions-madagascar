@@ -12,3 +12,4 @@ __pycache__/
 menu.sh
 sauvegarde-*/
 *.csv
+*.png
