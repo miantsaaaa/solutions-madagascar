@@ -1,7 +1,9 @@
-# Checklist securite Aitif - V6.7
+# Checklist securite Aitif - V6.9
+# Checks dans checks_aitif.py, 1 seul endroit.
 # 5 checks rapides chaque jour, avant de pousser.
 # Si 1 check est rouge, tu corriges avant de pousser.
 import os, glob, socket, re
+from checks_aitif import check_gitignore, check_fichiers_sensibles, check_ports_sensibles, check_sauvegarde
 
 def checklist():
     print("=== CHECKLIST SECURITE AITIF. - V6.7 ===")
