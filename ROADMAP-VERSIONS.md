@@ -22,6 +22,13 @@
 - [x] V3.4 : graphique evolution ventes
 - [x] V3.5 : conseil achat auto
 
-## Domaine 04 a 07
+## Domaine 04 - Gouvernance + Ingenierie Data (apres 03)
+- [x] V4.1 : qualite donnees - score / 100
+- [ ] V4.2 : nettoyage auto des doublons
+- [ ] V4.3 : rapport data mensuel
+- [ ] V4.4 : export propre pour Excel
+- [ ] V4.5 : regles de gouvernance
+
+## Domaine 05 a 07
 - Meme regle : 5 petites versions par domaine, avant de switcher.
 - 1 version = 1 test sur Redmi + 1 commit + 1 push.
