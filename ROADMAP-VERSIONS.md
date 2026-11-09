@@ -80,6 +80,8 @@
 - [x] V4.7 : Data Aitif - doublons + rapport + export Aitif, rapport vraie marge
 - [x] V4.8 : Data Aitif - README propre, structure expliquee
 - [x] V4.9 : Data Aitif - marge fichier separe, plus de duplication
+- [x] V4.10 : Data Aitif - main integre doublons + rapport, tout en 1 commande
+- [x] Domaine 04 - 2eme tour termine
 - [ ] V5.6 : IoT Aitif
 - [ ] V6.6 : Cyber Aitif
 - [ ] V7.6 : Metier Aitif
