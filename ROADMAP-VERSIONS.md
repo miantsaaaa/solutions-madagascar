@@ -25,7 +25,7 @@
 ## Domaine 04 - Gouvernance + Ingenierie Data (apres 03)
 - [x] V4.1 : qualite donnees - score / 100
 - [x] V4.2 : nettoyage auto des doublons
-- [ ] V4.3 : rapport data mensuel
+- [x] V4.3 : rapport data mensuel
 - [ ] V4.4 : export propre pour Excel
 - [ ] V4.5 : regles de gouvernance
 
