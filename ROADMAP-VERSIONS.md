@@ -26,7 +26,7 @@
 - [x] V4.1 : qualite donnees - score / 100
 - [x] V4.2 : nettoyage auto des doublons
 - [x] V4.3 : rapport data mensuel
-- [ ] V4.4 : export propre pour Excel
+- [x] V4.4 : export propre pour Excel
 - [ ] V4.5 : regles de gouvernance
 
 ## Domaine 05 a 07
