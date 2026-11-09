@@ -6,6 +6,7 @@
 
 import sqlite3
 from config import get_ville
+from produits_aitif import produits_aitif
 VILLE = get_ville()
 from datetime import datetime
 
@@ -129,15 +130,6 @@ def exporter_csv():
         print(f"✅ {table} -> {fichier} ({len(rows)} lignes)")
     conn.close()
     print("Sauvegarde CSV terminee. Tu peux ouvrir dans Excel.")
-
-
-def produits_aitif():
-    print("\n--- PRODUITS AITIF - PRIX OBSERVES 09 Nov 2026 ---")
-    print("Riz Aitif - Fianarantsoa : 2500 Ar / kg - a verifier au marche")
-    print("Cafe Aitif - Fianarantsoa / Toamasina : 25000 Ar / kg")
-    print("Miel Aitif - Vatovavy : 23000 Ar / litre")
-    print("Regle Aitif : Internet donne la tendance, le marche donne le vrai prix.")
-    print("----------------------------------")
 
 def menu():
     init_db()
