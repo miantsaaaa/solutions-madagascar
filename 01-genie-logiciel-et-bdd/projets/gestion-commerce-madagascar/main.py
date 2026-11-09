@@ -81,6 +81,27 @@ def bilan_jour():
         print(f"- {p} : {q} pieces x {pr} Ar")
     conn.close()
 
+
+def rapport_semaine():
+    from datetime import datetime, timedelta
+    conn = sqlite3.connect(DB)
+    cur = conn.cursor()
+    print(f"\n--- RAPPORT 7 JOURS - {VILLE} / MADAGASCAR ---")
+    total_v = 0
+    total_d = 0
+    for i in range(6, -1, -1):
+        jour = (datetime.now() - timedelta(days=i)).strftime("%Y-%m-%d")
+        cur.execute("SELECT COALESCE(SUM(montant),0) FROM ventes WHERE date=?", (jour,))
+        v = cur.fetchone()[0]
+        cur.execute("SELECT COALESCE(SUM(montant),0) FROM depenses WHERE date=?", (jour,))
+        d = cur.fetchone()[0]
+        total_v += v
+        total_d += d
+        print(f"{jour} : Ventes {v} Ar | Depenses {d} Ar | Benefice {v-d} Ar")
+    print(f"TOTAL 7 JOURS : Ventes {total_v} Ar | Depenses {total_d} Ar | Benefice {total_v-total_d} Ar")
+    print("----------------------------------")
+    conn.close()
+
 def menu():
     init_db()
     while True:
@@ -89,8 +110,9 @@ def menu():
         print("2. Ajouter une depense")
         print("3. Ajouter / Mettre a jour stock")
         print("4. Voir bilan du jour + stock")
-        print("5. Quitter")
-        choix = input("Ton choix (1-5) : ")
+        print("5. Voir rapport 7 jours")
+        print("6. Quitter")
+        choix = input("Ton choix (1-6) : ")
         if choix == "1":
             ajouter_vente()
         elif choix == "2":
@@ -100,10 +122,12 @@ def menu():
         elif choix == "4":
             bilan_jour()
         elif choix == "5":
+            rapport_semaine()
+        elif choix == "6":
             print("Misaotra ! A demain. Donnees sauvegardees.")
             break
         else:
-            print("Choix invalide, mets 1 a 5.")
+            print("Choix invalide, mets 1 a 6.")
 
 if __name__ == "__main__":
     menu()
