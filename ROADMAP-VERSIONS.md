@@ -76,7 +76,7 @@
 - [x] V3.8 : IA Aitif - graphique Aitif
 - [x] V3.9 : IA Aitif - README propre, venv explique
 - [x] V3.10 : IA Aitif - main integre conseil + alerte, tout en 1 commande
-- [ ] V4.6 : Data Aitif
+- [x] V4.6 : Data Aitif - regle 8 vraie marge
 - [ ] V5.6 : IoT Aitif
 - [ ] V6.6 : Cyber Aitif
 - [ ] V7.6 : Metier Aitif
