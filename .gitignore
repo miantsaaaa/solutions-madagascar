@@ -13,3 +13,5 @@ menu.sh
 sauvegarde-*/
 *.csv
 *.png
+.env
+*.pem
