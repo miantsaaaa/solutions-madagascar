@@ -82,7 +82,7 @@
 - [x] V4.9 : Data Aitif - marge fichier separe, plus de duplication
 - [x] V4.10 : Data Aitif - main integre doublons + rapport, tout en 1 commande
 - [x] Domaine 04 - 2eme tour termine
-- [ ] V5.6 : IoT Aitif
+- [x] V5.6 : IoT Aitif - capteur + alerte + historique + tableau + MQTT en Aitif
 - [ ] V6.6 : Cyber Aitif
 - [ ] V7.6 : Metier Aitif
 - [ ] V8.10 : Fondation Aitif
