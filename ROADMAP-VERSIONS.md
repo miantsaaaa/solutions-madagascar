@@ -102,4 +102,6 @@
 - [x] Domaine 07 - 2eme tour termine
 - [x] V8.10 : Fondation Aitif - 70 versions, 9 domaines, 2eme tour termine
 - [x] Domaine 08 - 2eme tour termine
-- [ ] V9.6 : Preuves Aitif
+- [x] V9.6 : Preuves Aitif - bilan 2eme tour termine, 70 versions
+- [x] Domaine 09 - 2eme tour termine
+- [x] TOUT LE 2EME TOUR TERMINE - 09 Nov 2026
