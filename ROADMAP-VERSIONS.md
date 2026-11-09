@@ -86,6 +86,8 @@
 - [x] V5.7 : IoT Aitif - conseil stockage Riz + Cafe + Miel
 - [x] V5.8 : IoT Aitif - README propre, structure expliquee
 - [x] V5.9 : IoT Aitif - seuils fichier separe, plus de duplication
+- [x] V5.10 : IoT Aitif - main integre alerte + conseil stockage, tout en 1 commande
+- [x] Domaine 05 - 2eme tour termine
 - [ ] V6.6 : Cyber Aitif
 - [ ] V7.6 : Metier Aitif
 - [ ] V8.10 : Fondation Aitif
