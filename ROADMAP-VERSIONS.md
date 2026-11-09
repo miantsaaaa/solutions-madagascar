@@ -13,7 +13,7 @@
 - [x] V2.2 : sauvegarde auto
 - [x] V2.3 : nettoyage auto
 - [x] V2.4 : rapport etat systeme
-- [ ] V2.5 : alerte batterie / stockage
+- [x] V2.5 : alerte batterie / stockage
 
 ## Domaine 03 a 07
 - Meme regle : 5 petites versions par domaine, avant de switcher.
