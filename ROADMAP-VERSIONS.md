@@ -29,6 +29,13 @@
 - [x] V4.4 : export propre pour Excel
 - [x] V4.5 : regles de gouvernance
 
-## Domaine 05 a 07
+## Domaine 05 - Objets Connectes IoT (apres 04)
+- [x] V5.1 : capteur temperature simule
+- [ ] V5.2 : mesures toutes les heures + historique
+- [ ] V5.3 : alerte si trop chaud / trop froid
+- [ ] V5.4 : envoi MQTT (vrai objet connecte)
+- [ ] V5.5 : tableau de bord temperature du jour
+
+## Domaine 06 a 07
 - Meme regle : 5 petites versions par domaine, avant de switcher.
 - 1 version = 1 test sur Redmi + 1 commit + 1 push.
