@@ -27,7 +27,7 @@
 - [x] V4.2 : nettoyage auto des doublons
 - [x] V4.3 : rapport data mensuel
 - [x] V4.4 : export propre pour Excel
-- [ ] V4.5 : regles de gouvernance
+- [x] V4.5 : regles de gouvernance
 
 ## Domaine 05 a 07
 - Meme regle : 5 petites versions par domaine, avant de switcher.
