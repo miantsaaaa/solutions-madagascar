@@ -73,6 +73,7 @@
 - [x] V2.10 : Surveillance Aitif - main integre alerte, tout en 1 commande
 - [x] V3.6 : IA Aitif - conseil avec vraie marge
 - [x] V3.7 : IA Aitif - marge fichier separe, plus de duplication
+- [x] V3.8 : IA Aitif - graphique Aitif
 - [ ] V4.6 : Data Aitif
 - [ ] V5.6 : IoT Aitif
 - [ ] V6.6 : Cyber Aitif
