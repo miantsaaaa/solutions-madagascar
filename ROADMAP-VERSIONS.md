@@ -6,7 +6,7 @@
 - [x] V1.1 : ville du commerce
 - [x] V1.2 : rapport 7 jours
 - [x] V1.3 : stock diminue auto quand on vend
-- [ ] V1.4 : export CSV / sauvegarde
+- [x] V1.4 : export CSV / sauvegarde
 
 ## Domaine 02 - Admin Systeme (apres 01)
 - [ ] V2.1 : outil surveillance Redmi (batterie + stockage)

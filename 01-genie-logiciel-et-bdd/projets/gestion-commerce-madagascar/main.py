@@ -112,6 +112,23 @@ def rapport_semaine():
     print("----------------------------------")
     conn.close()
 
+
+def exporter_csv():
+    import csv
+    conn = sqlite3.connect(DB)
+    cur = conn.cursor()
+    for table, fichier in [("ventes","ventes.csv"),("depenses","depenses.csv"),("stock","stock.csv")]:
+        cur.execute(f"SELECT * FROM {table}")
+        rows = cur.fetchall()
+        cols = [d[0] for d in cur.description]
+        with open(fichier, "w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f)
+            w.writerow(cols)
+            w.writerows(rows)
+        print(f"✅ {table} -> {fichier} ({len(rows)} lignes)")
+    conn.close()
+    print("Sauvegarde CSV terminee. Tu peux ouvrir dans Excel.")
+
 def menu():
     init_db()
     while True:
@@ -121,8 +138,9 @@ def menu():
         print("3. Ajouter / Mettre a jour stock")
         print("4. Voir bilan du jour + stock")
         print("5. Voir rapport 7 jours")
-        print("6. Quitter")
-        choix = input("Ton choix (1-6) : ")
+        print("6. Exporter CSV / Sauvegarde")
+        print("7. Quitter")
+        choix = input("Ton choix (1-7) : ")
         if choix == "1":
             ajouter_vente()
         elif choix == "2":
@@ -134,10 +152,12 @@ def menu():
         elif choix == "5":
             rapport_semaine()
         elif choix == "6":
+            exporter_csv()
+        elif choix == "7":
             print("Misaotra ! A demain. Donnees sauvegardees.")
             break
         else:
-            print("Choix invalide, mets 1 a 6.")
+            print("Choix invalide, mets 1 a 7.")
 
 if __name__ == "__main__":
     menu()
