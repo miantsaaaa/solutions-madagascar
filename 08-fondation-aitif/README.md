@@ -12,7 +12,7 @@ Faire evoluer Madagascar, ameliorer l'ile, petit a petit.
 Donner de la valeur aux produits locaux.
 
 ## Ce qu'Aitif deviendra, petit a petit
-- Aujourd'hui : des outils logiciels qui marchent sur Redmi (deja fait, 35 versions)
+- Aujourd'hui : des outils logiciels qui marchent sur Redmi (deja fait, 70 versions : 35 en 1er tour + 35 en 2eme tour, 09 Nov 2026)
 - Demain : nos propres produits, a partir des produits locaux de Madagascar
 - Apres-demain : un restaurant Aitif, un hotel Aitif
 - Toujours : montrer le travail, ne pas courir apres les clients
@@ -32,5 +32,6 @@ Donner de la valeur aux produits locaux.
 - Objectif 1 an : avoir quelque chose de puissant, propre, credible.
 
 ## Structure
-- 01 a 07 : les 7 domaines deja construits (Commerce, Surveillance, IA, Data, IoT, Cyber, Metier)
+- 01 a 07 : les 7 domaines deja construits + 2eme tour termine (Commerce, Surveillance, IA, Data, IoT, Cyber, Metier)
+- 09 : preuves Aitif (Restaurant, Hotel, Produits, Tableau de bord, Agriculture + Energie)
 - 08 : fondation Aitif (ce dossier)
