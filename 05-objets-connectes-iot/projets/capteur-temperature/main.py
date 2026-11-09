@@ -1,0 +1,43 @@
+# Capteur Temperature Simule - V5.1 - Domaine 05 IoT
+# Simule un capteur ESP32 a Fianarantsoa, sans materiel
+import random, csv, os
+from datetime import datetime
+
+FICHIER = "mesures-temperature.csv"
+
+def mesurer():
+    print("=== CAPTEUR TEMPERATURE - IoT - FIANARANTSOA ===")
+    # Fianarantsoa : entre 12 et 26 degres en general
+    # On simule comme un vrai capteur avec un peu de bruit
+    heure = datetime.now().hour
+    if 0 <= heure < 6:
+        base = 14  # nuit froide
+    elif 6 <= heure < 12:
+        base = 19  # matin
+    elif 12 <= heure < 18:
+        base = 24  # apres-midi chaud
+    else:
+        base = 18  # soir
+    temp = round(base + random.uniform(-2, 2), 1)
+    humidite = round(random.uniform(55, 85), 1)
+    print(f"Heure : {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    print(f"Temperature : {temp} C")
+    print(f"Humidite : {humidite} %")
+    if temp < 15:
+        print("Etat : FROID - couvre ton stock, surtout les legumes.")
+    elif temp <= 25:
+        print("Etat : NORMAL - bon pour le stockage du riz.")
+    else:
+        print("Etat : CHAUD - aere ton stock, risque de moisissure.")
+    # Sauvegarde
+    existe = os.path.exists(FICHIER)
+    with open(FICHIER, "a", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        if not existe:
+            w.writerow(["Date", "Heure", "Temperature (C)", "Humidite (%)"])
+        w.writerow([datetime.now().strftime("%Y-%m-%d"), datetime.now().strftime("%H:%M"), temp, humidite])
+    print(f"\nMesure sauvegardee dans : {FICHIER}")
+    print("Un vrai capteur ESP32 ferait exactement la meme chose.")
+
+if __name__ == "__main__":
+    mesurer()
