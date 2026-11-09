@@ -12,7 +12,7 @@
 - [x] V2.1 : outil surveillance Redmi (batterie + stockage)
 - [x] V2.2 : sauvegarde auto
 - [x] V2.3 : nettoyage auto
-- [ ] V2.4 : rapport etat systeme
+- [x] V2.4 : rapport etat systeme
 - [ ] V2.5 : alerte batterie / stockage
 
 ## Domaine 03 a 07
