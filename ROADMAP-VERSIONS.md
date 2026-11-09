@@ -97,5 +97,6 @@
 - [x] V7.6 : Metier Aitif - 8 regles corrigees, titres Aitif
 - [x] V7.7 : Metier Aitif - catalogue Produits Aitif avec vrais prix et marges
 - [x] V7.8 : Metier Aitif - README propre, structure expliquee
+- [x] V7.9 : Metier Aitif - CSS fichier separe, plus de duplication
 - [ ] V8.10 : Fondation Aitif
 - [ ] V9.6 : Preuves Aitif
