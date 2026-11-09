@@ -1,9 +1,11 @@
-# Conseil stockage Aitif - V5.7
+# Conseil stockage Aitif - V5.9
+# Seuils dans seuils_aitif.py, 1 seul endroit.
 # Dit si le stock Aitif est en securite, selon la derniere mesure.
 # Riz : 15-25 C, humidite < 80 %
 # Cafe : 15-25 C, humidite < 70 % (sinon moisissure, perte de gout)
 # Miel : < 25 C, humidite < 70 % (sinon fermentation)
 import csv, os
+from seuils_aitif import SEUILS
 
 def conseil_stock():
     print("=== CONSEIL STOCKAGE AITIF. - V5.7 ===")
@@ -18,11 +20,10 @@ def conseil_stock():
     print(f"Derniere mesure : {d['Date']} {d['Heure']} - {temp} C, {hum} %\n")
     def ok(t_min, t_max, h_max):
         return t_min <= temp <= t_max and hum <= h_max
-    for produit, t_min, t_max, h_max, action in [
-        ("Riz", 15, 25, 80, "Aere si humide, couvre si froid."),
-        ("Cafe", 15, 25, 70, "Garde au sec, loin du soleil, sinon perte de gout."),
-        ("Miel", 0, 25, 70, "Garde au frais, pot bien ferme, sinon fermentation."),
-    ]:
+    ACTIONS = {"Riz": "Aere si humide, couvre si froid.", "Cafe": "Garde au sec, loin du soleil, sinon perte de gout.", "Miel": "Garde au frais, pot bien ferme, sinon fermentation."}
+    for produit, s in SEUILS.items():
+        t_min, t_max, h_max = s["t_min"], s["t_max"], s["h_max"]
+        action = ACTIONS[produit]
         etat = "OK - en securite" if ok(t_min, t_max, h_max) else "ATTENTION - agis"
         print(f"[{produit}] {etat} | {action}")
     print("\nTon capteur protege tes 3 produits Aitif, pas seulement le riz.")
