@@ -1,4 +1,4 @@
-# Prediction Ventes Aitif - V3.6
+# Prediction Ventes Aitif - V3.10
 # AITIF. - IA Aitif, pour faire evoluer Madagascar
 # Prediction avec jour de semaine : samedi != lundi
 import sqlite3, glob, os
@@ -52,3 +52,15 @@ def prediction():
 
 if __name__ == "__main__":
     prediction()
+    print("\n--- CONSEIL AITIF. ---")
+    try:
+        from conseil_achat import conseil
+        conseil()
+    except Exception as e:
+        print(f"Conseil non lisible ici : {e}")
+    print("\n--- ALERTE AITIF. ---")
+    try:
+        from alerte_stock import alerte
+        alerte()
+    except Exception as e:
+        print(f"Alerte non lisible ici : {e}")
