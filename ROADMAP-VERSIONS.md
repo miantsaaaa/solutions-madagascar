@@ -20,7 +20,7 @@
 - [x] V3.2 : prediction avec jour de semaine
 - [x] V3.3 : alerte stock bas prevu
 - [x] V3.4 : graphique evolution ventes
-- [ ] V3.5 : conseil achat auto
+- [x] V3.5 : conseil achat auto
 
 ## Domaine 04 a 07
 - Meme regle : 5 petites versions par domaine, avant de switcher.
