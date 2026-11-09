@@ -1,9 +1,10 @@
-# Alerte temperature - V5.3 - Domaine 05 IoT
+# Alerte temperature Aitif - V5.6
+# AITIF. - IoT Aitif.
 # Lit la derniere mesure et te dit si tu dois agir maintenant
 import csv, os
 
 def alerte():
-    print("=== ALERTE TEMPERATURE - IoT - FIANARANTSOA ===")
+    print("=== ALERTE TEMPERATURE AITIF. - V5.6 - FIANARANTSOA ===")
     if not os.path.exists("mesures-temperature.csv"):
         print("Aucune mesure. Lance d'abord : python3 main.py")
         return

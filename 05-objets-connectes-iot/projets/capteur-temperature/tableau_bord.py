@@ -1,9 +1,10 @@
-# Tableau de bord temperature - V5.5 - Domaine 05 IoT
+# Tableau de bord temperature Aitif - V5.6
+# AITIF. - IoT Aitif.
 # 1 ecran : derniere mesure, moyenne, alerte, historique
 import csv, os
 
 def tableau():
-    print("=== TABLEAU DE BORD TEMPERATURE - FIANARANTSOA / MADAGASCAR ===")
+    print("=== TABLEAU DE BORD TEMPERATURE AITIF. - V5.6 - FIANARANTSOA / MADAGASCAR ===")
     if not os.path.exists("mesures-temperature.csv"):
         print("Aucune mesure. Lance : python3 main.py")
         return

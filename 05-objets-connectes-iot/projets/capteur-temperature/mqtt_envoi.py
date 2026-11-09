@@ -1,11 +1,12 @@
-# Envoi MQTT - V5.4 - Domaine 05 IoT
+# Envoi MQTT Aitif - V5.6
+# AITIF. - IoT Aitif.
 # Envoie la mesure comme un vrai capteur ESP32, via MQTT
 # Sans serveur, on simule l'envoi et on l'ecrit dans un fichier mqtt.log
 import csv, os, json
 from datetime import datetime
 
 def envoyer():
-    print("=== ENVOI MQTT - IoT - FIANARANTSOA ===")
+    print("=== ENVOI MQTT AITIF. - V5.6 - FIANARANTSOA ===")
     if not os.path.exists("mesures-temperature.csv"):
         print("Aucune mesure. Lance d'abord : python3 main.py")
         return

@@ -1,9 +1,10 @@
-# Historique temperature - V5.2 - Domaine 05 IoT
+# Historique temperature Aitif - V5.6
+# AITIF. - IoT Aitif.
 # Lit toutes les mesures et montre l'evolution de la journee
 import csv, os, glob
 
 def historique():
-    print("=== HISTORIQUE TEMPERATURE - IoT - FIANARANTSOA ===")
+    print("=== HISTORIQUE TEMPERATURE AITIF. - V5.6 - FIANARANTSOA ===")
     fichiers = glob.glob("mesures-temperature.csv")
     if not fichiers or not os.path.exists(fichiers[0]):
         print("Aucune mesure. Lance d'abord : python3 main.py")

@@ -1,4 +1,5 @@
-# Capteur Temperature Simule - V5.1 - Domaine 05 IoT
+# Capteur Temperature Aitif - V5.6
+# AITIF. - IoT Aitif.
 # Simule un capteur ESP32 a Fianarantsoa, sans materiel
 import random, csv, os
 from datetime import datetime
@@ -6,7 +7,7 @@ from datetime import datetime
 FICHIER = "mesures-temperature.csv"
 
 def mesurer():
-    print("=== CAPTEUR TEMPERATURE - IoT - FIANARANTSOA ===")
+    print("=== CAPTEUR TEMPERATURE AITIF. - V5.6 - FIANARANTSOA ===")
     # Fianarantsoa : entre 12 et 26 degres en general
     # On simule comme un vrai capteur avec un peu de bruit
     heure = datetime.now().hour
