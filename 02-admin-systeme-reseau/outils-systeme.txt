@@ -1,0 +1,7 @@
+postgresql postgresql-contrib mysql-client sqlite3
+nginx mosquitto mosquitto-clients
+nmap tcpdump tshark
+net-tools iproute2 htop tmux tree jq
+curl wget git unzip zip
+lynis hydra john nikto
+dnsutils whois traceroute iperf3 openssh-server
