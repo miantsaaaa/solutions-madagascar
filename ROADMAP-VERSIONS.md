@@ -70,6 +70,7 @@
 - [x] V2.7 : Surveillance Aitif - simulation nettoyage, voir avant de supprimer
 - [x] V2.8 : Surveillance Aitif - README propre, structure expliquee
 - [x] V2.9 : Surveillance Aitif - sauvegarde complete tous domaines + alerte simulation
+- [x] V2.10 : Surveillance Aitif - main integre alerte, tout en 1 commande
 - [ ] V3.6 : IA Aitif
 - [ ] V4.6 : Data Aitif
 - [ ] V5.6 : IoT Aitif
