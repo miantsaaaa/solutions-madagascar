@@ -11,7 +11,7 @@
 ## Domaine 02 - Admin Systeme (apres 01)
 - [x] V2.1 : outil surveillance Redmi (batterie + stockage)
 - [x] V2.2 : sauvegarde auto
-- [ ] V2.3 : nettoyage auto
+- [x] V2.3 : nettoyage auto
 - [ ] V2.4 : rapport etat systeme
 - [ ] V2.5 : alerte batterie / stockage
 
