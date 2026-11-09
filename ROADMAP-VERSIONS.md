@@ -66,7 +66,8 @@
 - [x] V1.8 : Commerce Aitif - base dans db.py separe, stable
 - [x] V1.9 : Commerce Aitif - README propre, structure expliquee
 - [ ] V1.10 : Commerce Aitif - prochaine vraie amelioration
-- [x] V2.6 : Surveillance Aitif - branding + test stabilite
+- [x] V2.6 : Surveillance Aitif - branding
+- [x] V2.7 : Surveillance Aitif - simulation nettoyage, voir avant de supprimer
 - [ ] V3.6 : IA Aitif
 - [ ] V4.6 : Data Aitif
 - [ ] V5.6 : IoT Aitif
