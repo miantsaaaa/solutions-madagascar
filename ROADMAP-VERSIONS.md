@@ -40,7 +40,7 @@
 - [x] V6.1 : audit mot de passe
 - [x] V6.2 : generateur mot de passe fort
 - [x] V6.3 : audit fichiers sensibles
-- [ ] V6.4 : scan ports ouverts
+- [x] V6.4 : scan ports ouverts
 - [ ] V6.5 : rapport audit securite complet
 
 ## Domaine 07
