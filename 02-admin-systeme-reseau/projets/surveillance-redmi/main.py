@@ -1,4 +1,4 @@
-# Surveillance Aitif - V2.6
+# Surveillance Aitif - V2.10
 # AITIF. - Aitif, pour faire evoluer Madagascar
 # Domaine 02 - Admin Systeme + Reseau
 # Par Miantsa - solutions-madagascar
@@ -57,4 +57,10 @@ if __name__ == "__main__":
     check_stockage()
     check_batterie()
     check_reseau()
+    print("\n--- ALERTE AITIF. ---")
+    try:
+        from alerte import alerte
+        alerte()
+    except Exception as e:
+        print(f"Alerte non lisible ici : {e}")
     print("\nTermine. Relance quand tu veux avec : python3 main.py")
