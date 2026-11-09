@@ -59,12 +59,13 @@
 - [x] V8.4 : Charte
 - [x] V8.5 : Dossier produits locaux + fin Trimestre 1 La Boite
 
+## 2eme tour - Regle : verification ne compte pas comme version, seule une amelioration compte comme Vx.x
 ## 2eme tour - Retour a V1 (apres 5 par domaine)
 - [x] V1.6 : Commerce devient Commerce Aitif - produits Aitif
 - [x] V1.7 : Commerce Aitif - refactor, fichier separe, stable
 - [x] V1.8 : Commerce Aitif - base dans db.py separe, stable
-- [x] V1.9 : Commerce Aitif - test de stabilite, preuve
-- [x] V1.10 : Commerce Aitif - README propre, structure expliquee
+- [x] V1.9 : Commerce Aitif - README propre, structure expliquee
+- [ ] V1.10 : Commerce Aitif - prochaine vraie amelioration
 - [x] V2.6 : Surveillance Aitif - branding + test stabilite
 - [ ] V3.6 : IA Aitif
 - [ ] V4.6 : Data Aitif
