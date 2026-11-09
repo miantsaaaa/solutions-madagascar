@@ -89,6 +89,7 @@
 - [x] V5.10 : IoT Aitif - main integre alerte + conseil stockage, tout en 1 commande
 - [x] Domaine 05 - 2eme tour termine
 - [x] V6.6 : Cyber Aitif - audit + generateur + fichiers + ports + rapport en Aitif
+- [x] V6.7 : Cyber Aitif - checklist rapide 5 checks avant de pousser
 - [ ] V7.6 : Metier Aitif
 - [ ] V8.10 : Fondation Aitif
 - [ ] V9.6 : Preuves Aitif
