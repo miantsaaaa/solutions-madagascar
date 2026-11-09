@@ -4,6 +4,8 @@
 # Par Miantsa - solutions-madagascar
 
 import sqlite3
+from config import get_ville
+VILLE = get_ville()
 from datetime import datetime
 
 DB = "commerce.db"
@@ -67,7 +69,7 @@ def bilan_jour():
     ventes = cur.fetchone()[0]
     cur.execute("SELECT COALESCE(SUM(montant),0) FROM depenses WHERE date=?", (aujourd_hui(),))
     depenses = cur.fetchone()[0]
-    print("\n--- BILAN DU JOUR - MADAGASCAR ---")
+    print(f"\n--- BILAN DU JOUR - {VILLE} / MADAGASCAR ---")
     print(f"Date : {aujourd_hui()}")
     print(f"Ventes : {ventes} Ar")
     print(f"Depenses : {depenses} Ar")
@@ -82,7 +84,7 @@ def bilan_jour():
 def menu():
     init_db()
     while True:
-        print("\n=== GESTION COMMERCE - MADAGASCAR ===")
+        print(f"\n=== GESTION COMMERCE - {VILLE.upper()} / MADAGASCAR ===")
         print("1. Ajouter une vente")
         print("2. Ajouter une depense")
         print("3. Ajouter / Mettre a jour stock")
