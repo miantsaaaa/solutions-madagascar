@@ -5,7 +5,7 @@
 - [x] V1 : ventes, depenses, stock, bilan jour
 - [x] V1.1 : ville du commerce
 - [x] V1.2 : rapport 7 jours
-- [ ] V1.3 : stock diminue auto quand on vend
+- [x] V1.3 : stock diminue auto quand on vend
 - [ ] V1.4 : export CSV / sauvegarde
 
 ## Domaine 02 - Admin Systeme (apres 01)
