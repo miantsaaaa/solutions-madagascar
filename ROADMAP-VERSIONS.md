@@ -51,3 +51,10 @@
 - [x] V7.5 : site complet + fin entreprise V1
 - Meme regle : 5 petites versions par domaine, avant de switcher.
 - 1 version = 1 test sur Redmi + 1 commit + 1 push.
+
+## Domaine 08 - Fondation Aitif (Boite)
+- [x] V8.1 : Nom, vision, mission, regles
+- [x] V8.2 : Plan 1 An
+- [x] V8.3 : Identite simple Aitif
+- [x] V8.4 : Charte
+- [x] V8.5 : Dossier produits locaux + fin Trimestre 1 La Boite
