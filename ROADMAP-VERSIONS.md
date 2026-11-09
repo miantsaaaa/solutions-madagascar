@@ -98,5 +98,7 @@
 - [x] V7.7 : Metier Aitif - catalogue Produits Aitif avec vrais prix et marges
 - [x] V7.8 : Metier Aitif - README propre, structure expliquee
 - [x] V7.9 : Metier Aitif - CSS fichier separe, plus de duplication
+- [x] V7.10 : Metier Aitif - portfolio raconte 2eme tour termine 01-06
+- [x] Domaine 07 - 2eme tour termine
 - [ ] V8.10 : Fondation Aitif
 - [ ] V9.6 : Preuves Aitif
