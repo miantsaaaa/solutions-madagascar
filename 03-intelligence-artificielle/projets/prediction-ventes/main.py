@@ -1,4 +1,5 @@
-# Prediction Ventes - V3.2 - Domaine 03 IA
+# Prediction Ventes Aitif - V3.6
+# AITIF. - IA Aitif, pour faire evoluer Madagascar
 # Prediction avec jour de semaine : samedi != lundi
 import sqlite3, glob, os
 from datetime import datetime, timedelta
@@ -9,7 +10,7 @@ DB = DBS[0] if DBS else ""
 JOURS = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"]
 
 def prediction():
-    print("=== PREDICTION VENTES V3.2 - IA - MADAGASCAR ===")
+    print("=== PREDICTION VENTES AITIF. - V3.6 - MADAGASCAR ===")
     if not DB or not os.path.exists(DB):
         print("Pas de base trouvee.")
         return

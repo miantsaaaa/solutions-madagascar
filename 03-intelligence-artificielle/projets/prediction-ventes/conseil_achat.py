@@ -1,12 +1,21 @@
-# Conseil achat auto - V3.5 - Domaine 03 IA
+# Conseil achat Aitif - V3.6
+# AITIF. - IA Aitif, conseille avec la vraie marge.
 # Ton IA te dit quoi acheter, combien, et combien ca va couter
 import sqlite3, glob, os
 
 DBS = glob.glob("/root/**/commerce.db", recursive=True)
 DB = DBS[0] if DBS else ""
 
+MARGE_REELLE = {"Riz": 700, "Cafe": 8033, "Miel": 11000}
+
+def marge_pour(produit):
+    for cle, val in MARGE_REELLE.items():
+        if cle.lower() in produit.lower():
+            return val
+    return 0
+
 def conseil():
-    print("=== CONSEIL ACHAT AUTO - IA - MADAGASCAR ===")
+    print("=== CONSEIL ACHAT AITIF. - V3.6 - MADAGASCAR ===")
     if not DB or not os.path.exists(DB):
         print("Pas de base trouvee.")
         return
@@ -31,7 +40,8 @@ def conseil():
             if besoin > 0:
                 cout = besoin * prix
                 total_achat += cout
-                print(f" - {produit} : il reste {qte}, tu vends ~{nb} / jour. Rachete {besoin} x {prix} Ar = {cout} Ar")
+                marge = marge_pour(produit)
+                print(f" - {produit} : il reste {qte}, tu vends ~{nb} / jour. Rachete {besoin} x {prix} Ar = {cout} Ar | Vraie marge / vente : {marge} Ar")
             else:
                 print(f" - {produit} : stock OK ({qte}), pas besoin d'acheter.")
         elif qte >= 7:
