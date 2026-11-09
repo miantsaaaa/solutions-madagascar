@@ -7,19 +7,9 @@
 import sqlite3
 from config import get_ville
 from produits_aitif import produits_aitif
+from db import DB, init_db, connect
 VILLE = get_ville()
 from datetime import datetime
-
-DB = "commerce.db"
-
-def init_db():
-    conn = sqlite3.connect(DB)
-    cur = conn.cursor()
-    cur.execute("CREATE TABLE IF NOT EXISTS ventes (id INTEGER PRIMARY KEY, produit TEXT, montant INTEGER, date TEXT)")
-    cur.execute("CREATE TABLE IF NOT EXISTS depenses (id INTEGER PRIMARY KEY, raison TEXT, montant INTEGER, date TEXT)")
-    cur.execute("CREATE TABLE IF NOT EXISTS stock (id INTEGER PRIMARY KEY, produit TEXT UNIQUE, quantite INTEGER, prix INTEGER)")
-    conn.commit()
-    conn.close()
 
 def aujourd_hui():
     return datetime.now().strftime("%Y-%m-%d")
