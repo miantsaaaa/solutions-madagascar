@@ -65,7 +65,8 @@
 - [x] V1.7 : Commerce Aitif - refactor, fichier separe, stable
 - [x] V1.8 : Commerce Aitif - base dans db.py separe, stable
 - [x] V1.9 : Commerce Aitif - README propre, structure expliquee
-- [x] V1.10 : Commerce Aitif - vraie marge avec frais
+- [x] V1.10
+- [x] V1.11 : Commerce Aitif - Agent 01 cree, mission evoluer Domaine 01 petit a petit : Commerce Aitif - vraie marge avec frais
 - [x] V2.6 : Surveillance Aitif - branding
 - [x] V2.7 : Surveillance Aitif - simulation nettoyage, voir avant de supprimer
 - [x] V2.8 : Surveillance Aitif - README propre, structure expliquee
