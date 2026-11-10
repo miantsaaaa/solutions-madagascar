@@ -2,9 +2,9 @@
 ## Aitif ne fait pas juste du commerce.
 
 Le commerce, c'etait le Domaine 01. Le premier pas.
-Aitif, c'est les 9 domaines ensemble. Et apres, il y aura 10, 11, 12... 2eme tour termine 09 Nov 2026 : chaque domaine 01 a 07 a fait 5 ameliorations de plus, tout en 1 commande.
+Aitif, c'est les 7 domaines ensemble. Et apres, il y aura 10, 11, 12... 2eme tour termine 09 Nov 2026 : chaque domaine 01 a 07 a fait 5 ameliorations de plus, tout en 1 commande.
 
-## Ce qu'on peut deja faire avec nos 9 domaines
+## Ce qu'on peut deja faire avec nos 7 domaines
 ### 01 - Genie Logiciel + BDD
 Creer n'importe quelle app : commerce, ecole, sante, transport, hotel, restaurant.
 Si ca se compte, ca se suit, on peut le coder.
@@ -33,7 +33,7 @@ Si c'est ouvert, on ferme. Si c'est faible, on renforce.
 Faire connaitre : portfolio, CV, catalogue, journal.
 Si c'est bien fait, on le montre. On ne promet pas, on prouve.
 
-### 08 - Fondation Aitif
+### Fondation Aitif (transversal, pas un domaine)
 Donner le sens : vision, mission, identite, charte, prix, marge.
 Si on ne sait pas pourquoi, on ne construit pas.
 
@@ -49,7 +49,7 @@ On dit : "Quel domaine on utilise ? On decoupe en petit, on construit, on teste,
 Si on ne sait pas, on apprend. Si c'est trop gros, on coupe en plus petit.
 On cree, on evolue toujours.
 
-### 09 - Preuves Aitif
+### Preuves Aitif (transversal, pas un domaine)
 Prouver que ca marche ensemble : Restaurant, Hotel, Produits, Tableau de bord, Agriculture + Energie.
 Si ca marche seul, ca doit marcher ensemble.
 
