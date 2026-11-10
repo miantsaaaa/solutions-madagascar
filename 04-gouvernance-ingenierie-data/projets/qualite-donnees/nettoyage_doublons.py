@@ -1,4 +1,4 @@
-# Nettoyage doublons Aitif - V4.7
+# Nettoyage doublons Aitif - V4.13 - 3eme tour
 # AITIF. - Data Aitif.
 # Detecte et fusionne les doublons dans stock, sans supprimer tes ventes
 import sqlite3, glob, os
@@ -7,12 +7,14 @@ DBS = glob.glob("/root/**/commerce.db", recursive=True)
 DB = DBS[0] if DBS else ""
 
 def nettoyer():
-    print("=== NETTOYAGE DOUBLONS AITIF. - V4.7 - MADAGASCAR ===")
+    print("=== NETTOYAGE DOUBLONS AITIF. - V4.13 - MADAGASCAR ===")
     if not DB or not os.path.exists(DB):
         print("Pas de base trouvee.")
         return
     conn = sqlite3.connect(DB)
     cur = conn.cursor()
+    cur.execute("SELECT COUNT(*) FROM stock")
+    avant = cur.fetchone()[0]
     # Cherche les produits en double dans stock
     cur.execute("SELECT produit, COUNT(*), SUM(quantite) FROM stock GROUP BY produit HAVING COUNT(*) > 1")
     doublons = cur.fetchall()
@@ -40,8 +42,11 @@ def nettoyer():
             print(f" - {p} {m} Ar le {d} : {c} fois (verifie si c'est vraiment un doublon)")
     else:
         print("\nAucune vente en double exact.")
+    cur.execute("SELECT COUNT(*) FROM stock")
+    apres = cur.fetchone()[0]
+    print(f"\nAvant : {avant} ligne(s) de stock, Apres : {apres} ligne(s), Gagne : {avant - apres} ligne(s)")
+    print("Nettoyage termine. Tes donnees restent intactes.")
     conn.close()
-    print("\nNettoyage termine. Tes donnees restent intactes.")
 
 if __name__ == "__main__":
     nettoyer()
