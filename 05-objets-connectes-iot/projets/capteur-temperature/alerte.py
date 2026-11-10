@@ -1,10 +1,10 @@
-# Alerte temperature Aitif - V5.6
+# Alerte temperature Aitif - V5.13 - 3eme tour
 # AITIF. - IoT Aitif.
 # Lit la derniere mesure et te dit si tu dois agir maintenant
 import csv, os
 
 def alerte():
-    print("=== ALERTE TEMPERATURE AITIF. - V5.6 - FIANARANTSOA ===")
+    print("=== ALERTE TEMPERATURE AITIF. - V5.13 - FIANARANTSOA ===")
     if not os.path.exists("mesures-temperature.csv"):
         print("Aucune mesure. Lance d'abord : python3 main.py")
         return
@@ -32,7 +32,17 @@ def alerte():
         print("Humidite tres haute : risque de moisissure sur le riz. Aere.")
     elif hum > 80:
         print("Humidite haute : surveille ton riz.")
-    print("\nTon capteur te previent avant que ce soit trop tard.")
+    from seuils_aitif import seuil_pour
+    danger = []
+    for prod in ["Riz", "Cafe", "Miel"]:
+        s = seuil_pour(prod)
+        if not (s["t_min"] <= temp <= s["t_max"] and hum <= s["h_max"]):
+            danger.append(prod)
+    if danger:
+        print(f"\nProduits en danger : {', '.join(danger)} - protege-les en premier.")
+    else:
+        print("\nAucun produit en danger avec ces seuils.")
+    print("Ton capteur te previent avant que ce soit trop tard.")
 
 if __name__ == "__main__":
     alerte()
