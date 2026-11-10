@@ -133,7 +133,8 @@
 - [x] V7.8 : Metier Aitif - README propre, structure expliquee
 - [x] V7.9 : Metier Aitif - CSS fichier separe, plus de duplication
 - [x] V7.10
-- [x] V7.11 : Metier Aitif - Agent 07 cree, mission evoluer Domaine 07 petit a petit : Metier Aitif - portfolio raconte 2eme tour termine 01-06
+- [x] V7.11
+- [x] V7.12 : Metier Aitif - portfolio ajoute 3eme tour termine 01-06 agents bilan 1 phrase : Metier Aitif - Agent 07 cree, mission evoluer Domaine 07 petit a petit : Metier Aitif - portfolio raconte 2eme tour termine 01-06
 - [x] Domaine 07 - 2eme tour termine
 - [x] V8.10 : Fondation Aitif - 70 versions, 9 domaines, 2eme tour termine
 - [x] Domaine 08 - 2eme tour termine
