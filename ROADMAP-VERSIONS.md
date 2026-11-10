@@ -136,7 +136,8 @@
 - [x] V7.11
 - [x] V7.12
 - [x] V7.13
-- [x] V7.14 : Metier Aitif - catalogue met a jour preuves 3eme tour capteur cyber : Metier Aitif - journal ajoute 3eme tour termine 102 versions agents : Metier Aitif - portfolio ajoute 3eme tour termine 01-06 agents bilan 1 phrase : Metier Aitif - Agent 07 cree, mission evoluer Domaine 07 petit a petit : Metier Aitif - portfolio raconte 2eme tour termine 01-06
+- [x] V7.14
+- [x] V7.15 : Metier Aitif - cv ajoute bilan 1 phrase 102 versions 7 domaines : Metier Aitif - catalogue met a jour preuves 3eme tour capteur cyber : Metier Aitif - journal ajoute 3eme tour termine 102 versions agents : Metier Aitif - portfolio ajoute 3eme tour termine 01-06 agents bilan 1 phrase : Metier Aitif - Agent 07 cree, mission evoluer Domaine 07 petit a petit : Metier Aitif - portfolio raconte 2eme tour termine 01-06
 - [x] Domaine 07 - 2eme tour termine
 - [x] V8.10 : Fondation Aitif - 70 versions, 9 domaines, 2eme tour termine
 - [x] Domaine 08 - 2eme tour termine
