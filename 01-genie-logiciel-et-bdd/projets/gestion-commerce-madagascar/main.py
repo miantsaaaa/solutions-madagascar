@@ -1,4 +1,4 @@
-# Gestion Commerce Aitif - V1.13 - 3eme tour
+# Gestion Commerce Aitif - V1.14 - 3eme tour
 # AITIF. - Aitif, pour faire evoluer Madagascar
 # Outil pour petits commerces partout a Madagascar
 # 100% sur Redmi, hors-ligne, en Ariary, base SQLite
@@ -124,7 +124,7 @@ def exporter_csv():
 def menu():
     init_db()
     while True:
-        print(f"\n=== GESTION COMMERCE AITIF. V1.13 - {VILLE.upper()} / MADAGASCAR ===")
+        print(f"\n=== GESTION COMMERCE AITIF. V1.14 - {VILLE.upper()} / MADAGASCAR ===")
         print("1. Ajouter une vente")
         print("2. Ajouter une depense")
         print("3. Ajouter / Mettre a jour stock")

@@ -1,4 +1,4 @@
-# Produits Aitif - V1.13 - 3eme tour
+# Produits Aitif - V1.14 - 3eme tour
 # Separe de main.py pour que main.py reste leger, stable, puissant.
 # V1.10 : montre la vraie marge, avec frais. Sans frais, la marge ment.
 
@@ -13,4 +13,6 @@ def produits_aitif():
     print("Si tu vends 1 Riz + 1 Cafe + 1 Miel, tu gagnes vraiment 19733 Ar.")
     print("CLASSEMENT BENEFICE : 1. Miel 11000 Ar | 2. Cafe 8033 Ar | 3. Riz 700 Ar")
     print("Conseil Aitif : si tu as peu de temps, concentre-toi sur le Miel d'abord.")
+    print("PRIX POUR 5 : Riz 5x2500=12500 Ar (benef 3500) | Cafe 5x25000=125000 Ar (benef 40165) | Miel 5x23000=115000 Ar (benef 55000)")
+    print("PRIX POUR 2 : Riz 5000 Ar | Cafe 50000 Ar | Miel 46000 Ar - benef total 2 de chaque : 39466 Ar")
     print("----------------------------------")
