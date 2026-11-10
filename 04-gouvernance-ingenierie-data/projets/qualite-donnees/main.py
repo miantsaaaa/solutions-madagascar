@@ -1,4 +1,4 @@
-# Qualite Donnees Aitif - V4.10
+# Qualite Donnees Aitif - V4.12 - 3eme tour
 # AITIF. - Data Aitif, pour faire evoluer Madagascar
 # Controle tes donnees commerce et donne un score / 100
 import sqlite3, glob, os
@@ -7,7 +7,7 @@ DBS = glob.glob("/root/**/commerce.db", recursive=True)
 DB = DBS[0] if DBS else ""
 
 def controle():
-    print("=== QUALITE DONNEES AITIF. - V4.6 - MADAGASCAR ===")
+    print("=== QUALITE DONNEES AITIF. - V4.12 - MADAGASCAR ===")
     if not DB or not os.path.exists(DB):
         print("Pas de base trouvee.")
         return
@@ -35,6 +35,15 @@ def controle():
         erreurs += 1
     else:
         print("   OK : tous les produits ont un nom")
+    cur.execute("SELECT DISTINCT produit FROM ventes")
+    noms = [r[0] for r in cur.fetchall()]
+    total_checks += 1
+    inconnus = [n for n in noms if not any(k in n for k in ["Riz", "Cafe", "Miel"])]
+    if inconnus:
+        print(f"   ERREUR : {len(inconnus)} produit(s) inconnu(s) : {inconnus} - corrige le nom")
+        erreurs += 1
+    else:
+        print("   OK : tous les produits sont Riz, Cafe ou Miel")
     print("\n[STOCK]")
     cur.execute("SELECT COUNT(*) FROM stock")
     nb_s = cur.fetchone()[0]
