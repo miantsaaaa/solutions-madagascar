@@ -1,10 +1,10 @@
-# Tableau de bord temperature Aitif - V5.6
+# Tableau de bord temperature Aitif - V5.14 - 3eme tour
 # AITIF. - IoT Aitif.
 # 1 ecran : derniere mesure, moyenne, alerte, historique
 import csv, os
 
 def tableau():
-    print("=== TABLEAU DE BORD TEMPERATURE AITIF. - V5.6 - FIANARANTSOA / MADAGASCAR ===")
+    print("=== TABLEAU DE BORD TEMPERATURE AITIF. - V5.14 - FIANARANTSOA / MADAGASCAR ===")
     if not os.path.exists("mesures-temperature.csv"):
         print("Aucune mesure. Lance : python3 main.py")
         return
@@ -23,6 +23,14 @@ def tableau():
         print("[ALERTE] CHAUD - aere ton stock")
     else:
         print("[ETAT] NORMAL - stock en securite")
+    from seuils_aitif import seuil_pour
+    hum_der = float(derniere["Humidite (%)"])
+    print("\n[PRODUITS - seuils Aitif]")
+    for prod in ["Riz", "Cafe", "Miel"]:
+        s = seuil_pour(prod)
+        ok = s["t_min"] <= temp <= s["t_max"] and hum_der <= s["h_max"]
+        etat = "OK" if ok else "DANGER"
+        print(f" - {prod} : {etat} ({temp} C, {hum_der} %)")
     print("\n[HISTORIQUE]")
     for r in rows[-5:]:
         barre = "#" * int(float(r["Temperature (C)"]))
