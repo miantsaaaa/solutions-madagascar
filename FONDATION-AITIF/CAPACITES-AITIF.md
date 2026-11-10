@@ -60,3 +60,20 @@ Si ca marche seul, ca doit marcher ensemble.
 - 13 : Sante (suivi simple, hors-ligne, sans remplacer le medecin)
 
 On ne les ouvre pas maintenant. On les note, pour montrer qu'il n'y a pas de limite.
+
+## IMPORTANT - Domaines = capacites, pas des projets
+
+Ne pas confondre.
+
+- Les 7 domaines sont 7 CAPACITES. Ce qu'on sait faire.
+- Les projets sont ce qu'on CONSTRUIT avec ces capacites : Commerce, Restaurant, Hotel, Transformation Riz, Transformation Cafe, Transformation Cacao, Ecole, Sante, Agriculture...
+
+Exemple :
+- Domaine 01 = Genie Logiciel + BDD. Ce n'est pas "Commerce". Commerce etait juste le premier projet pour apprendre.
+- Projet Restaurant = utilise 01 (app) + 02 (systeme qui tient) + 05 (capteur frigo) + 06 (securite) + 07 (portfolio).
+- Projet Hotel = utilise 01 (reservation) + 02 (surveillance) + 03 (prediction occupation) + 04 (data propre) + 07 (montrer).
+- Projet Transformation Riz = utilise 01 (suivi lot) + 04 (tracabilite) + 05 (capteur transformation) + 07 (etiquette Aitif).
+
+C'est pour ca qu'on peut creer plusieurs travails, pas juste le commerce.
+On ne cree pas un nouveau domaine pour chaque nouveau travail.
+On reutilise les memes 7 capacites, pour chaque nouveau projet, petit a petit.
