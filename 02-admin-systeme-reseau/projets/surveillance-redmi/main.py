@@ -1,4 +1,4 @@
-# Surveillance Aitif - V2.14 - 3eme tour
+# Surveillance Aitif - V2.15 - 3eme tour
 # AITIF. - Aitif, pour faire evoluer Madagascar
 # Domaine 02 - Admin Systeme + Reseau
 # Par Miantsa - solutions-madagascar
@@ -74,4 +74,6 @@ if __name__ == "__main__":
         alerte()
     except Exception as e:
         print(f"Alerte non lisible ici : {e}")
-    print("\nTermine. Relance quand tu veux avec : python3 main.py")
+    print("\nBILAN AITIF EN 1 PHRASE : Stockage a surveiller, Reseau a verifier avant push, Batterie a verifier sur Redmi - Action : simuler nettoyage si ORANGE")
+    print("Domaine 02 termine 3eme tour - Agent 02 passe en arriere-plan.")
+    print("Termine. Relance quand tu veux avec : python3 main.py")
