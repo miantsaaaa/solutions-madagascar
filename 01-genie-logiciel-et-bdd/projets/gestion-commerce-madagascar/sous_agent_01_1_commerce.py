@@ -47,6 +47,25 @@ def action_simulation():
             pass
         return f"Action ECHEC - {e}"
 
+def proposition_action():
+    # A1.4 : pas juste alerter, proposer une action concrete
+    try:
+        import csv
+        rows = list(csv.DictReader(open("stock.csv", encoding="utf-8")))
+        d = {r['produit']: int(r['quantite']) for r in rows}
+        props = []
+        if d.get('Cafe', 0) == 0:
+            props.append("Proposition : Acheter Cafe - ne pas promettre de vente Cafe tant que stock 0")
+        if d.get('Miel', 0) == 0:
+            props.append("Proposition : Acheter Miel - ne pas promettre de vente Miel tant que stock 0")
+        if d.get('Riz', 0) <= 2:
+            props.append(f"Proposition : Acheter Riz - stock bas {d.get('Riz', 0)}")
+        if not props:
+            return "Proposition : Stock OK - tu peux vendre"
+        return " | ".join(props)
+    except Exception as e:
+        return f"Proposition ECHEC - {e}"
+
 def verification():
     msgs = []
     try:
@@ -74,10 +93,11 @@ while True:
         sim = simulation()
         act = action_simulation()
         ver = verification()
+        prop = proposition_action()
         res = pathlib.Path("RESULTAT-AGENT-01.txt")
         now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
         res.write_text(f"[{now}] Ordre : {ordre}\n[{now}] {sim}\n[{now}] {ver}\n", encoding="utf-8")
-        log(f"Ordre termine : {sim} | {act} | {ver}")
+        log(f"Ordre termine : {sim} | {act} | {ver} | {prop}")
         try:
             ordre_f.unlink()
         except Exception:
@@ -87,5 +107,7 @@ while True:
         sim = simulation()
         act = action_simulation()
         ver = verification()
-        log(f"Routine : {sim} | {act} | {ver}")
+        prop = proposition_action()
+        prop = proposition_action()
+        log(f"Routine : {sim} | {act} | {ver} | {prop}")
     time.sleep(300)  # A1.3 : 5 min, pas 1h - trop long
