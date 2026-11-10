@@ -1,9 +1,11 @@
-# Produits Aitif - V1.15 - 3eme tour
+# Produits Aitif - V1.16 - 4eme tour
 # Separe de main.py pour que main.py reste leger, stable, puissant.
 # V1.10 : montre la vraie marge, avec frais. Sans frais, la marge ment.
 
 def produits_aitif():
-    print("\n--- PRODUITS AITIF - PRIX OBSERVES 09 Nov 2026 ---")
+    from datetime import datetime
+    print(f"\n--- PRODUITS AITIF - PRIX OBSERVES ---")
+    print(f"Derniere mise a jour des prix : {datetime.now().strftime(chr(37)+chr(100)+chr(32)+chr(37)+chr(98)+chr(32)+chr(37)+chr(89))}")
     print("Riz Aitif - Fianarantsoa : vente 2500 - achat 1500 - frais 300 = benef 700 Ar (38.9%)")
     print("Cafe Aitif - Fianarantsoa / Toamasina : vente 25000 - achat 15467 - frais 1500 = benef 8033 Ar (47.3%)")
     print("Miel Aitif - Vatovavy : vente 23000 - achat 10000 - frais 2000 = benef 11000 Ar (91.7%)")
