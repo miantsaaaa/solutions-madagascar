@@ -100,7 +100,8 @@
 - [x] V4.9 : Data Aitif - marge fichier separe, plus de duplication
 - [x] V4.10
 - [x] V4.11
-- [x] V4.12 : Data Aitif - qualite ajoute verification produit inconnu Riz Cafe Miel : Data Aitif - Agent 04 cree, mission evoluer Domaine 04 petit a petit : Data Aitif - main integre doublons + rapport, tout en 1 commande
+- [x] V4.12
+- [x] V4.13 : Data Aitif - nettoyage doublons ajoute avant apres gagne lignes : Data Aitif - qualite ajoute verification produit inconnu Riz Cafe Miel : Data Aitif - Agent 04 cree, mission evoluer Domaine 04 petit a petit : Data Aitif - main integre doublons + rapport, tout en 1 commande
 - [x] Domaine 04 - 2eme tour termine
 - [x] V5.6 : IoT Aitif - capteur + alerte + historique + tableau + MQTT en Aitif
 - [x] V5.7 : IoT Aitif - conseil stockage Riz + Cafe + Miel
