@@ -1,4 +1,4 @@
-# Prediction Ventes Aitif - V3.14 - 3eme tour
+# Prediction Ventes Aitif - V3.15 - 3eme tour
 # AITIF. - IA Aitif, pour faire evoluer Madagascar
 # Prediction avec jour de semaine : samedi != lundi
 import sqlite3, glob, os
@@ -67,3 +67,5 @@ if __name__ == "__main__":
         alerte()
     except Exception as e:
         print(f"Alerte non lisible ici : {e}")
+    print("\nBILAN IA EN 1 PHRASE : Prediction demain basee sur moyenne, Meilleur benefice Miel 11000 Ar, Stock a verifier - Action : pousse le Miel demain")
+    print("Domaine 03 termine 3eme tour - Agent 03 passe en arriere-plan.")
