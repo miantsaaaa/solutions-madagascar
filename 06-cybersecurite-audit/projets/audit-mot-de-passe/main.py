@@ -1,4 +1,4 @@
-# Audit Mot de Passe Aitif - V6.6
+# Audit Mot de Passe Aitif - V6.12 - 3eme tour
 # AITIF. - Cyber Aitif.
 # Teste la force, 100% hors-ligne, ne sauvegarde JAMAIS le mot de passe
 import getpass, re
@@ -6,7 +6,7 @@ import getpass, re
 FAIBLES = ["123456", "12345678", "password", "motdepasse", "madagascar", "fianarantsoa", "1234", "azerty", "000000", "admin"]
 
 def audit():
-    print("=== AUDIT MOT DE PASSE AITIF. - V6.6 - MADAGASCAR ===")
+    print("=== AUDIT MOT DE PASSE AITIF. - V6.12 - MADAGASCAR ===")
     print("Ton mot de passe ne sera JAMAIS sauvegarde, ni envoye.")
     print("Il reste dans ta tete et dans ce test, c'est tout.")
     mdp = getpass.getpass("Tape un mot de passe a tester (il sera cache) : ")
@@ -56,6 +56,10 @@ def audit():
         print("\nDANGER : mot de passe connu / trop simple ! Score divise.")
         score = min(score, 20)
         conseils.append("Ne mets jamais 123456, madagascar, ta ville ou ta date de naissance.")
+    if re.search(r"(.)\1\1", mdp) or any(s in bas for s in ["123", "abc", "qwerty", "azerty", "000", "111"]):
+        print("\nDANGER : repetition ou suite detectee (aaa, 111, 123, abc) ! Score divise.")
+        score = min(score, 20)
+        conseils.append("Evite les repetitions (aaa, 111) et les suites (123, abc, qwerty).")
     print(f"\n[SCORE] {score} / 85+")
     if score >= 80:
         print("FORT : bon mot de passe. Garde-le secret, ne le partage jamais.")
