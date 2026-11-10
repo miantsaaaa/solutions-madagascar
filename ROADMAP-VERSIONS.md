@@ -77,7 +77,8 @@
 - [x] V2.8 : Surveillance Aitif - README propre, structure expliquee
 - [x] V2.9 : Surveillance Aitif - sauvegarde complete tous domaines + alerte simulation
 - [x] V2.10
-- [x] V2.11 : Surveillance Aitif - Agent 02 cree, mission evoluer Domaine 02 petit a petit : Surveillance Aitif - main integre alerte, tout en 1 commande
+- [x] V2.11
+- [x] V2.12 : Surveillance Aitif - conseil simuler_nettoyage quand stockage bientot plein : Surveillance Aitif - Agent 02 cree, mission evoluer Domaine 02 petit a petit : Surveillance Aitif - main integre alerte, tout en 1 commande
 - [x] V3.6 : IA Aitif - conseil avec vraie marge
 - [x] V3.7 : IA Aitif - marge fichier separe, plus de duplication
 - [x] V3.8 : IA Aitif - graphique Aitif
