@@ -1,4 +1,4 @@
-# Produits Aitif - V1.16 - 4eme tour
+# Produits Aitif - V1.17 - 4eme tour
 # Separe de main.py pour que main.py reste leger, stable, puissant.
 # V1.10 : montre la vraie marge, avec frais. Sans frais, la marge ment.
 
@@ -6,6 +6,17 @@ def produits_aitif():
     from datetime import datetime
     print(f"\n--- PRODUITS AITIF - PRIX OBSERVES ---")
     print(f"Derniere mise a jour des prix : {datetime.now().strftime(chr(37)+chr(100)+chr(32)+chr(37)+chr(98)+chr(32)+chr(37)+chr(89))}")
+    # V1.17 : stock restant, lu dans stock.csv, 0 si absent, jamais invente
+    try:
+        import csv as _csv
+        _stock = {}
+        with open("stock.csv", encoding="utf-8") as _f:
+            _r = _csv.DictReader(_f)
+            for _row in _r:
+                _stock[_row["produit"]] = _row["quantite"]
+        print(f"Stock restant : Riz {_stock.get('Riz', '0')} | Cafe {_stock.get('Cafe', '0')} | Miel {_stock.get('Miel', '0')}")
+    except Exception:
+        print("Stock restant : fichier stock.csv introuvable")
     print("Riz Aitif - Fianarantsoa : vente 2500 - achat 1500 - frais 300 = benef 700 Ar (38.9%)")
     print("Cafe Aitif - Fianarantsoa / Toamasina : vente 25000 - achat 15467 - frais 1500 = benef 8033 Ar (47.3%)")
     print("Miel Aitif - Vatovavy : vente 23000 - achat 10000 - frais 2000 = benef 11000 Ar (91.7%)")
