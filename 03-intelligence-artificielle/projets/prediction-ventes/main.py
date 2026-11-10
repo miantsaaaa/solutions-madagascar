@@ -1,4 +1,4 @@
-# Prediction Ventes Aitif - V3.10
+# Prediction Ventes Aitif - V3.14 - 3eme tour
 # AITIF. - IA Aitif, pour faire evoluer Madagascar
 # Prediction avec jour de semaine : samedi != lundi
 import sqlite3, glob, os
@@ -10,7 +10,7 @@ DB = DBS[0] if DBS else ""
 JOURS = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"]
 
 def prediction():
-    print("=== PREDICTION VENTES AITIF. - V3.6 - MADAGASCAR ===")
+    print("=== PREDICTION VENTES AITIF. - V3.14 - MADAGASCAR ===")
     if not DB or not os.path.exists(DB):
         print("Pas de base trouvee.")
         return
@@ -48,7 +48,10 @@ def prediction():
     else:
         print(f"\n[IA] Demain c'est {jour_demain}, pas encore de {jour_demain} dans tes ventes.")
         print(f"[IA] Prediction avec moyenne generale : {moyenne:.0f} Ar")
-    print("\nPlus tu vends chaque jour, plus ton IA connait chaque jour de semaine.")
+    from marge_aitif import MARGE_REELLE
+    meilleur = max(MARGE_REELLE, key=MARGE_REELLE.get)
+    print(f"\n[IA] Meilleur benefice demain : {meilleur} {MARGE_REELLE[meilleur]} Ar / vente - pousse-le d'abord.")
+    print("Plus tu vends chaque jour, plus ton IA connait chaque jour de semaine.")
 
 if __name__ == "__main__":
     prediction()
