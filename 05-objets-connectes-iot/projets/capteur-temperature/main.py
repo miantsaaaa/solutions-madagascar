@@ -1,4 +1,4 @@
-# Capteur Temperature Aitif - V5.10
+# Capteur Temperature Aitif - V5.12 - 3eme tour
 # AITIF. - IoT Aitif.
 # Simule un capteur ESP32 a Fianarantsoa, sans materiel
 import random, csv, os
@@ -7,7 +7,7 @@ from datetime import datetime
 FICHIER = "mesures-temperature.csv"
 
 def mesurer():
-    print("=== CAPTEUR TEMPERATURE AITIF. - V5.6 - FIANARANTSOA ===")
+    print("=== CAPTEUR TEMPERATURE AITIF. - V5.12 - FIANARANTSOA ===")
     # Fianarantsoa : entre 12 et 26 degres en general
     # On simule comme un vrai capteur avec un peu de bruit
     heure = datetime.now().hour
@@ -38,6 +38,16 @@ def mesurer():
             w.writerow(["Date", "Heure", "Temperature (C)", "Humidite (%)"])
         w.writerow([datetime.now().strftime("%Y-%m-%d"), datetime.now().strftime("%H:%M"), temp, humidite])
     print(f"\nMesure sauvegardee dans : {FICHIER}")
+    from seuils_aitif import seuil_pour
+    print("\n[Par produit - seuils Aitif]")
+    for prod in ["Riz", "Cafe", "Miel"]:
+        s = seuil_pour(prod)
+        ok_t = s["t_min"] <= temp <= s["t_max"]
+        ok_h = humidite <= s["h_max"]
+        if ok_t and ok_h:
+            print(f" - {prod} : OK ({temp} C, {humidite} %)")
+        else:
+            print(f" - {prod} : DANGER ({temp} C, {humidite} %) - seuil {s['t_min']}-{s['t_max']} C, humidite max {s['h_max']} %")
     print("Un vrai capteur ESP32 ferait exactement la meme chose.")
 
 if __name__ == "__main__":
