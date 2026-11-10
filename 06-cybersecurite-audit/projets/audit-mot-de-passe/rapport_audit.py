@@ -1,11 +1,11 @@
-# Rapport audit securite complet Aitif - V6.10
+# Rapport audit securite complet Aitif - V6.15 - 3eme tour - bilan 1 phrase
 # AITIF. - Cyber Aitif.
 # Reprend les 4 audits precedents en 1 rapport
 import os, glob, socket
 from datetime import datetime
 
 def rapport():
-    print("=== RAPPORT AUDIT SECURITE COMPLET AITIF. - V6.6 - MADAGASCAR ===")
+    print("=== RAPPORT AUDIT SECURITE COMPLET AITIF. - V6.15 - MADAGASCAR ===")
     print(f"Date : {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     print("Perimetre : ton Redmi + ton depot /root\n")
     score = 100
@@ -61,7 +61,14 @@ def rapport():
         print("BON : quelques points a corriger, mais base saine.")
     else:
         print("A CORRIGER : corrige les points rouges avant de continuer.")
-    print("\nTon audit est la preuve que tu travailles comme un pro de la securite.")
+    if score >= 90:
+        bilan = "ton Redmi est protege, tu peux pousser tranquille."
+    elif score >= 70:
+        bilan = "corrige les points orange avant de pousser."
+    else:
+        bilan = "ne pousse pas, corrige les rouges d'abord."
+    print(f"\nBilan Cyber : {score}/100 - {bilan}")
+    print("Ton audit est la preuve que tu travailles comme un pro de la securite.")
     print("Et si quelqu'un te trouve, il verra que tu ne laisses rien au hasard.")
 
 if __name__ == "__main__":
