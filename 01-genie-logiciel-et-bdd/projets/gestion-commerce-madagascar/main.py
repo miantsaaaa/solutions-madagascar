@@ -1,4 +1,4 @@
-# Gestion Commerce Aitif - V1.19 - 4eme tour
+# Gestion Commerce Aitif - V1.20 - 4eme tour
 # AITIF. - Aitif, pour faire evoluer Madagascar
 # Outil pour petits commerces partout a Madagascar
 # 100% sur Redmi, hors-ligne, en Ariary, base SQLite
@@ -151,6 +151,13 @@ def total_semaine_vraie_marge():
     print("----------------------------------")
     conn.close()
 
+def tout_en_1_commande():
+    print("\n=== TOUT EN 1 COMMANDE - AITIF V1.20 ===")
+    produits_aitif()
+    bilan_jour()
+    total_semaine_vraie_marge()
+    print("=== FIN TOUT EN 1 COMMANDE ===")
+
 def menu():
     init_db()
     while True:
@@ -164,7 +171,8 @@ def menu():
         print("7. Voir produits Aitif")
         print("8. Total semaine vraie marge")
         print("9. Quitter")
-        choix = input("Ton choix (1-9) : ")
+        print("10. Tout en 1 commande")
+        choix = input("Ton choix (1-10) : ")
         if choix == "1":
             ajouter_vente()
         elif choix == "2":
@@ -184,8 +192,10 @@ def menu():
         elif choix == "9":
             print("Misaotra ! A demain. Donnees sauvegardees.")
             break
+        elif choix == "10":
+            tout_en_1_commande()
         else:
-            print("Choix invalide, mets 1 a 9.")
+            print("Choix invalide, mets 1 a 10.")
 
 if __name__ == "__main__":
     menu()
