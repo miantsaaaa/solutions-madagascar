@@ -1,4 +1,4 @@
-# Alerte stock Aitif - V3.7
+# Alerte stock Aitif - V3.13 - 3eme tour
 # AITIF. - IA Aitif, alerte avec vraie marge.
 # Predis quel produit va manquer, avec tes vraies ventes + ton stock
 import sqlite3, glob, os
@@ -8,7 +8,7 @@ DBS = glob.glob("/root/**/commerce.db", recursive=True)
 DB = DBS[0] if DBS else ""
 
 def alerte():
-    print("=== ALERTE STOCK AITIF. - V3.7 - MADAGASCAR ===")
+    print("=== ALERTE STOCK AITIF. - V3.13 - MADAGASCAR ===")
     if not DB or not os.path.exists(DB):
         print("Pas de base trouvee.")
         return
@@ -38,6 +38,9 @@ def alerte():
         # Si tu vends 1 par jour et qu'il reste 2, il reste 2 jours
         marge = marge_pour(produit)
         print(f" - {produit} : {qte} restant(s), {nb_ventes} vente(s), {total_v} Ar vendus | Vraie marge / vente : {marge} Ar")
+        if nb_ventes > 0:
+            jours = qte // max(nb_ventes, 1) if nb_ventes else qte
+            print(f"   Il reste environ {jours} jour(s) de stock pour {produit}.")
         if qte <= 2:
             print(f"   ALERTE ROUGE : {produit} va manquer tres vite ! Rachete demain.")
         elif qte <= 5:
