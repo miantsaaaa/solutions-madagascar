@@ -80,7 +80,9 @@
 - [x] V2.11
 - [x] V2.12
 - [x] V2.13
-- [x] V2.14 : Surveillance Aitif - conseil reseau selon ping : Surveillance Aitif - estimation jours restants avec libre : Surveillance Aitif - conseil simuler_nettoyage quand stockage bientot plein : Surveillance Aitif - Agent 02 cree, mission evoluer Domaine 02 petit a petit : Surveillance Aitif - main integre alerte, tout en 1 commande
+- [x] V2.14
+- [x] V2.15 : Surveillance Aitif - bilan en 1 phrase, Domaine 02 3eme tour termine, Agent 02 en arriere-plan
+- [x] Domaine 02 - 3eme tour termine, Agent 02 en arriere-plan : Surveillance Aitif - conseil reseau selon ping : Surveillance Aitif - estimation jours restants avec libre : Surveillance Aitif - conseil simuler_nettoyage quand stockage bientot plein : Surveillance Aitif - Agent 02 cree, mission evoluer Domaine 02 petit a petit : Surveillance Aitif - main integre alerte, tout en 1 commande
 - [x] V3.6 : IA Aitif - conseil avec vraie marge
 - [x] V3.7 : IA Aitif - marge fichier separe, plus de duplication
 - [x] V3.8 : IA Aitif - graphique Aitif
