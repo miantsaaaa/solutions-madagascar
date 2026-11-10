@@ -1,4 +1,4 @@
-# Surveillance Aitif - V2.13 - 3eme tour
+# Surveillance Aitif - V2.14 - 3eme tour
 # AITIF. - Aitif, pour faire evoluer Madagascar
 # Domaine 02 - Admin Systeme + Reseau
 # Par Miantsa - solutions-madagascar
@@ -50,6 +50,14 @@ def check_reseau():
             for line in r.stdout.splitlines():
                 if "time=" in line:
                     print(f"Ping : {line.strip().split('time=')[-1]}")
+                    try:
+                        ms = float(line.strip().split('time=')[-1].replace(' ms',''))
+                        if ms > 200:
+                            print("Conseil Aitif : 4G faible, travaille hors-ligne, pousse plus tard")
+                        else:
+                            print("Conseil Aitif : Bon pour pousser sur GitHub")
+                    except:
+                        pass
         else:
             print("Ping : echec")
     except Exception as e:
