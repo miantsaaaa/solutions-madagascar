@@ -3,6 +3,19 @@
 # Toi tu parles seulement au Maitre via MESSAGE-AGENT-01.txt
 # Le Maitre discute avec son Sous-Agent via DISCUSSION-AGENT-01.txt
 import time, pathlib, datetime, subprocess, sys, os
+# A1.5 : REGLE AITIF - Agent ne pousse JAMAIS seul. Il travaille, Miantsa pousse.
+# A1.5 : Anti-doublon - 1 seul Maitre, 1 seul Sous-Agent
+_pid_f = pathlib.Path("AGENT-01.pid")
+if _pid_f.exists():
+    try:
+        _old = int(_pid_f.read_text().strip())
+        os.kill(_old, 0)  # verifie si vivant
+        print(f"Maitre deja en cours PID {_old} - je m'arrete, pas de doublon.")
+        raise SystemExit(0)
+    except (ProcessLookupError, ValueError):
+        pass  # ancien PID mort, on continue
+_pid_f.write_text(str(os.getpid()))
+
 def now():
     return datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
 def ecrire_discussion(qui, msg):
