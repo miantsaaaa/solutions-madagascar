@@ -37,4 +37,4 @@ while True:
         ecrire_discussion("Maitre 01", f"Sous-Agent 01.1 relance, PID {sous_proc.pid}.")
     else:
         ecrire_discussion("Maitre 01", "Sous-Agent 01.1, tout va bien ? Continue.")
-    time.sleep(3600)
+    time.sleep(300)  # A1.3 : 5 min, pas 1h - trop long

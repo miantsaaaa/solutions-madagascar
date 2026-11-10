@@ -88,4 +88,4 @@ while True:
         act = action_simulation()
         ver = verification()
         log(f"Routine : {sim} | {act} | {ver}")
-    time.sleep(3600)
+    time.sleep(300)  # A1.3 : 5 min, pas 1h - trop long
