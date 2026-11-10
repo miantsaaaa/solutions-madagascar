@@ -111,7 +111,8 @@
 - [x] V5.8 : IoT Aitif - README propre, structure expliquee
 - [x] V5.9 : IoT Aitif - seuils fichier separe, plus de duplication
 - [x] V5.10
-- [x] V5.11 : IoT Aitif - Agent 05 cree, mission evoluer Domaine 05 petit a petit : IoT Aitif - main integre alerte + conseil stockage, tout en 1 commande
+- [x] V5.11
+- [x] V5.12 : IoT Aitif - capteur ajoute par produit OK DANGER avec seuils Aitif : IoT Aitif - Agent 05 cree, mission evoluer Domaine 05 petit a petit : IoT Aitif - main integre alerte + conseil stockage, tout en 1 commande
 - [x] Domaine 05 - 2eme tour termine
 - [x] V6.6 : Cyber Aitif - audit + generateur + fichiers + ports + rapport en Aitif
 - [x] V6.7 : Cyber Aitif - checklist rapide 5 checks avant de pousser
