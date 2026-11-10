@@ -1,4 +1,4 @@
-# Surveillance Aitif - V2.10
+# Surveillance Aitif - V2.12 - 3eme tour
 # AITIF. - Aitif, pour faire evoluer Madagascar
 # Domaine 02 - Admin Systeme + Reseau
 # Par Miantsa - solutions-madagascar
@@ -14,8 +14,10 @@ def check_stockage():
     print(f"Utilisation : {pct:.1f}%")
     if pct > 90:
         print("ALERTE : stockage presque plein !")
+        print("Conseil Aitif : Lance : python3 simuler_nettoyage.py - ne supprime jamais sans simuler")
     elif pct > 80:
         print("Attention : stockage bientot plein")
+        print("Conseil Aitif : Lance : python3 simuler_nettoyage.py pour voir ce que tu peux liberer")
     else:
         print("OK stockage")
 
