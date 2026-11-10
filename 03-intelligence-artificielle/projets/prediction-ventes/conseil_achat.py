@@ -1,4 +1,4 @@
-# Conseil achat Aitif - V3.6
+# Conseil achat Aitif - V3.12 - 3eme tour
 # AITIF. - IA Aitif, conseille avec la vraie marge.
 # Ton IA te dit quoi acheter, combien, et combien ca va couter
 import sqlite3, glob, os
@@ -8,7 +8,7 @@ DBS = glob.glob("/root/**/commerce.db", recursive=True)
 DB = DBS[0] if DBS else ""
 
 def conseil():
-    print("=== CONSEIL ACHAT AITIF. - V3.6 - MADAGASCAR ===")
+    print("=== CONSEIL ACHAT AITIF. - V3.12 - MADAGASCAR ===")
     if not DB or not os.path.exists(DB):
         print("Pas de base trouvee.")
         return
@@ -24,6 +24,7 @@ def conseil():
         return
     print("\n[Conseil de ton IA pour demain]")
     total_achat = 0
+    total_benef = 0
     for produit, qte, prix in stocks:
         nb = ventes.get(produit, 0)
         # Regle simple : si tu as vendu et qu'il reste peu, rachete pour 7 jours
@@ -34,6 +35,7 @@ def conseil():
                 cout = besoin * prix
                 total_achat += cout
                 marge = marge_pour(produit)
+                total_benef += besoin * marge
                 print(f" - {produit} : il reste {qte}, tu vends ~{nb} / jour. Rachete {besoin} x {prix} Ar = {cout} Ar | Vraie marge / vente : {marge} Ar")
             else:
                 print(f" - {produit} : stock OK ({qte}), pas besoin d'acheter.")
@@ -42,6 +44,7 @@ def conseil():
         else:
             print(f" - {produit} : pas encore de vente, garde ton stock ({qte}).")
     print(f"\n[Budget achat total prevu] : {total_achat} Ar")
+    print(f"[Benefice total attendu avec cet achat] : {total_benef} Ar")
     if total_achat == 0:
         print("Conseil IA : n'achete rien demain, ton stock tient.")
     else:
