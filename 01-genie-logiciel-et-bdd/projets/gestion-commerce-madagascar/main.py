@@ -1,4 +1,4 @@
-# Gestion Commerce Aitif - V1.15 - 3eme tour
+# Gestion Commerce Aitif - V1.18 - 4eme tour
 # AITIF. - Aitif, pour faire evoluer Madagascar
 # Outil pour petits commerces partout a Madagascar
 # 100% sur Redmi, hors-ligne, en Ariary, base SQLite
@@ -76,6 +76,15 @@ def bilan_jour():
     print(f"Ventes : {ventes} Ar")
     print(f"Depenses : {depenses} Ar")
     print(f"Benefice : {ventes - depenses} Ar")
+    # V1.18 : benefice vraie marge - Riz 700, Cafe 8033, Miel 11000 par unite, jamais invente
+    _marge = {"Riz": 700, "Cafe": 8033, "Miel": 11000}
+    _prix = {"Riz": 2500, "Cafe": 25000, "Miel": 23000}
+    cur.execute("SELECT produit, montant FROM ventes WHERE date=?", (aujourd_hui(),))
+    _vraie = 0
+    for _prod, _mont in cur.fetchall():
+        if _prod in _marge and _prix[_prod] > 0:
+            _vraie += (_mont // _prix[_prod]) * _marge[_prod]
+    print(f"Benefice vraie marge : {_vraie} Ar (Riz 700 / Cafe 8033 / Miel 11000 par unite)")
     print("----------------------------------")
     cur.execute("SELECT produit, quantite, prix FROM stock")
     print("\nSTOCK :")
