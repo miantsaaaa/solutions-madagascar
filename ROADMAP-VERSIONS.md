@@ -114,7 +114,8 @@
 - [x] V5.11
 - [x] V5.12
 - [x] V5.13
-- [x] V5.14 : IoT Aitif - tableau de bord ajoute par produit OK DANGER avec seuils Aitif : IoT Aitif - alerte ajoute produits en danger avec seuils Aitif : IoT Aitif - capteur ajoute par produit OK DANGER avec seuils Aitif : IoT Aitif - Agent 05 cree, mission evoluer Domaine 05 petit a petit : IoT Aitif - main integre alerte + conseil stockage, tout en 1 commande
+- [x] V5.14
+- [x] V5.15 : IoT Aitif - conseil ajoute bilan capteur 1 phrase 0/3 en securite : IoT Aitif - tableau de bord ajoute par produit OK DANGER avec seuils Aitif : IoT Aitif - alerte ajoute produits en danger avec seuils Aitif : IoT Aitif - capteur ajoute par produit OK DANGER avec seuils Aitif : IoT Aitif - Agent 05 cree, mission evoluer Domaine 05 petit a petit : IoT Aitif - main integre alerte + conseil stockage, tout en 1 commande
 - [x] Domaine 05 - 2eme tour termine
 - [x] V6.6 : Cyber Aitif - audit + generateur + fichiers + ports + rapport en Aitif
 - [x] V6.7 : Cyber Aitif - checklist rapide 5 checks avant de pousser
