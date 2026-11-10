@@ -90,7 +90,8 @@
 - [x] V3.10
 - [x] V3.11
 - [x] V3.12
-- [x] V3.13 : IA Aitif - alerte stock ajoute jours restants de stock : IA Aitif - conseil achat ajoute benefice total attendu avec cet achat : IA Aitif - Agent 03 cree, mission evoluer Domaine 03 petit a petit : IA Aitif - main integre conseil + alerte, tout en 1 commande
+- [x] V3.13
+- [x] V3.14 : IA Aitif - prediction ajoute meilleur benefice demain Miel 11000 Ar : IA Aitif - alerte stock ajoute jours restants de stock : IA Aitif - conseil achat ajoute benefice total attendu avec cet achat : IA Aitif - Agent 03 cree, mission evoluer Domaine 03 petit a petit : IA Aitif - main integre conseil + alerte, tout en 1 commande
 - [x] V4.6 : Data Aitif - regle 8 vraie marge
 - [x] V4.7 : Data Aitif - doublons + rapport + export Aitif, rapport vraie marge
 - [x] V4.8 : Data Aitif - README propre, structure expliquee
