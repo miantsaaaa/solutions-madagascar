@@ -19,6 +19,34 @@ def simulation():
     except Exception as e:
         return f"Simulation ECHEC - {e}"
 
+def action_simulation():
+    # A1.2 : ACTIONS, pas juste lecture - en labo sur copie
+    try:
+        import shutil, csv
+        shutil.copy("stock.csv", "stock_test.csv")
+        rows = list(csv.DictReader(open("stock_test.csv", encoding="utf-8")))
+        # Action : simule vente 1 Riz
+        for r in rows:
+            if r['produit'] == 'Riz':
+                avant = int(r['quantite'])
+                r['quantite'] = str(max(0, avant - 1))
+                apres = r['quantite']
+        with open("stock_test.csv", "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=rows[0].keys())
+            w.writeheader()
+            w.writerows(rows)
+        # Verifie : le fichier test existe et Riz a bien diminue
+        check = list(csv.DictReader(open("stock_test.csv", encoding="utf-8")))
+        ok = any(r['produit'] == 'Riz' and int(r['quantite']) == max(0, avant - 1) for r in check)
+        pathlib.Path("stock_test.csv").unlink()
+        return f"Action OK - vente simulee 1 Riz : {avant} -> {apres}, nettoyage fait" if ok else "Action ECHEC - stock test ne correspond pas"
+    except Exception as e:
+        try:
+            pathlib.Path("stock_test.csv").unlink()
+        except Exception:
+            pass
+        return f"Action ECHEC - {e}"
+
 def verification():
     msgs = []
     try:
@@ -44,11 +72,12 @@ while True:
         ordre = ordre_f.read_text(encoding="utf-8").strip()
         log(f"Ordre recu : {ordre}")
         sim = simulation()
+        act = action_simulation()
         ver = verification()
         res = pathlib.Path("RESULTAT-AGENT-01.txt")
         now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
         res.write_text(f"[{now}] Ordre : {ordre}\n[{now}] {sim}\n[{now}] {ver}\n", encoding="utf-8")
-        log(f"Ordre termine : {sim} | {ver}")
+        log(f"Ordre termine : {sim} | {act} | {ver}")
         try:
             ordre_f.unlink()
         except Exception:
@@ -56,6 +85,7 @@ while True:
     else:
         # 2. Sinon : simulation + verification de routine
         sim = simulation()
+        act = action_simulation()
         ver = verification()
-        log(f"Routine : {sim} | {ver}")
+        log(f"Routine : {sim} | {act} | {ver}")
     time.sleep(3600)
