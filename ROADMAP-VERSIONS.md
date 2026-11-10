@@ -73,7 +73,8 @@
 - [x] V1.15
 - [x] V1.16
 - [x] V1.17
-- [x] V1.18 : Commerce Aitif - bilan jour ajoute benefice vraie marge : Commerce Aitif - produits ajoutent stock restant Riz Cafe Miel : Commerce Aitif - produits ajoutent date mise a jour des prix : Commerce Aitif - phrase vendeur, Domaine 01 3eme tour termine, Agent 01 en arriere-plan
+- [x] V1.18
+- [x] V1.19 : Commerce Aitif - menu ajoute option 8 total semaine vraie marge : Commerce Aitif - bilan jour ajoute benefice vraie marge : Commerce Aitif - produits ajoutent stock restant Riz Cafe Miel : Commerce Aitif - produits ajoutent date mise a jour des prix : Commerce Aitif - phrase vendeur, Domaine 01 3eme tour termine, Agent 01 en arriere-plan
 - [x] Domaine 01 - 3eme tour termine, Agent 01 en arriere-plan : Commerce Aitif - prix pour 2 et pour 5, reponse vendeur rapide : Commerce Aitif - classement benefice, Miel d'abord : Commerce Aitif - total 1 de chaque, benef 19733 Ar : Commerce Aitif - Agent 01 cree, mission evoluer Domaine 01 petit a petit : Commerce Aitif - vraie marge avec frais
 - [x] V2.6 : Surveillance Aitif - branding
 - [x] V2.7 : Surveillance Aitif - simulation nettoyage, voir avant de supprimer
