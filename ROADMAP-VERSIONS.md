@@ -124,7 +124,8 @@
 - [x] V6.10
 - [x] V6.11
 - [x] V6.12
-- [x] V6.13 : Cyber Aitif - generateur regenere si repetition ou suite, passe audit V6.12 : Cyber Aitif - audit detecte repetition et suite aaa 111 123 abc : Cyber Aitif - Agent 06 cree, mission evoluer Domaine 06 petit a petit : Cyber Aitif - rapport integre checklist, tout en 1 commande
+- [x] V6.13
+- [x] V6.14 : Cyber Aitif - audit fichiers ajoute ghp sk- .key .kdbx secrets.json : Cyber Aitif - generateur regenere si repetition ou suite, passe audit V6.12 : Cyber Aitif - audit detecte repetition et suite aaa 111 123 abc : Cyber Aitif - Agent 06 cree, mission evoluer Domaine 06 petit a petit : Cyber Aitif - rapport integre checklist, tout en 1 commande
 - [x] Domaine 06 - 2eme tour termine
 - [x] V7.6 : Metier Aitif - 8 regles corrigees, titres Aitif
 - [x] V7.7 : Metier Aitif - catalogue Produits Aitif avec vrais prix et marges
