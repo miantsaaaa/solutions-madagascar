@@ -1,4 +1,4 @@
-# Gestion Commerce Aitif - V1.18 - 4eme tour
+# Gestion Commerce Aitif - V1.19 - 4eme tour
 # AITIF. - Aitif, pour faire evoluer Madagascar
 # Outil pour petits commerces partout a Madagascar
 # 100% sur Redmi, hors-ligne, en Ariary, base SQLite
@@ -130,6 +130,27 @@ def exporter_csv():
     conn.close()
     print("Sauvegarde CSV terminee. Tu peux ouvrir dans Excel.")
 
+def total_semaine_vraie_marge():
+    from datetime import datetime, timedelta
+    _marge = {"Riz": 700, "Cafe": 8033, "Miel": 11000}
+    _prix = {"Riz": 2500, "Cafe": 25000, "Miel": 23000}
+    conn = sqlite3.connect(DB)
+    cur = conn.cursor()
+    _total_v = 0
+    _total_vraie = 0
+    for i in range(6, -1, -1):
+        jour = (datetime.now() - timedelta(days=i)).strftime("%Y-%m-%d")
+        cur.execute("SELECT produit, montant FROM ventes WHERE date=?", (jour,))
+        for _prod, _mont in cur.fetchall():
+            _total_v += _mont
+            if _prod in _marge and _prix[_prod] > 0:
+                _total_vraie += (_mont // _prix[_prod]) * _marge[_prod]
+    print(f"\n--- TOTAL SEMAINE VRAIE MARGE ---")
+    print(f"Ventes 7 jours : {_total_v} Ar")
+    print(f"Benefice vraie marge 7 jours : {_total_vraie} Ar (Riz 700 / Cafe 8033 / Miel 11000 par unite)")
+    print("----------------------------------")
+    conn.close()
+
 def menu():
     init_db()
     while True:
@@ -141,8 +162,9 @@ def menu():
         print("5. Voir rapport 7 jours")
         print("6. Exporter CSV / Sauvegarde")
         print("7. Voir produits Aitif")
-        print("8. Quitter")
-        choix = input("Ton choix (1-8) : ")
+        print("8. Total semaine vraie marge")
+        print("9. Quitter")
+        choix = input("Ton choix (1-9) : ")
         if choix == "1":
             ajouter_vente()
         elif choix == "2":
@@ -158,10 +180,12 @@ def menu():
         elif choix == "7":
             produits_aitif()
         elif choix == "8":
+            total_semaine_vraie_marge()
+        elif choix == "9":
             print("Misaotra ! A demain. Donnees sauvegardees.")
             break
         else:
-            print("Choix invalide, mets 1 a 8.")
+            print("Choix invalide, mets 1 a 9.")
 
 if __name__ == "__main__":
     menu()
