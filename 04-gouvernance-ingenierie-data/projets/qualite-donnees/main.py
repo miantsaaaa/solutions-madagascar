@@ -1,13 +1,13 @@
-# Qualite Donnees Aitif - V4.16 - 3eme tour
+# Qualite Donnees Aitif - V4.20 - 3eme tour
 # AITIF. - Data Aitif, pour faire evoluer Madagascar
 # Controle tes donnees commerce et donne un score / 100
 import sqlite3, glob, os
 
-DBS = glob.glob("/root/*/projets/**/commerce.db", recursive=True)  # V4.16 : scan projets seulement, pas tout /root
+DBS = glob.glob("/root/*/projets/**/commerce.db", recursive=True)  # V4.20 : scan projets seulement, pas tout /root
 DB = DBS[0] if DBS else ""
 
 def controle():
-    print("=== QUALITE DONNEES AITIF. - V4.16 - MADAGASCAR ===")
+    print("=== QUALITE DONNEES AITIF. - V4.20 - MADAGASCAR ===")
     if not DB or not os.path.exists(DB):
         print("Pas de base trouvee.")
         return
@@ -106,7 +106,12 @@ if __name__ == "__main__":
 
 
 def tout_en_1_commande():
-    """V4.16 : Controle + Doublons + Rapport en 1 commande + TERMINE."""
+    """V4.20 : Check Agents + Controle + Doublons + Rapport + Rapport Semaine + Export en 1 commande + TERMINE."""
+    try:
+        from check_agents import check_agents
+        check_agents()
+    except Exception as e:
+        print(f"Check Agents non lisible ici : {e}")
     controle()
     print("\n--- DOUBLONS AITIF. ---")
     try:
@@ -120,7 +125,19 @@ def tout_en_1_commande():
         rapport()
     except Exception as e:
         print(f"Rapport non lisible ici : {e}")
-    print("\n=== TERMINE - Qualite Donnees Aitif V4.16 finie, Miantsa peut verifier ===")
+    print("\n--- RAPPORT SEMAINE AITIF. ---")
+    try:
+        from rapport_semaine import rapport_semaine
+        rapport_semaine()
+    except Exception as e:
+        print(f"Rapport Semaine non lisible ici : {e}")
+    print("\n--- EXPORT AITIF. ---")
+    try:
+        from export_propre import export
+        export()
+    except Exception as e:
+        print(f"Export non lisible ici : {e}")
+    print("\n=== TERMINE - Qualite Donnees Aitif V4.20 finie, Miantsa peut verifier ===")
 
 if __name__ == "__main__":
     tout_en_1_commande()
