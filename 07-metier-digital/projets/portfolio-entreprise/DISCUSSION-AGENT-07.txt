@@ -1,0 +1,3 @@
+DISCUSSION Master 07 <-> Sub-Agent 07.1 Portfolio - A7.1
+Master 07 : mission = Portfolio verifie toutes les 5 min, 5 fichiers + liens + produits reels.
+Sub-Agent 07.1 : compris, je fais tout_en_1 complet V7.20.
