@@ -1,4 +1,4 @@
-# Historique temperature Aitif - V5.6
+# Historique temperature Aitif - V5.18
 # AITIF. - IoT Aitif.
 # Lit toutes les mesures et montre l'evolution de la journee
 import csv, os, glob
@@ -29,6 +29,7 @@ def historique():
     else:
         print("Journee stable, bon pour le stockage.")
     print("\nAstuce : lance main.py 3 fois par jour (matin, midi, soir) pour un vrai historique.")
+    print("\n=== TERMINE - Historique V5.18 fini, Miantsa peut verifier ===")
 
 if __name__ == "__main__":
     historique()

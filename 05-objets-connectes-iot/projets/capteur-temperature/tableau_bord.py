@@ -1,4 +1,4 @@
-# Tableau de bord temperature Aitif - V5.14 - 3eme tour
+# Tableau de bord temperature Aitif - V5.18 - 3eme tour
 # AITIF. - IoT Aitif.
 # 1 ecran : derniere mesure, moyenne, alerte, historique
 import csv, os
@@ -35,6 +35,7 @@ def tableau():
     for r in rows[-5:]:
         barre = "#" * int(float(r["Temperature (C)"]))
         print(f" {r['Heure']} {r['Temperature (C)']} C |{barre}")
+    print("\n=== TERMINE - Tableau de Bord V5.18 fini, Miantsa peut verifier ===")
     print("\nTon tableau de bord IoT est pret. C'est comme ca qu'un commercant voit son stock en 1 coup d'oeil.")
 
 if __name__ == "__main__":
