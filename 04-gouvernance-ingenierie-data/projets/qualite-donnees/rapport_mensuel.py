@@ -5,7 +5,7 @@ import sqlite3, glob, os
 from datetime import datetime
 from marge_aitif import marge_pour
 
-DBS = glob.glob("/root/**/commerce.db", recursive=True)
+DBS = glob.glob("/root/*/projets/**/commerce.db", recursive=True)  # V4.16 : scan projets seulement, pas tout /root
 DB = DBS[0] if DBS else ""
 
 def rapport():

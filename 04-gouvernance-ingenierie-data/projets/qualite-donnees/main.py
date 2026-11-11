@@ -1,13 +1,13 @@
-# Qualite Donnees Aitif - V4.15 - 3eme tour
+# Qualite Donnees Aitif - V4.16 - 3eme tour
 # AITIF. - Data Aitif, pour faire evoluer Madagascar
 # Controle tes donnees commerce et donne un score / 100
 import sqlite3, glob, os
 
-DBS = glob.glob("/root/**/commerce.db", recursive=True)
+DBS = glob.glob("/root/*/projets/**/commerce.db", recursive=True)  # V4.16 : scan projets seulement, pas tout /root
 DB = DBS[0] if DBS else ""
 
 def controle():
-    print("=== QUALITE DONNEES AITIF. - V4.12 - MADAGASCAR ===")
+    print("=== QUALITE DONNEES AITIF. - V4.16 - MADAGASCAR ===")
     if not DB or not os.path.exists(DB):
         print("Pas de base trouvee.")
         return
@@ -103,3 +103,24 @@ if __name__ == "__main__":
         print(f"Rapport non lisible ici : {e}")
     print("\nBILAN DATA EN 1 PHRASE : Donnees verifiees, Doublons nettoyes, Rapport propre - Action : tu peux decider, tes donnees sont propres")
     print("Domaine 04 termine 3eme tour - Agent 04 passe en arriere-plan.")
+
+
+def tout_en_1_commande():
+    """V4.16 : Controle + Doublons + Rapport en 1 commande + TERMINE."""
+    controle()
+    print("\n--- DOUBLONS AITIF. ---")
+    try:
+        from nettoyage_doublons import nettoyer
+        nettoyer()
+    except Exception as e:
+        print(f"Doublons non lisibles ici : {e}")
+    print("\n--- RAPPORT AITIF. ---")
+    try:
+        from rapport_mensuel import rapport
+        rapport()
+    except Exception as e:
+        print(f"Rapport non lisible ici : {e}")
+    print("\n=== TERMINE - Qualite Donnees Aitif V4.16 finie, Miantsa peut verifier ===")
+
+if __name__ == "__main__":
+    tout_en_1_commande()

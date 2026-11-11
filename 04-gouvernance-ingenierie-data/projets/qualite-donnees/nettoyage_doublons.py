@@ -3,7 +3,7 @@
 # Detecte et fusionne les doublons dans stock, sans supprimer tes ventes
 import sqlite3, glob, os
 
-DBS = glob.glob("/root/**/commerce.db", recursive=True)
+DBS = glob.glob("/root/*/projets/**/commerce.db", recursive=True)  # V4.16 : scan projets seulement, pas tout /root
 DB = DBS[0] if DBS else ""
 
 def nettoyer():
