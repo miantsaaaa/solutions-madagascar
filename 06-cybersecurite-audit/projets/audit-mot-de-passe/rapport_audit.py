@@ -13,7 +13,7 @@ def rapport():
     print("[1. FICHIERS SENSIBLES]")
     dangereux = []
     for pat in [".env", "id_rsa", ".pem", "password.txt"]:
-        for f in glob.glob(f"/root/**/{pat}", recursive=True):
+        for f in glob.glob(f"/root/*/projets/**/{pat}", recursive=True):  # V6.16 scan projets seulement
             if ".git/" not in f and "venv" not in f:
                 dangereux.append(f)
     if not dangereux:

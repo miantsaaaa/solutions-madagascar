@@ -1,4 +1,4 @@
-# Audit Mot de Passe Aitif - V6.12 - 3eme tour
+# Audit Mot de Passe Aitif - V6.16 - 3eme tour
 # AITIF. - Cyber Aitif.
 # Teste la force, 100% hors-ligne, ne sauvegarde JAMAIS le mot de passe
 import getpass, re
@@ -6,7 +6,7 @@ import getpass, re
 FAIBLES = ["123456", "12345678", "password", "motdepasse", "madagascar", "fianarantsoa", "1234", "azerty", "000000", "admin"]
 
 def audit():
-    print("=== AUDIT MOT DE PASSE AITIF. - V6.12 - MADAGASCAR ===")
+    print("=== AUDIT MOT DE PASSE AITIF. - V6.16 - MADAGASCAR ===")
     print("Ton mot de passe ne sera JAMAIS sauvegarde, ni envoye.")
     print("Il reste dans ta tete et dans ce test, c'est tout.")
     mdp = getpass.getpass("Tape un mot de passe a tester (il sera cache) : ")
@@ -76,3 +76,30 @@ def audit():
 
 if __name__ == "__main__":
     audit()
+
+
+def tout_en_1_commande():
+    """V6.16 : Audit Fichiers + Generateur + Rapport + Checklist en 1 commande, SANS demander de mot de passe + TERMINE."""
+    print("=== TOUT EN 1 - AUDIT CYBER V6.16 - SANS mot de passe tape ===")
+    print("L'audit mot de passe V6.12 reste manuel : python3 main.py, tu tapes toi-meme.")
+    try:
+        from audit_fichiers import audit as audit_fichiers
+        audit_fichiers()
+    except Exception as e:
+        print(f"Audit Fichiers non lisible ici : {e}")
+    print("\n--- GENERATEUR AITIF. ---")
+    try:
+        from generateur import generer
+        generer(16)
+    except Exception as e:
+        print(f"Generateur non lisible ici : {e}")
+    print("\n--- RAPPORT AUDIT AITIF. ---")
+    try:
+        from rapport_audit import rapport
+        rapport()
+    except Exception as e:
+        print(f"Rapport non lisible ici : {e}")
+    print("\n=== TERMINE - Audit Cyber Aitif V6.16 fini, Miantsa peut verifier ===")
+
+if __name__ == "__main__":
+    tout_en_1_commande()

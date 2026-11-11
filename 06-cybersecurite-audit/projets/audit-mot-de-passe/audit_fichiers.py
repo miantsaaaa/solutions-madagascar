@@ -12,7 +12,7 @@ def audit():
     problemes = 0
     # 1. Noms de fichiers dangereux
     for pat in DANGEREUX:
-        for f in glob.glob(f"/root/**/{pat}", recursive=True):
+        for f in glob.glob(f"/root/*/projets/**/{pat}", recursive=True):  # V6.16 scan projets seulement
             if ".git/" not in f and "venv" not in f:
                 print(f"DANGER : fichier sensible trouve : {f}")
                 print("   Ne le pousse JAMAIS. Mets-le dans .gitignore.")
@@ -22,7 +22,7 @@ def audit():
     # 2. Mots de passe en dur dans les .py (hors venv)
     print("\n[Recherche de secrets dans les .py]")
     trouves = 0
-    for f in glob.glob("/root/**/*.py", recursive=True):
+    for f in glob.glob("/root/*/projets/**/*.py", recursive=True)  # V6.16 : scan projets seulement:
         if "venv" in f or ".git" in f:
             continue
         try:
