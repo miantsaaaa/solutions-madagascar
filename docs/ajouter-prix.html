@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ajouter un prix - Aitif</title><link rel="stylesheet" href="style.css"></head><body>
+<h1>Ajouter 1 vrai prix 🇲🇬</h1><p>Sur le marche, remplis, copie, colle dans Termux quand tu rentres. Pas de prix invente.</p>
+<label>Produit<br><input id="produit" placeholder="Ex: Miel 1L"></label><br><br>
+<label>Categorie<br><input id="categorie" value="Alimentaire"></label><br><br>
+<label>Region<br><input id="region" placeholder="Ex: Atsinanana"></label><br><br>
+<label>Ville<br><input id="ville" placeholder="Ex: Toamasina"></label><br><br>
+<label>Lieu<br><input id="lieu" placeholder="Ex: Marche"></label><br><br>
+<label>Prix en Ar<br><input id="prix" type="number" placeholder="Ex: 23000"></label><br><br>
+<label>Source<br><input id="source" placeholder="Ex: Vendeur marche"></label><br><br>
+<button onclick="generer()">Generer la ligne</button><br><br>
+<pre id="out" style="white-space:pre-wrap;background:#f4f4f4;padding:12px;border-radius:8px">Remplis et appuie sur Generer.</pre>
+<script>
+function generer(){
+  const v=id=>document.getElementById(id).value.trim();
+  const produit=v('produit'), cat=v('categorie'), reg=v('region'), ville=v('ville'), lieu=v('lieu'), prix=v('prix'), src=v('source');
+  if(!produit||!reg||!ville||!lieu||!prix||!src){document.getElementById('out').textContent="Il manque un champ. Remplis tout : produit + region + ville + lieu + prix + source.";return;}
+  const d=new Date().toISOString().slice(0,10);
+  const ligne=d+","+produit+","+cat+","+reg+","+ville+","+lieu+","+prix+","+src+",Miantsa,";
+  const cmd='python3 ajouter-prix.py --produit "'+produit+'" --categorie "'+cat+'" --region "'+reg+'" --ville "'+ville+'" --lieu "'+lieu+'" --prix '+prix+' --source "'+src+'"';
+  document.getElementById('out').textContent="1) Copie cette ligne dans prix-locaux.csv :\n"+ligne+"\n\n2) Ou colle cette commande dans Termux :\n"+cmd;
+}
+</script><p><a href="prix.html">← Voir les prix</a> | <a href="index.html">← Portfolio</a></p></body></html>
