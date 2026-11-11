@@ -96,8 +96,10 @@ while True:
         prop = proposition_action()
         res = pathlib.Path("RESULTAT-AGENT-01.txt")
         now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
-        res.write_text(f"[{now}] Ordre : {ordre}\n[{now}] {sim}\n[{now}] {ver}\n", encoding="utf-8")
-        log(f"Ordre termine : {sim} | {act} | {ver} | {prop}")
+        res.write_text(f"[{now}] Ordre : {ordre}\n[{now}] {sim}\n[{now}] {act}\n[{now}] {ver}\n[{now}] {prop}\n[{now}] === TERMINE - Mission finie, Miantsa peut verifier ===\n", encoding="utf-8")
+        with open("DISCUSSION-AGENT-01.txt", "a", encoding="utf-8") as _df:
+            _df.write(f"[{now}] Sous-Agent 01.1 : Maitre, mission finie === TERMINE ===\\n")
+        log(f"Ordre termine : {sim} | {act} | {ver} | {prop} | === TERMINE ===")
         try:
             ordre_f.unlink()
         except Exception:
