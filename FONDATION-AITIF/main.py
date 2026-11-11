@@ -76,4 +76,38 @@ def verifier_propre():
     print("\n=== TERMINE - Verifier Propre V0.2 fini, Miantsa peut verifier ===")
 
 if __name__ == "__main__":
-    verifier_propre()
+    pass  # V0.3 : voir guide_du_jour
+
+
+def guide_du_jour():
+    """V0.3 : Guide du jour - 1 fois par jour, 1 seule prochaine etape + TERMINE."""
+    print("=== GUIDE DU JOUR - 【entity-AGENT 00¦canonical_name=Agent 00】 V0.3 ===")
+    print("Je relis DIRECTION-AITIF.md avant de conseiller. Je ne devine pas.")
+    # 1. Direction
+    direction = pathlib.Path("/root/FONDATION-AITIF/DIRECTION-AITIF.md")
+    if direction.exists():
+        print(" OK : DIRECTION-AITIF.md lue")
+    else:
+        print(" ROUGE : DIRECTION manquante - on est perdu, on la reecrit d'abord")
+        return
+    # 2. Etapes cochees / restantes
+    txt = direction.read_text(encoding="utf-8")
+    faites = [l for l in txt.splitlines() if l.strip().startswith("- [x]")]
+    restantes = [l for l in txt.splitlines() if l.strip().startswith("- [ ]")]
+    print(f"\nEtapes faites : {len(faites)}")
+    for l in faites:
+        print(f"  [x] {l[5:].strip()[:80]}")
+    print(f"\nEtapes restantes : {len(restantes)}")
+    for l in restantes[:5]:
+        print(f"  [ ] {l[5:].strip()[:80]}")
+    # 3. 1 seule prochaine etape
+    if restantes:
+        print(f"\n>>> PROCHAINE ETAPE - 1 SEULE : {restantes[0][5:].strip()}")
+        print("Ne fais pas autre chose avant d'avoir fini celle-ci, testee + poussee + notee.")
+    else:
+        print("\n>>> PROCHAINE ETAPE : Toutes les etapes sont faites. On ecrit la suite dans DIRECTION, avec date + raison.")
+    print("\nBilan Guide : 1 etape, pas 5 - tu sais quoi faire aujourd'hui, tu ne te perds pas.")
+    print("\n=== TERMINE - Guide du jour V0.3 fini, Miantsa peut verifier ===")
+
+if __name__ == "__main__":
+    guide_du_jour()
