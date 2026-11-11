@@ -138,7 +138,7 @@ def tout_en_1_fondation():
         ("VERIFIER PROPRE", verifier_propre),
         ("GUIDE DU JOUR", guide_du_jour),
         ("BILAN ENTREPRISE", bilan_entreprise),
-        ("VEILLE NOUVELLES", veille_nouvelles),
+        ("VEILLE AUTO INTERNET", veille_nouvelles_auto),
     ]:
         print(f"\n--- {titre} AITIF. ---")
         try:
