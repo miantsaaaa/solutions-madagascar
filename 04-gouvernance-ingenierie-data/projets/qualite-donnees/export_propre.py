@@ -1,14 +1,14 @@
-# Export propre Aitif - V4.7
+# Export propre Aitif - V4.18
 # AITIF. - Data Aitif.
 # Exporte seulement les donnees verifiees, avec en-tetes claires
 import sqlite3, glob, os, csv
 from datetime import datetime
 
-DBS = glob.glob("/root/**/commerce.db", recursive=True)
+DBS = glob.glob("/root/*/projets/**/commerce.db", recursive=True)  # V4.18 : scan projets seulement
 DB = DBS[0] if DBS else ""
 
 def export():
-    print("=== EXPORT PROPRE AITIF. - V4.7 - MADAGASCAR ===")
+    print("=== EXPORT PROPRE AITIF. - V4.18 - MADAGASCAR ===")
     if not DB or not os.path.exists(DB):
         print("Pas de base trouvee.")
         return
@@ -34,6 +34,7 @@ def export():
     conn.close()
     print("\nExport propre : pas de lignes sales, pas de doublons fusionnes.")
     print("Tu peux ouvrir dans Excel sans nettoyer a la main.")
+    print("\n=== TERMINE - Export Propre V4.18 fini, Miantsa peut verifier ===")
 
 if __name__ == "__main__":
     export()
