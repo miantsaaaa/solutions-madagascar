@@ -61,7 +61,7 @@ On ne promet pas, on prouve. Petit a petit, toujours bien organise.
 - [x] V0.6 Agent 00 - VEILLE AUTO INTERNET - FAIT
 - [x] V0.7 Agent 00 - TOUT_EN_1 AVEC VEILLE AUTO - FAIT
 - [x] V0.8 Agent 00 - SOUS-AGENTS 00.1-00.7 ANALYSE 01-07 - FAIT 11 Nov 2026 : 01,06,07 parlent, 02,03,04,05 VIVANTS mais muets, a faire parler petit a petit par Miantsa + Meta AI - TOUT_EN_1 AVEC VEILLE AUTO - FAIT 11 Nov 2026 : tout_en_1 = Comprendre + Verifier + Guide + Bilan + Veille Auto + TERMINE - VEILLE AUTO INTERNET - FAIT 11 Nov 2026 : 3 vraies nouvelles avec liens, rien invente, filtre politique/gossip - TOUT_EN_1 FONDATION - FAIT 11 Nov 2026 : Comprendre + Verifier + Guide + Bilan + TERMINE
-- [ ] ETAPE VENTE 1 : Mettre Portfolio en ligne, que "Aitif Madagascar" se trouve.
+- [x] ETAPE VENTE 1 - FAIT 11 Nov 2026 : https://miantsaaaa.github.io/solutions-madagascar/ - HTTP 200 : Mettre Portfolio en ligne, que "Aitif Madagascar" se trouve.
 - [ ] ETAPE VENTE 2 : Vendre 1 chose reelle : 1 kg Cafe ou Miel ou 1 service "commerce en chiffres" pour 1 commercant.
 - [ ] Apres 1 vente reelle seulement : on reparle de grossir, departement par departement.
 
