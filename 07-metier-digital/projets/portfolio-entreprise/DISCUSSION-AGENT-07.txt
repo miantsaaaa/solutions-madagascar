@@ -1,3 +1,7 @@
 DISCUSSION Master 07 <-> Sub-Agent 07.1 Portfolio - A7.1
 Master 07 : mission = Portfolio verifie toutes les 5 min, 5 fichiers + liens + produits reels.
 Sub-Agent 07.1 : compris, je fais tout_en_1 complet V7.20.
+
+--- A7.5 MISSION ---
+Master 07 : Mission Sub-Agent 07.1 = toutes les 5 min, tout_en_1 complet V7.20. Si 1 lien casse ou 1 produit manque, tu l'ecris dans MESSAGE-AGENT-07.txt.
+Sub-Agent 07.1 : mission comprise, je travaille. TERMINE a chaque tour.
