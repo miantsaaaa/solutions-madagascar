@@ -1,4 +1,4 @@
-# Surveillance Aitif - V2.15 - 3eme tour
+# Surveillance Aitif - V2.16 - 4eme tour
 # AITIF. - Aitif, pour faire evoluer Madagascar
 # Domaine 02 - Admin Systeme + Reseau
 # Par Miantsa - solutions-madagascar
@@ -21,6 +21,32 @@ def check_stockage():
         print("Conseil Aitif : Lance : python3 simuler_nettoyage.py pour voir ce que tu peux liberer")
     else:
         print("OK stockage")
+
+def check_agents():
+    print("\n--- AGENTS AITIF ---")
+    from datetime import datetime
+    print(f"Derniere verification : {datetime.now().strftime('%d %b %Y %H:%M')}")
+    # Agent 01 : Maitre + Sous-Agent - on verifie via PID file et ps
+    import pathlib
+    pid_f = pathlib.Path("/root/01-genie-logiciel-et-bdd/projets/gestion-commerce-madagascar/AGENT-01.pid")
+    if pid_f.exists():
+        try:
+            pid = int(pid_f.read_text().strip())
+            os.kill(pid, 0)
+            print(f"Agent 01 Maitre : VIVANT (PID {pid})")
+        except Exception:
+            print("Agent 01 Maitre : ARRETE - relance avec nohup python3 agent01_loop.py")
+    else:
+        print("Agent 01 Maitre : PAS DE PID - arrete ou jamais lance")
+    # Sous-Agent : on cherche via ps
+    try:
+        r = subprocess.run(["ps", "aux"], capture_output=True, text=True, timeout=5)
+        if "sous_agent_01_1_commerce.py" in r.stdout:
+            print("Agent 01 Sous-Agent 01.1 Commerce : VIVANT")
+        else:
+            print("Agent 01 Sous-Agent 01.1 Commerce : ARRETE")
+    except Exception as e:
+        print(f"Agent 01 Sous-Agent : non verifiable ({e})")
 
 def check_batterie():
     print("\n--- BATTERIE ---")
@@ -67,6 +93,7 @@ if __name__ == "__main__":
     print("=== SURVEILLANCE AITIF. - MADAGASCAR ===")
     check_stockage()
     check_batterie()
+    check_agents()
     check_reseau()
     print("\n--- ALERTE AITIF. ---")
     try:
