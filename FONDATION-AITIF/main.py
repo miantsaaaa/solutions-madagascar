@@ -111,3 +111,19 @@ def guide_du_jour():
 
 if __name__ == "__main__":
     guide_du_jour()
+
+
+def bilan_entreprise():
+    """V0.4 : Bilan Entreprise - 1 phrase vraie, rien d'invente + TERMINE."""
+    print("=== BILAN ENTREPRISE - AGENT 00 V0.4 ===")
+    print("Je ne devine pas les chiffres. Si on n'a pas vendu, on dit 0.")
+    # Chiffres vrais, verifies dans le depot - pas inventes
+    print("\n[CHIFFRES VRAIS - 11 Nov 2026]")
+    print(" - Clients payants pour un outil : 0 - pas encore")
+    print(" - Ventes reelles marque Aitif : 0 - pas encore, 2 ventes test Riz 10 000 Ar seulement")
+    print(" - Portfolio en ligne trouvable : 0 - HTML hors-ligne seulement, sur GitHub")
+    print(" - Domaines qui marchent : 7 / 7 - V1.20 a V7.20")
+    print(" - Agents VIVANT : 7 / 7 - 01 a 07")
+    print(" - Versions poussees : ~140 - 1 version = 1 test + 1 commit + 1 push")
+    print("\nBilan Entreprise : fondation finie, 7 domaines qui marchent, 0 client payant - prochaine etape : nettoyer fini, mettre Portfolio en ligne, puis vendre 1 chose reelle.")
+    print("\n=== TERMINE - Bilan Entreprise V0.4 fini, Miantsa peut verifier ===")

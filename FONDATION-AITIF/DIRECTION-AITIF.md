@@ -26,7 +26,7 @@ On ne promet pas, on prouve. Petit a petit, toujours bien organise.
 
 ## 4. Prochaines etapes - dans l'ordre, pas en meme temps
 - [x] V0.2 Agent 00 - NETTOYER - FAIT 11 Nov 2026 : .gitignore + verifier_propre, doublons listes, rien supprime sans lister : ranger fichiers hors domaines, supprimer doublons agentXX_loop.py a la racine, mettre *.log / *.pid / MESSAGE-* / RESULTAT-* dans .gitignore. Ne rien supprimer sans lister d'abord.
-- [ ] V0.3 Agent 00 - GUIDE DU JOUR : 1 fois par jour, 1 seule prochaine etape.
+- [x] V0.3 Agent 00 - GUIDE DU JOUR - FAIT 11 Nov 2026 : lit DIRECTION, 1 seule etape : 1 fois par jour, 1 seule prochaine etape.
 - [ ] V0.4 【entity-Agent 00¦canonical_name=Agent 00】 - BILAN ENTREPRISE : 1 phrase vraie : argent gagne, clients, visites. Pas de chiffre invente.
 - [ ] V0.5 【entity-Agent 00¦canonical_name=Agent 00】 - TOUT_EN_1 FONDATION : Comprendre + Nettoyer-check + Guide + Bilan + TERMINE.
 - [ ] ETAPE VENTE 1 : Mettre Portfolio en ligne, que "Aitif Madagascar" se trouve.
