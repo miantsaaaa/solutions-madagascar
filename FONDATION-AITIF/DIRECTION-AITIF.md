@@ -81,3 +81,8 @@ On ne promet pas, on prouve. Petit a petit, toujours bien organise.
 
 ---
 Ecrit le 11 Nov 2026. Si on change de direction, on reecrit ici avec date + raison.
+
+## DIRECTION 1quater - 11 Nov 2026 - Generalisation Madagascar
+- Produits : Riz / Cafe / Miel = exemples pour apprendre, PAS les seuls produits. Tous produits Madagascar : vanille, girofle, manioc, poisson, artisanat, service, etc.
+- Lieu : Fianarantsoa / Toamasina = villes de depart, PAS les seules. Cible : Madagascar entier, 23 regions, avec Region + Ville + Lieu sur chaque prix.
+- Regle : Internet = tendance, Marche = vrai prix. Pas de prix sans date + region + ville + lieu + source + qui a vu.
