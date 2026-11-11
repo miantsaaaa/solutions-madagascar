@@ -1,4 +1,4 @@
-# Capteur Temperature Aitif - V5.12 - 3eme tour
+# Capteur Temperature Aitif - V5.16 - 3eme tour
 # AITIF. - IoT Aitif.
 # Simule un capteur ESP32 a Fianarantsoa, sans materiel
 import random, csv, os
@@ -7,7 +7,7 @@ from datetime import datetime
 FICHIER = "mesures-temperature.csv"
 
 def mesurer():
-    print("=== CAPTEUR TEMPERATURE AITIF. - V5.12 - FIANARANTSOA ===")
+    print("=== CAPTEUR TEMPERATURE AITIF. - V5.16 - FIANARANTSOA ===")
     # Fianarantsoa : entre 12 et 26 degres en general
     # On simule comme un vrai capteur avec un peu de bruit
     heure = datetime.now().hour
@@ -64,3 +64,24 @@ if __name__ == "__main__":
         conseil_stock()
     except Exception as e:
         print(f"Conseil non lisible ici : {e}")
+
+
+def tout_en_1_commande():
+    """V5.16 : Mesure + Alerte + Conseil en 1 commande + TERMINE."""
+    mesurer()
+    print("\n--- ALERTE AITIF. ---")
+    try:
+        from alerte import alerte
+        alerte()
+    except Exception as e:
+        print(f"Alerte non lisible ici : {e}")
+    print("\n--- CONSEIL STOCKAGE AITIF. ---")
+    try:
+        from conseil_stock_aitif import conseil_stock
+        conseil_stock()
+    except Exception as e:
+        print(f"Conseil non lisible ici : {e}")
+    print("\n=== TERMINE - Capteur Temperature Aitif V5.16 fini, Miantsa peut verifier ===")
+
+if __name__ == "__main__":
+    tout_en_1_commande()
