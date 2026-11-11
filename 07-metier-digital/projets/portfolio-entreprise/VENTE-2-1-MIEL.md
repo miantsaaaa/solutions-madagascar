@@ -26,3 +26,8 @@
 - 16 000 / 18 000 / 22 000 Ar - Foret Baobab / Jujubier / Eucalyptus 1L
 - Conclusion : notre 23 000 Ar est dans la fourchette, cote haut. A verifier au marche Toamasina avant de vendre.
 - Regle : Internet = tendance, marche = vrai prix.
+
+## Connexion Prix Locaux - 11 Nov 2026
+- Marge calculee par : prix-locaux/calculer-marge.py --produit "Miel 1L" --achat 10000 --frais 2000
+- Test : prix test 23 000 Ar -> marge 11 000 Ar (91.7 %) - puis efface, retour 0 prix.
+- Regle : la marge ne vient plus d'un chiffre ecrit a la main, elle vient du dernier vrai prix.

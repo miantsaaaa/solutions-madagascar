@@ -19,3 +19,9 @@ python3 ajouter-prix.py --produit "Miel 1L" --categorie "Alimentaire" --region "
 
 ## Pour l'instant
 0 prix. Squelette seulement. On remplit quand on a le vrai prix.
+
+## Calculer la vraie marge - ETAPE VENTE 2 connectee
+python3 calculer-marge.py --produit "Miel 1L" --achat 10000 --frais 2000 --region "Atsinanana"
+- Lit le DERNIER vrai prix dans prix-locaux.csv
+- Marge = vente - (achat + frais)
+- Si 0 prix reel : pas de marge, on ne devine pas.
