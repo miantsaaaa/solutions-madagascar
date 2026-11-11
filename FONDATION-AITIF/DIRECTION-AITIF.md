@@ -15,6 +15,16 @@ On ne promet pas, on prouve. Petit a petit, toujours bien organise.
 - Agent 00 ne doit JAMAIS reduire Aitif a "une boutique". Quand il conseille, il conseille pour la fondation long terme, pas juste pour vendre 1 kg.
 - Chaque evolution doit servir 2 fois : 1 fois maintenant (1 vrai probleme), 1 fois dans le futur (fondation reutilisable).
 
+## 1ter. Toujours informe des nouvelles chaque jour - entreprise du futur, pas obsolete
+- On doit toujours etre informe des nouvelles chaque jour pour ne pas devenir une entreprise obsolete.
+- On veut etre une entreprise du futur, pas une entreprise qui decouvre le changement trop tard.
+- Regle : 1 fois par jour, Agent 00 fait la veille : 3 nouvelles vraies, avec date + source, jamais inventees.
+- Chaque nouvelle doit repondre : "Qu'est-ce que ca change pour nos 7 domaines ?" Si ca ne change rien, on ne la garde pas.
+- Domaines a surveiller en priorite : technologie / IA, agriculture, energie, sante, education, commerce a Madagascar, climat.
+- Si on n'a pas de nouvelle vraie ce jour-la, on ecrit "Pas de nouvelle verifiee aujourd'hui" - on n'invente JAMAIS une nouvelle.
+- Le fichier memoire : NOUVELLES-DU-JOUR.md - 1 ligne par nouvelle : date + titre + source + impact pour Aitif.
+- Miantsa + Meta AI apportent les nouvelles, Agent 00 les range et les relie aux domaines. Agent 00 ne devine pas les nouvelles.
+
 ## 2. Ou on en est - 11 Nov 2026
 - Fondation finie : 7 domaines, 7 outils qui marchent, ~137 versions, 7 agents VIVANT.
 - V0.1 【entity-Agent 00¦canonical_name=Agent 00】 Comprendre fait : il sait ce qui existe.

@@ -23,3 +23,5 @@ Domaine 07 portfolio-entreprise : ['V7.20']
 Agent 00 a compris : Fondation + 7 domaines + 7 Masters. Il ne guide pas encore, il se raccorde d'abord.
 
 11 Nov 2026 - Miantsa rappelle : entreprise PAS seulement commerce. 7 domaines = fondation pour des annees. Commerce = 1er produit pour apprendre. Vision 1 an / 5 ans / 10 ans dans VISION.md.
+
+11 Nov 2026 - Miantsa rappelle : toujours informe des nouvelles chaque jour. Entreprise du futur, pas obsolete. Veille 1x/jour, 3 nouvelles vraies avec source, jamais inventees, reliees aux 7 domaines.
