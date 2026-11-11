@@ -1,6 +1,6 @@
-# Rapport etat systeme - V2.6 Aitif - Domaine 02
+# Rapport etat systeme - V2.17 Aitif - Domaine 02
 # Genere un rapport complet : stockage, reseau, projets, sauvegardes
-import shutil, socket, subprocess, os, glob
+import shutil, socket, subprocess, os, glob, pathlib
 from datetime import datetime
 
 def rapport():
@@ -15,6 +15,26 @@ def rapport():
         print("[RESEAU] Internet : OK")
     except:
         print("[RESEAU] Internet : COUPE")
+    # Agents - V2.17
+    print("\n[AGENTS]")
+    pid_f = pathlib.Path("/root/01-genie-logiciel-et-bdd/projets/gestion-commerce-madagascar/AGENT-01.pid")
+    if pid_f.exists():
+        try:
+            _pid = int(pid_f.read_text().strip())
+            os.kill(_pid, 0)
+            print(f" - Agent 01 Maitre : VIVANT (PID {_pid})")
+        except Exception:
+            print(" - Agent 01 Maitre : ARRETE")
+    else:
+        print(" - Agent 01 Maitre : PAS DE PID - arrete")
+    try:
+        _r = subprocess.run(["ps", "aux"], capture_output=True, text=True, timeout=5)
+        if "sous_agent_01_1_commerce.py" in _r.stdout:
+            print(" - Agent 01 Sous-Agent 01.1 Commerce : VIVANT")
+        else:
+            print(" - Agent 01 Sous-Agent 01.1 Commerce : ARRETE")
+    except Exception as e:
+        print(f" - Agent 01 Sous-Agent : non verifiable ({e})")
     # Projets
     print("\n[PROJETS]")
     for p in sorted(glob.glob("/root/*/projets/*")):
