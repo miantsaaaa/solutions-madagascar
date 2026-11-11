@@ -1,4 +1,4 @@
-# Prediction Ventes Aitif - V3.15 - 3eme tour
+# Prediction Ventes Aitif - V3.16 - 3eme tour
 # AITIF. - IA Aitif, pour faire evoluer Madagascar
 # Prediction avec jour de semaine : samedi != lundi
 import sqlite3, glob, os
@@ -10,7 +10,7 @@ DB = DBS[0] if DBS else ""
 JOURS = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"]
 
 def prediction():
-    print("=== PREDICTION VENTES AITIF. - V3.14 - MADAGASCAR ===")
+    print("=== PREDICTION VENTES AITIF. - V3.16 - MADAGASCAR ===")
     if not DB or not os.path.exists(DB):
         print("Pas de base trouvee.")
         return
@@ -69,3 +69,24 @@ if __name__ == "__main__":
         print(f"Alerte non lisible ici : {e}")
     print("\nBILAN IA EN 1 PHRASE : Prediction demain basee sur moyenne, Meilleur benefice Miel 11000 Ar, Stock a verifier - Action : pousse le Miel demain")
     print("Domaine 03 termine 3eme tour - Agent 03 passe en arriere-plan.")
+
+
+def tout_en_1_commande():
+    """V3.16 : Prediction + Conseil + Alerte en 1 commande + TERMINE."""
+    prediction()
+    print("\n--- CONSEIL AITIF. ---")
+    try:
+        from conseil_achat import conseil
+        conseil()
+    except Exception as e:
+        print(f"Conseil non lisible ici : {e}")
+    print("\n--- ALERTE AITIF. ---")
+    try:
+        from alerte_stock import alerte
+        alerte()
+    except Exception as e:
+        print(f"Alerte non lisible ici : {e}")
+    print("\n=== TERMINE - Prediction Ventes Aitif V3.16 finie, Miantsa peut verifier ===")
+
+if __name__ == "__main__":
+    tout_en_1_commande()
