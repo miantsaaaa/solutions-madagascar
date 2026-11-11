@@ -1,4 +1,4 @@
-# Surveillance Aitif - V2.16 - 4eme tour
+# Surveillance Aitif - V2.20 - 4eme tour
 # AITIF. - Aitif, pour faire evoluer Madagascar
 # Domaine 02 - Admin Systeme + Reseau
 # Par Miantsa - solutions-madagascar
@@ -89,8 +89,8 @@ def check_reseau():
     except Exception as e:
         print(f"Ping : {e}")
 
-if __name__ == "__main__":
-    print("=== SURVEILLANCE AITIF. - MADAGASCAR ===")
+def tout_en_1_commande():
+    print("=== TOUT EN 1 COMMANDE - SURVEILLANCE AITIF V2.20 ===")
     check_stockage()
     check_batterie()
     check_agents()
@@ -102,5 +102,8 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"Alerte non lisible ici : {e}")
     print("\nBILAN AITIF EN 1 PHRASE : Stockage a surveiller, Reseau a verifier avant push, Batterie a verifier sur Redmi - Action : simuler nettoyage si ORANGE")
-    print("Domaine 02 termine 3eme tour - Agent 02 passe en arriere-plan.")
-    print("Termine. Relance quand tu veux avec : python3 main.py")
+    print("=== FIN TOUT EN 1 COMMANDE ===")
+    print("=== TERMINE - Surveillance finie, Miantsa peut verifier ===")
+
+if __name__ == "__main__":
+        tout_en_1_commande()
