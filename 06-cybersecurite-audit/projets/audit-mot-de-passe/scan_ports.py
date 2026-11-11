@@ -1,4 +1,4 @@
-# Scan ports ouverts Aitif - V6.6
+# Scan ports ouverts Aitif - V6.18
 # AITIF. - Cyber Aitif.
 # Scan TON propre Redmi / localhost, jamais celui des autres sans autorisation
 import socket
@@ -42,6 +42,7 @@ def scan():
         print("Aucun port ouvert : ton Redmi est ferme, c'est bien pour la securite.")
     print("\nAudit termine. Un port ouvert n'est pas un danger en soi,")
     print("c'est un port ouvert SANS mot de passe fort qui est dangereux.")
+    print("\n=== TERMINE - Scan Ports V6.18 fini, Miantsa peut verifier ===")
 
 if __name__ == "__main__":
     scan()

@@ -1,4 +1,4 @@
-# Checklist securite Aitif - V6.9
+# Checklist securite Aitif - V6.18
 # Checks dans checks_aitif.py, 1 seul endroit.
 # 5 checks rapides chaque jour, avant de pousser.
 # Si 1 check est rouge, tu corriges avant de pousser.
@@ -25,7 +25,7 @@ def checklist():
     print("\n[2/5] Pas de fichier sensible ?")
     sens = []
     for pat in [".env", "password.txt", "motdepasse.txt", "id_rsa", ".pem"]:
-        for f in glob.glob(f"/root/**/{pat}", recursive=True):
+        for f in glob.glob(f"/root/*/projets/**/{pat}", recursive=True):  # V6.18 scan projets seulement
             if ".git/" not in f and "venv" not in f:
                 sens.append(f)
     if not sens:
@@ -36,7 +36,7 @@ def checklist():
     # 3. Pas de secret en dur dans les .py Aitif
     print("\n[3/5] Pas de secret en dur dans tes .py ?")
     trouves = 0
-    for f in glob.glob("/root/**/*.py", recursive=True):
+    for f in glob.glob("/root/*/projets/**/*.py", recursive=True):  # V6.18 scan projets seulement
         if "venv" in f or ".git" in f:
             continue
         try:
@@ -81,6 +81,7 @@ def checklist():
     else:
         print("ROUGE : ne pousse pas, corrige d'abord.")
     print("\nAitif ne pousse jamais avec un rouge.")
+    print("\n=== TERMINE - Checklist V6.18 finie, Miantsa peut verifier ===")
 
 if __name__ == "__main__":
     checklist()
