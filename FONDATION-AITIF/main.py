@@ -236,6 +236,14 @@ def analyser_agents():
             }
             msg = None
             for base in [dossiers[i], "/root", "/root/FONDATION-AITIF"]:
+                # STATUS d’abord (nouveau), puis MESSAGE, puis REPONSE
+                for nom in [f"STATUS-AGENT-0{i}.txt", f"MESSAGE-AGENT-0{i}.txt", f"AGENT-0{i}-REPONSE.txt"]:
+                    cand2 = pathlib.Path(base) / nom
+                    if cand2.exists():
+                        msg = cand2
+                        break
+                if msg is not None:
+                    break
                 cand = pathlib.Path(base) / f"MESSAGE-AGENT-0{i}.txt"
                 if cand.exists():
                     msg = cand

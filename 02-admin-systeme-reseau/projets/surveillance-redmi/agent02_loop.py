@@ -44,4 +44,5 @@ while True:
         ecrire_discussion("Maitre 02", f"Sous-Agent 02.1 relance, PID {sous_proc.pid}.")
     else:
         ecrire_discussion("Maitre 02", "Sous-Agent 02.1, tout va bien ? Continue.")
+    pathlib.Path("STATUS-AGENT-02.txt").write_text(f"Agent 02 Surveillance - {now()} - VIVANT - Maitre + Sous-Agent 02.1 travaillent - Voir AGENT-02-REPONSE.txt pour le detail\n", encoding="utf-8")
     time.sleep(300)
