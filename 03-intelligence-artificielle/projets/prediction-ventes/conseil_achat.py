@@ -4,7 +4,7 @@
 import sqlite3, glob, os
 from marge_aitif import marge_pour
 
-DBS = glob.glob("/root/**/commerce.db", recursive=True)
+DBS = glob.glob("/root/*/projets/**/commerce.db", recursive=True)  # V3.18 : scan projets seulement
 DB = DBS[0] if DBS else ""
 
 def conseil():
