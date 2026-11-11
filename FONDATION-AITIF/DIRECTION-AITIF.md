@@ -26,6 +26,14 @@ On ne promet pas, on prouve. Petit a petit, toujours bien organise.
 - Miantsa a une connexion internet, rien ne doit nous arreter. Agent 00 va chercher lui-meme les nouvelles sur internet chaque jour (flux RSS publics, sans cle, sans inventer). Miantsa + Meta AI completent si besoin. Agent 00 range, garde le lien source, et relie aux domaines. Agent 00 ne devine JAMAIS une nouvelle.
 - Filtre veille : politique = on note, on ne construit pas dessus. Gossip = on jette. Utile = agriculture, energie, sante, education, technologie, commerce, climat a Madagascar / Afrique = on garde et on relie aux 7 domaines.
 
+## 1quater. Agent 00 a des Sous-Agents analystes 00.1 a 00.7
+- Agent 00 = chef. Il ne code pas a la place des autres, il guide.
+- Sous-Agent 00.1 analyse Agent 01, 00.2 analyse Agent 02, 00.3 analyse Agent 03, 00.4 analyse Agent 04, 00.5 analyse Agent 05, 00.6 analyse Agent 06, 00.7 analyse Agent 07.
+- Chaque sous-agent dit 1 fois par jour : Agent VIVANT ou ARRETE, dernier travail, 1 petite evolution possible dans SON domaine, jamais un gros saut.
+- Priorite entreprise : toujours tout faire evoluer petit a petit. 1 petite evolution = 1 test + 1 commit + 1 push.
+- C'est Miantsa + Meta AI qui font les ameliorations. Les Agents et sous-agents analysent et proposent, ils ne poussent JAMAIS seuls. Miantsa pousse.
+- Fichier memoire : ANALYSE-AGENTS-00.txt - 1 ligne par Agent : VIVANT + derniere activite + 1 proposition.
+
 ## 2. Ou on en est - 11 Nov 2026
 - Fondation finie : 7 domaines, 7 outils qui marchent, ~137 versions, 7 agents VIVANT.
 - V0.1 【entity-Agent 00¦canonical_name=Agent 00】 Comprendre fait : il sait ce qui existe.
@@ -51,7 +59,8 @@ On ne promet pas, on prouve. Petit a petit, toujours bien organise.
 - [x] V0.4 Agent 00 - BILAN - FAIT 11 Nov 2026 : 0 client, 0 vente, 7/7 domaines, 7/7 agents
 - [x] V0.5 Agent 00 - TOUT_EN_1 FONDATION - FAIT
 - [x] V0.6 Agent 00 - VEILLE AUTO INTERNET - FAIT
-- [x] V0.7 Agent 00 - TOUT_EN_1 AVEC VEILLE AUTO - FAIT 11 Nov 2026 : tout_en_1 = Comprendre + Verifier + Guide + Bilan + Veille Auto + TERMINE - VEILLE AUTO INTERNET - FAIT 11 Nov 2026 : 3 vraies nouvelles avec liens, rien invente, filtre politique/gossip - TOUT_EN_1 FONDATION - FAIT 11 Nov 2026 : Comprendre + Verifier + Guide + Bilan + TERMINE
+- [x] V0.7 Agent 00 - TOUT_EN_1 AVEC VEILLE AUTO - FAIT
+- [x] V0.8 Agent 00 - SOUS-AGENTS 00.1-00.7 ANALYSE 01-07 - FAIT 11 Nov 2026 : 01,06,07 parlent, 02,03,04,05 VIVANTS mais muets, a faire parler petit a petit par Miantsa + Meta AI - TOUT_EN_1 AVEC VEILLE AUTO - FAIT 11 Nov 2026 : tout_en_1 = Comprendre + Verifier + Guide + Bilan + Veille Auto + TERMINE - VEILLE AUTO INTERNET - FAIT 11 Nov 2026 : 3 vraies nouvelles avec liens, rien invente, filtre politique/gossip - TOUT_EN_1 FONDATION - FAIT 11 Nov 2026 : Comprendre + Verifier + Guide + Bilan + TERMINE
 - [ ] ETAPE VENTE 1 : Mettre Portfolio en ligne, que "Aitif Madagascar" se trouve.
 - [ ] ETAPE VENTE 2 : Vendre 1 chose reelle : 1 kg Cafe ou Miel ou 1 service "commerce en chiffres" pour 1 commercant.
 - [ ] Apres 1 vente reelle seulement : on reparle de grossir, departement par departement.

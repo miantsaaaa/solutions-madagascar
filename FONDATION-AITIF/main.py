@@ -139,6 +139,7 @@ def tout_en_1_fondation():
         ("GUIDE DU JOUR", guide_du_jour),
         ("BILAN ENTREPRISE", bilan_entreprise),
         ("VEILLE AUTO INTERNET", veille_nouvelles_auto),
+        ("ANALYSE AGENTS", analyser_agents),
     ]:
         print(f"\n--- {titre} AITIF. ---")
         try:
@@ -209,3 +210,45 @@ def veille_nouvelles_auto():
         print("0 nouvelle verifiee aujourd'hui - on n'invente pas.")
     print("Question : qu'est-ce que ca change pour nos 7 domaines ?")
     print("=== TERMINE - Veille Auto V0.6bis fini, Miantsa peut verifier ===")
+
+
+def analyser_agents():
+    """V0.8 : Sous-Agents 00.1-00.7 analysent Agents 01-07. Proposent 1 petite evolution chacun. Ne poussent rien."""
+    import subprocess, pathlib
+    from datetime import datetime
+    print("=== ANALYSE AGENTS 01-07 - SOUS-AGENTS 00.1-00.7 - V0.8 ===")
+    print("Regle : analyser et proposer, jamais pousser seul. C'est Miantsa + Meta AI qui ameliorent.")
+    domaines = {1:"Qualite",2:"Commerce",3:"Sante",4:"Education",5:"Capteur",6:"Cyber",7:"Portfolio"}
+    lignes = []
+    for i in range(1,8):
+        try:
+            pid = subprocess.run(["pgrep","-f",f"agent0{i}_loop.py"], capture_output=True, text=True).stdout.strip().splitlines()
+            vivant = "VIVANT" if pid else "ARRETE"
+            # MESSAGE peut etre dans domaine, /root, ou FONDATION selon ou l'agent a ete lance
+            dossiers = {
+                1: "[STRIPPED 66 bytes]",
+                2: "/root/02-admin-systeme-reseau/projets/surveillance-redmi",
+                3: "/root/03-intelligence-artificielle/projets/prediction-ventes",
+                4: "/root/04-gouvernance-ingenierie-data/projets/qualite-donnees",
+                5: "/root/05-objets-connectes-iot/projets/capteur-temperature",
+                6: "/root/06-cybersecurite-audit/projets/audit-mot-de-passe",
+                7: "/root/07-metier-digital/projets/portfolio-entreprise",
+            }
+            msg = None
+            for base in [dossiers[i], "/root", "/root/FONDATION-AITIF"]:
+                cand = pathlib.Path(base) / f"MESSAGE-AGENT-0{i}.txt"
+                if cand.exists():
+                    msg = cand
+                    break
+            dernier = "pas de MESSAGE"
+            if msg is not None and msg.exists():
+                txt = msg.read_text(encoding="utf-8", errors="ignore").strip().splitlines()
+                dernier = txt[-1][:90] if txt else "vide"
+            prop = f"1 petite evolution petit a petit dans {domaines[i]}, a decider par Miantsa + Meta AI"
+            print(f"00.{i} -> Agent 0{i} {domaines[i]} : {vivant} | Dernier : {dernier} | Proposition : {prop}")
+            lignes.append(f"00.{i} -> Agent 0{i} {domaines[i]} : {vivant} | {datetime.now().strftime('%Y-%m-%d')} | {prop}")
+        except Exception as e:
+            print(f"00.{i} -> Agent 0{i} : erreur analyse : {e}")
+    pathlib.Path("/root/FONDATION-AITIF/ANALYSE-AGENTS-00.txt").write_text("\n".join(lignes)+"\n", encoding="utf-8")
+    print("Analyse rangee dans ANALYSE-AGENTS-00.txt")
+    print("=== TERMINE - Analyse V0.8 fini, Miantsa peut verifier ===")
