@@ -23,7 +23,8 @@ On ne promet pas, on prouve. Petit a petit, toujours bien organise.
 - Domaines a surveiller en priorite : technologie / IA, agriculture, energie, sante, education, commerce a Madagascar, climat.
 - Si on n'a pas de nouvelle vraie ce jour-la, on ecrit "Pas de nouvelle verifiee aujourd'hui" - on n'invente JAMAIS une nouvelle.
 - Le fichier memoire : NOUVELLES-DU-JOUR.md - 1 ligne par nouvelle : date + titre + source + impact pour Aitif.
-- Miantsa + Meta AI apportent les nouvelles, Agent 00 les range et les relie aux domaines. Agent 00 ne devine pas les nouvelles.
+- Miantsa a une connexion internet, rien ne doit nous arreter. Agent 00 va chercher lui-meme les nouvelles sur internet chaque jour (flux RSS publics, sans cle, sans inventer). Miantsa + Meta AI completent si besoin. Agent 00 range, garde le lien source, et relie aux domaines. Agent 00 ne devine JAMAIS une nouvelle.
+- Filtre veille : politique = on note, on ne construit pas dessus. Gossip = on jette. Utile = agriculture, energie, sante, education, technologie, commerce, climat a Madagascar / Afrique = on garde et on relie aux 7 domaines.
 
 ## 2. Ou on en est - 11 Nov 2026
 - Fondation finie : 7 domaines, 7 outils qui marchent, ~137 versions, 7 agents VIVANT.
@@ -48,7 +49,8 @@ On ne promet pas, on prouve. Petit a petit, toujours bien organise.
 - [x] V0.2 Agent 00 - NETTOYER - FAIT 11 Nov 2026 : .gitignore + verifier_propre, doublons listes, rien supprime sans lister : ranger fichiers hors domaines, supprimer doublons agentXX_loop.py a la racine, mettre *.log / *.pid / MESSAGE-* / RESULTAT-* dans .gitignore. Ne rien supprimer sans lister d'abord.
 - [x] V0.3 Agent 00 - GUIDE DU JOUR - FAIT 11 Nov 2026 : lit DIRECTION, 1 seule etape : 1 fois par jour, 1 seule prochaine etape.
 - [x] V0.4 Agent 00 - BILAN - FAIT 11 Nov 2026 : 0 client, 0 vente, 7/7 domaines, 7/7 agents
-- [x] V0.5 Agent 00 - TOUT_EN_1 FONDATION - FAIT 11 Nov 2026 : Comprendre + Verifier + Guide + Bilan + TERMINE
+- [x] V0.5 Agent 00 - TOUT_EN_1 FONDATION - FAIT
+- [x] V0.6 Agent 00 - VEILLE AUTO INTERNET - FAIT 11 Nov 2026 : 3 vraies nouvelles avec liens, rien invente, filtre politique/gossip - TOUT_EN_1 FONDATION - FAIT 11 Nov 2026 : Comprendre + Verifier + Guide + Bilan + TERMINE
 - [ ] ETAPE VENTE 1 : Mettre Portfolio en ligne, que "Aitif Madagascar" se trouve.
 - [ ] ETAPE VENTE 2 : Vendre 1 chose reelle : 1 kg Cafe ou Miel ou 1 service "commerce en chiffres" pour 1 commercant.
 - [ ] Apres 1 vente reelle seulement : on reparle de grossir, departement par departement.

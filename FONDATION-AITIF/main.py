@@ -138,6 +138,7 @@ def tout_en_1_fondation():
         ("VERIFIER PROPRE", verifier_propre),
         ("GUIDE DU JOUR", guide_du_jour),
         ("BILAN ENTREPRISE", bilan_entreprise),
+        ("VEILLE NOUVELLES", veille_nouvelles),
     ]:
         print(f"\n--- {titre} AITIF. ---")
         try:
@@ -145,3 +146,66 @@ def tout_en_1_fondation():
         except Exception as e:
             print(f"{titre} non lisible ici : {e}")
     print("\n=== TERMINE - Tout en 1 Fondation V0.5 fini, Miantsa peut verifier ===")
+
+
+def veille_nouvelles():
+    """V0.6 : Veille 1x/jour. Lit NOUVELLES-DU-JOUR.md. Ne devine JAMAIS une nouvelle."""
+    from datetime import date
+    f = pathlib.Path("/root/FONDATION-AITIF/NOUVELLES-DU-JOUR.md")
+    print("=== VEILLE NOUVELLES - AGENT 00 V0.6 ===")
+    print("Regle : 3 nouvelles vraies max, avec date + source. Si pas verifie, on dit 0.")
+    if not f.exists():
+        print("Pas de fichier NOUVELLES-DU-JOUR.md encore. On le cree vide, on n'invente rien.")
+        return
+    txt = f.read_text(encoding="utf-8")
+    auj = date.today().isoformat()
+    lignes = [l for l in txt.splitlines() if auj in l and l.strip().startswith("- ")]
+    if not lignes:
+        print(f"Pas de nouvelle verifiee pour {auj}.")
+        print("Miantsa + Meta AI apportent les nouvelles, Agent 00 les range. On n'invente pas.")
+    else:
+        print(f"Nouvelles verifiees {auj} : {len(lignes)}")
+        for l in lignes[:3]:
+            print(l)
+    print("Question pour chaque nouvelle : qu'est-ce que ca change pour nos 7 domaines ?")
+    print("=== TERMINE - Veille V0.6 fini, Miantsa peut verifier ===")
+
+
+def veille_nouvelles_auto():
+    """V0.6bis : Veille AUTO avec internet. Lit les vrais flux RSS, garde le lien source. Ne devine rien."""
+    import urllib.request, xml.etree.ElementTree as ET
+    from datetime import date
+    print("=== VEILLE AUTO INTERNET - AGENT 00 V0.6bis ===")
+    print("Miantsa a internet, rien ne doit nous arreter. On va chercher les vraies nouvelles.")
+    flux = [
+        ("Madagascar", "https://news.google.com/rss/search?q=Madagascar&hl=fr&gl=MG&ceid=MG:fr"),
+        ("IA Technologie", "https://news.google.com/rss/search?q=intelligence+artificielle+technologie&hl=fr&gl=FR&ceid=FR:fr"),
+        ("Agriculture Energie", "https://news.google.com/rss/search?q=agriculture+energie+Afrique&hl=fr&gl=FR&ceid=FR:fr"),
+    ]
+    trouvees = []
+    for nom, url in flux:
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "AITIF-Veille/1.0"})
+            data = urllib.request.urlopen(req, timeout=15).read()
+            root = ET.fromstring(data)
+            for item in root.findall(".//item")[:1]:
+                titre = (item.findtext("title") or "").strip()
+                lien = (item.findtext("link") or "").strip()
+                if titre and lien:
+                    trouvees.append(f"- {date.today().isoformat()} | {titre} | {nom} | {lien}")
+                    print(f"[{nom}] {titre}")
+                    print(f"  Source : {lien}")
+        except Exception as e:
+            print(f"[{nom}] flux non lisible : {e} - on n'invente pas, on reessaie demain")
+    f = pathlib.Path("/root/FONDATION-AITIF/NOUVELLES-DU-JOUR.md")
+    if trouvees:
+        txt = f.read_text(encoding="utf-8") if f.exists() else ""
+        for l in trouvees:
+            if l.split(" | ")[1] not in txt:
+                txt += l + " | Impact : a relier aux 7 domaines par Agent 00\n"
+        f.write_text(txt, encoding="utf-8")
+        print(f"Nouvelles vraies rangees : {len(trouvees)} - dans NOUVELLES-DU-JOUR.md")
+    else:
+        print("0 nouvelle verifiee aujourd'hui - on n'invente pas.")
+    print("Question : qu'est-ce que ca change pour nos 7 domaines ?")
+    print("=== TERMINE - Veille Auto V0.6bis fini, Miantsa peut verifier ===")
