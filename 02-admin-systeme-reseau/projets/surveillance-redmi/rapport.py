@@ -1,4 +1,4 @@
-# Rapport etat systeme - V2.17 Aitif - Domaine 02
+# Rapport etat systeme - V2.18 Aitif - Domaine 02
 # Genere un rapport complet : stockage, reseau, projets, sauvegardes
 import shutil, socket, subprocess, os, glob, pathlib
 from datetime import datetime
@@ -46,7 +46,8 @@ def rapport():
     for s in saves[-3:]:
         print(f" - {s}")
     # Fichiers .db
-    dbs = glob.glob("/root/**/*.db", recursive=True)
+    # V2.18 : ne scanne plus tout /root, trop long - seulement projets/
+    dbs = glob.glob("/root/*/projets/**/*.db", recursive=True)
     print(f"\n[BASES DE DONNEES] {len(dbs)} fichier(s) .db")
     for d in dbs:
         print(f" - {d} : {os.path.getsize(d)//1024} Ko")
