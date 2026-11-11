@@ -19,3 +19,10 @@
 - [ ] 1 personne a qui proposer (sans forcer) : ____
 - [ ] Vendu ? oui / non - Date : ____ - Prix reel : ____ Ar
 - [ ] Marge reelle : ____ Ar
+
+## Tendance Internet - 11 Nov 2026 - Agent 00 Veille
+- 25 000 Ar - Miel litchi 1L, Tantelya, 05 Nov 2026
+- 10 000 Ar - Producteur, multi-fleurs, Vatovavy
+- 16 000 / 18 000 / 22 000 Ar - Foret Baobab / Jujubier / Eucalyptus 1L
+- Conclusion : notre 23 000 Ar est dans la fourchette, cote haut. A verifier au marche Toamasina avant de vendre.
+- Regle : Internet = tendance, marche = vrai prix.
