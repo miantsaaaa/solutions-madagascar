@@ -1,16 +1,16 @@
-# Prediction Ventes Aitif - V3.18 - 3eme tour
+# Prediction Ventes Aitif - V3.20 - 3eme tour
 # AITIF. - IA Aitif, pour faire evoluer Madagascar
 # Prediction avec jour de semaine : samedi != lundi
 import sqlite3, glob, os
 from datetime import datetime, timedelta
 
-DBS = glob.glob("/root/*/projets/**/commerce.db", recursive=True)  # V3.18 : scan projets seulement, pas tout /root
+DBS = glob.glob("/root/*/projets/**/commerce.db", recursive=True)  # V3.20 : scan projets seulement, pas tout /root
 DB = DBS[0] if DBS else ""
 
 JOURS = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"]
 
 def prediction():
-    print("=== PREDICTION VENTES AITIF. - V3.18 - MADAGASCAR ===")
+    print("=== PREDICTION VENTES AITIF. - V3.20 - MADAGASCAR ===")
     if not DB or not os.path.exists(DB):
         print("Pas de base trouvee.")
         return
@@ -72,7 +72,12 @@ if __name__ == "__main__":
 
 
 def tout_en_1_commande():
-    """V3.18 : Prediction + Conseil + Alerte en 1 commande + TERMINE."""
+    """V3.20 : Check Agents + Prediction + Conseil + Alerte + Rapport Semaine en 1 commande + TERMINE."""
+    try:
+        from check_agents import check_agents
+        check_agents()
+    except Exception as e:
+        print(f"Check Agents non lisible ici : {e}")
     prediction()
     print("\n--- CONSEIL AITIF. ---")
     try:
@@ -86,7 +91,13 @@ def tout_en_1_commande():
         alerte()
     except Exception as e:
         print(f"Alerte non lisible ici : {e}")
-    print("\n=== TERMINE - Prediction Ventes Aitif V3.18 finie, Miantsa peut verifier ===")
+    print("\n--- RAPPORT SEMAINE AITIF. ---")
+    try:
+        from rapport_semaine import rapport_semaine
+        rapport_semaine()
+    except Exception as e:
+        print(f"Rapport Semaine non lisible ici : {e}")
+    print("\n=== TERMINE - Prediction Ventes Aitif V3.20 finie, Miantsa peut verifier ===")
 
 if __name__ == "__main__":
     tout_en_1_commande()
