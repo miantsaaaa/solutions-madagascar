@@ -52,4 +52,28 @@ def comprendre():
     print("\nBilan Comprendre : j'ai lu la Fondation + les 7 domaines + les 7 Masters - je suis raccorde, je peux guider petit a petit.")
     print("\n=== TERMINE - Agent 00 V0.1 Comprendre fini, Miantsa peut verifier ===")
 if __name__ == "__main__":
-    comprendre()
+    pass  # V0.2 : voir verifier_propre ci-dessous
+
+
+def verifier_propre():
+    """V0.2 : Verifie que le depot est propre - pas de doublons a la racine + TERMINE."""
+    print("=== VERIFIER PROPRE - AGENT 00 V0.2 ===")
+    import pathlib as pl
+    base = pl.Path("/root")
+    # Doublons a la racine qui ne devraient pas etre la
+    doublons = list(base.glob("agent0*_loop.py")) + list(base.glob("MESSAGE-AGENT-*.txt")) + list(base.glob("AGENT-*-REPONSE.txt"))
+    if doublons:
+        print(f" ATTENTION : {len(doublons)} fichier(s) doublon a la racine :")
+        for f in doublons:
+            print(f"  - {f.name} (vrai fichier est dans son domaine, celui-ci est un doublon)")
+    else:
+        print(" OK : aucun doublon a la racine")
+    # .gitignore
+    gitig = (base / ".gitignore").read_text(encoding="utf-8")
+    for mot in ["*.pid", "MESSAGE-AGENT-*.txt", "*.log"]:
+        print(f" {'OK' if mot in gitig else 'ROUGE'} : {mot} {'dans .gitignore' if mot in gitig else 'manquant dans .gitignore'}")
+    print("\nBilan Propre : depot range = on ne se perd plus, git status lisible.")
+    print("\n=== TERMINE - Verifier Propre V0.2 fini, Miantsa peut verifier ===")
+
+if __name__ == "__main__":
+    verifier_propre()

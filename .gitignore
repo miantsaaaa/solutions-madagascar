@@ -15,3 +15,8 @@ sauvegarde-*/
 *.png
 .env
 *.pem
+*.pid
+MESSAGE-AGENT-*.txt
+RESULTAT-AGENT-*.txt
+AGENT-*-REPONSE.txt
+agent*.log
