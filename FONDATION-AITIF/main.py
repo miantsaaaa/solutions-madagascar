@@ -127,3 +127,21 @@ def bilan_entreprise():
     print(" - Versions poussees : ~140 - 1 version = 1 test + 1 commit + 1 push")
     print("\nBilan Entreprise : fondation finie, 7 domaines qui marchent, 0 client payant - prochaine etape : nettoyer fini, mettre Portfolio en ligne, puis vendre 1 chose reelle.")
     print("\n=== TERMINE - Bilan Entreprise V0.4 fini, Miantsa peut verifier ===")
+
+
+def tout_en_1_fondation():
+    """V0.5 : Comprendre + Verifier Propre + Guide + Bilan + TERMINE, en 1 commande."""
+    print("=== TOUT EN 1 FONDATION - AGENT 00 V0.5 ===")
+    print("Agent 00 = chef. Il ne fait pas 5 choses, il fait le tour en 1 commande.")
+    for titre, fn in [
+        ("COMPRENDRE", comprendre),
+        ("VERIFIER PROPRE", verifier_propre),
+        ("GUIDE DU JOUR", guide_du_jour),
+        ("BILAN ENTREPRISE", bilan_entreprise),
+    ]:
+        print(f"\n--- {titre} AITIF. ---")
+        try:
+            fn()
+        except Exception as e:
+            print(f"{titre} non lisible ici : {e}")
+    print("\n=== TERMINE - Tout en 1 Fondation V0.5 fini, Miantsa peut verifier ===")
