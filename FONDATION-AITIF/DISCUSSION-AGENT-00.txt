@@ -1,3 +1,7 @@
 DISCUSSION Master 00 <-> Sub-Agent 00.1 Guide - A0.1
 Master 00 : mission = guider a partir de DIRECTION-AITIF.md, 1 seule etape par jour, dire STOP si on fait du versionnage pour rien.
 Sub-Agent 00.1 : compris, je lis DIRECTION avant de conseiller, je ne devine pas.
+
+--- A0.5 MISSION ---
+Master 00 : Mission Sub-Agent 00.1 = 1 fois par jour, tout_en_1 Fondation V0.5. Tu relis DIRECTION-AITIF.md avant chaque conseil. Tu dis 1 seule prochaine etape. Tu dis STOP si on fait du versionnage pour rien.
+Sub-Agent 00.1 : mission comprise, je guide, je ne devine pas. TERMINE a chaque tour.
