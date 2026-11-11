@@ -2,7 +2,9 @@
 
 Fondation : CAPACITES-AITIF.md
 Fondation : CHARTE.md
+Fondation : DIRECTION-AITIF.md
 Fondation : IDENTITE.md
+Fondation : MEMOIRE-AGENT-00.md
 Fondation : PLAN-1-AN.md
 Fondation : PRIX-OBSERVES-2026-11-09.md
 Fondation : PRODUITS-LOCAUX.md
@@ -19,3 +21,5 @@ Domaine 06 audit-mot-de-passe : ['V6.20']
 Domaine 07 portfolio-entreprise : ['V7.20']
 
 Agent 00 a compris : Fondation + 7 domaines + 7 Masters. Il ne guide pas encore, il se raccorde d'abord.
+
+11 Nov 2026 - Miantsa rappelle : entreprise PAS seulement commerce. 7 domaines = fondation pour des annees. Commerce = 1er produit pour apprendre. Vision 1 an / 5 ans / 10 ans dans VISION.md.

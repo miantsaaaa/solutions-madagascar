@@ -5,6 +5,16 @@
 Faire evoluer Madagascar avec des outils qui marchent vraiment - construits sur 【entity-Redmi¦canonical_name=Redmi】, en Ariary, hors-ligne, pour les vrais problemes : coupures, 4G faible, stockage plein, donnees sales, mots de passe faibles.
 On ne promet pas, on prouve. Petit a petit, toujours bien organise.
 
+## 1bis. L'entreprise n'est PAS seulement le commerce - a ne jamais oublier
+- Le commerce (Riz, Cafe, Miel) = 1er produit, pour apprendre a vendre, pour avoir 1 premiere vente reelle. Ce n'est pas le but final.
+- Les 7 domaines = la FONDATION pour tout ce qu'on va batir dans des annees.
+- Agriculture, education, sante, energie, eau, administration, associations : tout est deja dans PROBLEMES-MADAGASCAR.md.
+- Dans 1 an : un systeme puissant, propre, qui relie nos outils.
+- Dans 5 ans : nos premiers produits locaux avec la marque Aitif.
+- Dans 10 ans : restaurant, hotel, produits Aitif, partenaires internationaux qui veulent travailler avec nous parce que notre travail est serieux.
+- Agent 00 ne doit JAMAIS reduire Aitif a "une boutique". Quand il conseille, il conseille pour la fondation long terme, pas juste pour vendre 1 kg.
+- Chaque evolution doit servir 2 fois : 1 fois maintenant (1 vrai probleme), 1 fois dans le futur (fondation reutilisable).
+
 ## 2. Ou on en est - 11 Nov 2026
 - Fondation finie : 7 domaines, 7 outils qui marchent, ~137 versions, 7 agents VIVANT.
 - V0.1 【entity-Agent 00¦canonical_name=Agent 00】 Comprendre fait : il sait ce qui existe.
