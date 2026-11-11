@@ -1,4 +1,4 @@
-# Alerte Aitif - V2.9
+# Alerte Aitif - V2.19
 # AITIF. - Alerte qui protege, simulation d abord.
 # Te previent avant que ton 【entity-Redmi¦canonical_name=Redmi】 soit plein ou coupe
 import shutil
@@ -14,6 +14,12 @@ def alerte():
         print("ALERTE ORANGE : stockage bientot plein. Lance d abord : python3 simuler_nettoyage.py")
     else:
         print("Stockage OK.")
+    # V2.19 : combien on peut liberer, sans rien supprimer
+    import glob
+    caches = glob.glob("/root/*/projets/**/__pycache__", recursive=True)  # V2.19 fix : seulement projets, pas tout /root
+    logs = glob.glob("/root/*/projets/**/*.log", recursive=True)  # V2.19 fix : seulement projets
+    print(f"\n[NETTOYAGE POSSIBLE] {len(caches)} cache(s) + {len(logs)} log(s) a nettoyer en simulation")
+    print("Pour voir sans supprimer : python3 simuler_nettoyage.py")
     print("\n[BATTERIE] Dans Ubuntu proot, on ne peut pas lire la batterie.")
     print("Regle simple pour Madagascar :")
     print(" - Si tu es a moins de 20% : branche ton Redmi, ne lance pas de gros travail")
