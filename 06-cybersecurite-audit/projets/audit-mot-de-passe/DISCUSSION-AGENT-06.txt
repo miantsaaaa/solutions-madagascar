@@ -1,0 +1,3 @@
+DISCUSSION Master 06 <-> Sub-Agent 06.1 Cyber - A6.1
+Master 06 : mission = Audit Cyber toutes les 5 min, sans jamais demander de mot de passe.
+Sub-Agent 06.1 : compris, je fais tout_en_1 complet V6.20.
