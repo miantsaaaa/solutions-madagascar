@@ -23,4 +23,7 @@ Domaine 07 portfolio-entreprise : ['V7.20']
 
 Agent 00 a compris : Fondation + 7 domaines + 7 Masters. Il ne guide pas encore, il se raccorde d'abord.
 
-11 Nov 2026 - Analyse 00.1-00.7 : 01,06,07 parlent. 02,03,04,05 VIVANTS mais muets (log 0, pas de MESSAGE). Priorite : les faire parler petit a petit, 1 par 1. C'est Miantsa + Meta AI qui ameliorent, agents proposent seulement.
+## Veille Prix - 11 Nov 2026
+- Commande : python3 ~/07-metier-digital/projets/prix-locaux/veille-auto.py
+- Si VEILLE A FAIRE : lancer les 4 requetes Riz / Cafe / Miel / Vanille avec Meta AI, mettre a jour TENDANCE-INTERNET-*.md, JAMAIS prix-locaux.csv avec Internet.
+- Si OK : ne rien refaire.
