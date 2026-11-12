@@ -559,6 +559,18 @@
       "qui": "Miantsa + Meta AI",
       "quoi": "Projets par domaine",
       "note": "7 domaines = 7 projets phares - tout evolue ensemble"
+    },
+    {
+      "date": "12-11-2026",
+      "qui": "Miantsa + Meta AI",
+      "quoi": "Architecture V2 verifiee",
+      "note": "1 generateur API",
+      "null": [
+        " 1 fichier projets",
+        " 0 doublon",
+        " 0 appel archive",
+        " 0 faux"
+      ]
     }
   ],
   "preuves": [
@@ -571,14 +583,14 @@
     },
     {
       "id": "2",
-      "preuve": "1er projet futur detaille - Restaurants Aitif",
+      "preuve": "1er projet par domaine detaille - Restaurants Aitif",
       "statut": "EN PREPARATION",
       "date": "",
       "detail": "menu + prix reels + lieu + cout + plan remboursement"
     },
     {
       "id": "3",
-      "preuve": "1er projet futur detaille - Batisseurs routes",
+      "preuve": "1er projet par domaine detaille - Batisseurs routes",
       "statut": "EN PREPARATION",
       "date": "",
       "detail": "route a reparer + cout + materiaux + plan"
@@ -812,10 +824,9 @@
       "ville": "Toamasina",
       "statut": "IDEE A PREPARER",
       "ce_qu_il_fait_evoluer": "Transformer Riz Manioc Fruits a Madagascar",
-      "prochaine_etape": " pas exporter brut",
-      "null": [
-        "Lister 3 produits a transformer en 1er"
-      ]
+      "prochaine_etape": "Manioc->sec/farine, Banane->sechee, Tomate->sechee/sauce - Tester 1 kg d'abord, 0 chiffre invente",
+      "": "['Lister 3 produits a transformer en 1er']",
+      "detail_preparation": "Manioc->sec/farine, Banane->sechee, Tomate->sechee/sauce - Tester 1 kg d'abord, 0 chiffre invente"
     },
     {
       "domaine": "Education",
@@ -823,7 +834,9 @@
       "ville": "Fianarantsoa + Toamasina",
       "statut": "IDEE A PREPARER",
       "ce_qu_il_fait_evoluer": "Enfants qui apprennent en malgache + francais",
-      "prochaine_etape": "Lister 3 savoirs a enseigner en 1er"
+      "prochaine_etape": "Lister 3 savoirs a enseigner en 1er",
+      "": "",
+      "detail_preparation": "Lister 3 savoirs a enseigner en 1er"
     },
     {
       "domaine": "Sante",
@@ -831,7 +844,9 @@
       "ville": "Fianarantsoa + Toamasina",
       "statut": "IDEE A PREPARER",
       "ce_qu_il_fait_evoluer": "Soigner avec eau propre + savoir vrai",
-      "prochaine_etape": "Ecrire 5 regles hopital Aitif"
+      "prochaine_etape": "Ecrire 5 regles hopital Aitif",
+      "": "",
+      "detail_preparation": "Ecrire 5 regles hopital Aitif"
     },
     {
       "domaine": "Energie/Eau",
@@ -839,7 +854,9 @@
       "ville": "Madagascar entier",
       "statut": "IDEE A PREPARER",
       "ce_qu_il_fait_evoluer": "Soleil gratuit + eau propre pour tous",
-      "prochaine_etape": "Compter combien de maisons sans eau propre a Fianarantsoa"
+      "prochaine_etape": "Compter combien de maisons sans eau propre a Fianarantsoa",
+      "": "",
+      "detail_preparation": "Compter combien de maisons sans eau propre a Fianarantsoa"
     },
     {
       "domaine": "Environnement",
@@ -847,7 +864,9 @@
       "ville": "Madagascar entier",
       "statut": "IDEE A PREPARER",
       "ce_qu_il_fait_evoluer": "Routes solides + batiments solides",
-      "prochaine_etape": "Choisir 1 route a reparer en 1er - a observer"
+      "prochaine_etape": "Choisir 1 route a reparer en 1er - a observer",
+      "": "",
+      "detail_preparation": "Choisir 1 route a reparer en 1er - a observer"
     },
     {
       "domaine": "Numerique",
@@ -855,7 +874,9 @@
       "ville": "Fianarantsoa",
       "statut": "IDEE A PREPARER",
       "ce_qu_il_fait_evoluer": "Tester avant de vendre - preuve avant promesse",
-      "prochaine_etape": "Lister 3 tests a faire en 1er - Miel Riz Eau"
+      "prochaine_etape": "Lister 3 tests a faire en 1er - Miel Riz Eau",
+      "": "",
+      "detail_preparation": "Lister 3 tests a faire en 1er - Miel Riz Eau"
     },
     {
       "domaine": "Commerce",
@@ -863,7 +884,9 @@
       "ville": "Fianarantsoa + Toamasina",
       "statut": "IDEE A PREPARER",
       "ce_qu_il_fait_evoluer": "Manger sain avec produits locaux - prix juste",
-      "prochaine_etape": "Repondre aux 7 questions Restaurant avant pret"
+      "prochaine_etape": "Repondre aux 7 questions Restaurant avant pret - Manger sain prix juste, produits locaux",
+      "": "",
+      "detail_preparation": "Repondre aux 7 questions Restaurant avant pret - Manger sain prix juste, produits locaux"
     }
   ],
   "regles_anti_faillite": [

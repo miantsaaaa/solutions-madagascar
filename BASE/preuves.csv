@@ -1,5 +1,5 @@
 id,preuve,statut,date,detail
 1,Dossier banque pret - base propre et prouvee,EN PREPARATION,,BASE 0 faux + historique + API en ligne + regles anti-faillite
-2,1er projet futur detaille - Restaurants Aitif,EN PREPARATION,,menu + prix reels + lieu + cout + plan remboursement
-3,1er projet futur detaille - Batisseurs routes,EN PREPARATION,,route a reparer + cout + materiaux + plan
+2,1er projet par domaine detaille - Restaurants Aitif,EN PREPARATION,,menu + prix reels + lieu + cout + plan remboursement
+3,1er projet par domaine detaille - Batisseurs routes,EN PREPARATION,,route a reparer + cout + materiaux + plan
 4,1 savoir partage a 1 personne,EN ATTENTE,,date + qui + quel savoir
