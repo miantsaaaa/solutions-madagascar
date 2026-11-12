@@ -10,6 +10,6 @@ bash ~/generer-jeu-data.sh 2>/dev/null | head -1 || echo "Jeu-data : script abse
 echo "--- 4. Je verifie que je suis toujours vivant ---"
 bash ~/systeme-intelligent-aitif.sh | grep -E "Prix reels|Je ne sais|Memoire"
 echo "=== FIN EVOLUTION - Pret pour le prochain reel ==="
-bash ~/generer-api-base-v5.sh 2>/dev/null | head -1
+bash ~/generer-api-base-v6.sh 2>/dev/null | head -1
 bash ~/verifier-base-aitif.sh 2>/dev/null | tail -5
 bash ~/aitif-evoluer-agents.sh 2>/dev/null | tail -3

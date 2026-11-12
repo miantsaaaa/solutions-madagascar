@@ -15,5 +15,5 @@ echo "05 Prevention : Je garde $RG regles anti-faillite - jamais faillite"
 echo "06 Cyber : Je protege la base - snapshot + 0 faux"
 echo "07 Metier : Je prepare l'entreprise - vision JAMAIS faillite, faire evoluer Madagascar"
 echo "12-11-2026,Miantsa + Meta AI,Agents evoluent,8 agents niveau 2-3 - Base $P produits $S savoirs $PR projets $RG regles" >> ~/BASE/historique.csv
-bash ~/generer-api-base-v5.sh | tail -1
+bash ~/generer-api-base-v6.sh | tail -1
 echo "=== FIN - Agents ont evolue ==="

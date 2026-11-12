@@ -291,35 +291,82 @@
   "agents": [
     {
       "id": "00",
-      "etat": "VIVANT"
+      "nom": "Memoire",
+      "mission": "Se souvenir de tout - historique",
+      "niveau": " qui quoi quand",
+      "derniere_evolution": "Niveau 2 - Base + Historique",
+      "prochaine_evolution": "12-11-2026 - Historique 17 lignes",
+      "null": [
+        "Apprendre les projets futurs + regles anti-faillite"
+      ]
     },
     {
       "id": "01",
-      "etat": "VIVANT"
+      "nom": "Prix",
+      "mission": "Voir les vrais prix - jamais de faux",
+      "niveau": "Niveau 2 - Outil ajouter prix",
+      "derniere_evolution": "Niveau 1 - Attendait un prix",
+      "prochaine_evolution": "12-11-2026 - Outil pret",
+      "null": [
+        "Apprendre les couts Restaurant + Batisseurs"
+      ]
     },
     {
       "id": "02",
-      "etat": "VIVANT"
+      "nom": "Surveillance",
+      "mission": "Surveiller que tout reste vivant 8/8",
+      "niveau": "Niveau 3 - Auto-relance + Base auto-affichee",
+      "derniere_evolution": "12-11-2026 - Base s'affiche toute seule",
+      "prochaine_evolution": "Surveiller API v5 + projets futurs"
     },
     {
       "id": "03",
-      "etat": "VIVANT"
+      "nom": "Apprentissage",
+      "mission": "Apprendre des savoirs - malgache + francais",
+      "niveau": "Niveau 2 - 13 savoirs",
+      "derniere_evolution": "Niveau 1 - 3 savoirs",
+      "prochaine_evolution": "12-11-2026 - Savoirs 13",
+      "null": [
+        "Apprendre les savoirs Restaurant + Hopital + Batisseurs"
+      ]
     },
     {
       "id": "04",
-      "etat": "VIVANT"
+      "nom": "Data",
+      "mission": "Compter vrai - jamais de chiffre en dur",
+      "niveau": "Niveau 3 - aitif-base compte vrai",
+      "derniere_evolution": "Niveau 1 - Chiffres en dur",
+      "prochaine_evolution": "12-11-2026 - Compte vrai",
+      "null": [
+        "Compter projets + regles + preuves banque"
+      ]
     },
     {
       "id": "05",
-      "etat": "VIVANT"
+      "nom": "Prevention",
+      "mission": "Prevenir la faillite - regles anti-faillite",
+      "niveau": "Niveau 2 - 8 regles anti-faillite",
+      "derniere_evolution": "12-11-2026 - Regles creees",
+      "prochaine_evolution": "Apprendre les 7 questions Restaurant avant pret"
     },
     {
       "id": "06",
-      "etat": "VIVANT"
+      "nom": "Cyber",
+      "mission": "Proteger la base - snapshot + 0 faux",
+      "niveau": "Niveau 3 - Snapshot + Garde-fou",
+      "derniere_evolution": "12-11-2026 - Snapshot 12-11-2026",
+      "prochaine_evolution": "Proteger dossier banque - jamais perdre la base"
     },
     {
       "id": "07",
-      "etat": "VIVANT"
+      "nom": "Metier",
+      "mission": "Preparer l'entreprise - pas vendre",
+      "niveau": " preparer",
+      "derniere_evolution": "Niveau 2 - Vision + Projets futurs",
+      "prochaine_evolution": "12-11-2026 - Vision clarifiee",
+      "null": [
+        "Preparer dossier banque - 1 projet detaille a la fois"
+      ]
     }
   ],
   "regions": [
