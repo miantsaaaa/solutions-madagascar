@@ -470,6 +470,15 @@
       "qui": "Miantsa + Meta AI",
       "quoi": "Savoir ajoute",
       "note": "Miel - Ne pas trop chauffer - Sante"
+    },
+    {
+      "date": "12-11-2026",
+      "qui": "Miantsa + Meta AI",
+      "quoi": "Porte unique aitif.sh",
+      "note": "1 commande = toute la base",
+      "null": [
+        " menu 1-5"
+      ]
     }
   ],
   "preuves_a_apporter": [
