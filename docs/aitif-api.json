@@ -108,6 +108,16 @@
       "unite": "kg",
       "saison": "Toute annee",
       "note": "Produit local"
+    },
+    {
+      "nom": "Carotte",
+      "categorie": "Alimentation",
+      "unite": "kg",
+      "saison": "Saison fraiche",
+      "note": "Legume de Fianarantsoa",
+      "null": [
+        " terre haute"
+      ]
     }
   ],
   "prix_reels": [],
@@ -538,6 +548,12 @@
       "qui": "Miantsa + Meta AI",
       "quoi": "Savoir ajoute",
       "note": "Fianarantsoa - Terre haute et fraiche - Agriculture"
+    },
+    {
+      "date": "12-11-2026",
+      "qui": "Miantsa + Meta AI",
+      "quoi": "Produit ajoute",
+      "note": "Carotte - Alimentation"
     }
   ],
   "preuves_a_apporter": [
