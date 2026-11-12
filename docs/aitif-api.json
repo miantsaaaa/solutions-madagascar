@@ -258,5 +258,165 @@
       "id": "07",
       "etat": "VIVANT"
     }
+  ],
+  "regions": [
+    {
+      "id": "1",
+      "region": "Diana",
+      "ville_principale": "Antsiranana",
+      "note": "Nord"
+    },
+    {
+      "id": "2",
+      "region": "Sava",
+      "ville_principale": "Sambava",
+      "note": "Vanille"
+    },
+    {
+      "id": "3",
+      "region": "Itasy",
+      "ville_principale": "Miarinarivo",
+      "note": "Centre"
+    },
+    {
+      "id": "4",
+      "region": "Analamanga",
+      "ville_principale": "Antananarivo",
+      "note": "Capitale"
+    },
+    {
+      "id": "5",
+      "region": "Vakinankaratra",
+      "ville_principale": "Antsirabe",
+      "note": "Agriculture"
+    },
+    {
+      "id": "6",
+      "region": "Bongolava",
+      "ville_principale": "Tsiroanomandidy",
+      "note": "Centre-Ouest"
+    },
+    {
+      "id": "7",
+      "region": "Sofia",
+      "ville_principale": "Antsohihy",
+      "note": "Nord-Ouest"
+    },
+    {
+      "id": "8",
+      "region": "Boeny",
+      "ville_principale": "Mahajanga",
+      "note": "Ouest"
+    },
+    {
+      "id": "9",
+      "region": "Betsiboka",
+      "ville_principale": "Maevatanana",
+      "note": "Ouest"
+    },
+    {
+      "id": "10",
+      "region": "Melaky",
+      "ville_principale": "Maintirano",
+      "note": "Ouest"
+    },
+    {
+      "id": "11",
+      "region": "Alaotra-Mangoro",
+      "ville_principale": "Ambatondrazaka",
+      "note": "Riz"
+    },
+    {
+      "id": "12",
+      "region": "Atsinanana",
+      "ville_principale": "Toamasina",
+      "note": "Est - Aitif"
+    },
+    {
+      "id": "13",
+      "region": "Analanjirofo",
+      "ville_principale": "Fenerive-Est",
+      "note": "Est"
+    },
+    {
+      "id": "14",
+      "region": "Amoron'i Mania",
+      "ville_principale": "Ambositra",
+      "note": "Centre"
+    },
+    {
+      "id": "15",
+      "region": "Haute Matsiatra",
+      "ville_principale": "Fianarantsoa",
+      "note": "Centre-Sud - Aitif"
+    },
+    {
+      "id": "16",
+      "region": "Vatovavy",
+      "ville_principale": "Mananjary",
+      "note": "Sud-Est"
+    },
+    {
+      "id": "17",
+      "region": "Fitovinany",
+      "ville_principale": "Manakara",
+      "note": "Sud-Est"
+    },
+    {
+      "id": "18",
+      "region": "Atsimo-Atsinanana",
+      "ville_principale": "Farafangana",
+      "note": "Sud-Est"
+    },
+    {
+      "id": "19",
+      "region": "Ihorombe",
+      "ville_principale": "Ihosy",
+      "note": "Sud"
+    },
+    {
+      "id": "20",
+      "region": "Menabe",
+      "ville_principale": "Morondava",
+      "note": "Ouest"
+    },
+    {
+      "id": "21",
+      "region": "Atsimo-Andrefana",
+      "ville_principale": "Toliara",
+      "note": "Sud-Ouest"
+    },
+    {
+      "id": "22",
+      "region": "Androy",
+      "ville_principale": "Ambovombe",
+      "note": "Sud"
+    },
+    {
+      "id": "23",
+      "region": "Anosy",
+      "ville_principale": "Tolagnaro",
+      "note": "Sud-Est"
+    }
+  ],
+  "historique": [
+    {
+      "date": "12-11-2026",
+      "qui": "Miantsa + Meta AI",
+      "quoi": "Creation BASE",
+      "note": "Produits + Stock + Savoirs + Domaines + Regions"
+    },
+    {
+      "date": "12-11-2026",
+      "qui": "Miantsa + Meta AI",
+      "quoi": "API aitif-api.json",
+      "note": "1 fichier = toute la base pour l'application de demain"
+    },
+    {
+      "date": "12-11-2026",
+      "qui": "Miantsa + Meta AI",
+      "quoi": "Auto-relance",
+      "note": "Plus jamais de relance manuelle"
+    }
   ]
 }
