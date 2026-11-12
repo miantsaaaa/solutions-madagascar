@@ -35,6 +35,62 @@
       "unite": "kg",
       "saison": "Saison recolte",
       "note": "Volatile - ne pas vendre sans vrai prix"
+    },
+    {
+      "nom": "Haricot",
+      "categorie": "Alimentation",
+      "unite": "kg",
+      "saison": "Saison seche",
+      "note": "Proteine locale - tres demande"
+    },
+    {
+      "nom": "Manioc",
+      "categorie": "Alimentation",
+      "unite": "kg",
+      "saison": "Toute annee",
+      "note": "Base alimentaire Madagascar"
+    },
+    {
+      "nom": "Patate douce",
+      "categorie": "Alimentation",
+      "unite": "kg",
+      "saison": "Toute annee",
+      "note": "Facile a cultiver"
+    },
+    {
+      "nom": "Banane",
+      "categorie": "Alimentation",
+      "unite": "kg",
+      "saison": "Toute annee",
+      "note": "Fruit local"
+    },
+    {
+      "nom": "Oignon",
+      "categorie": "Alimentation",
+      "unite": "kg",
+      "saison": "Saison seche",
+      "note": "Base cuisine"
+    },
+    {
+      "nom": "Ail",
+      "categorie": "Alimentation",
+      "unite": "kg",
+      "saison": "Saison seche",
+      "note": "Petit mais precieux"
+    },
+    {
+      "nom": "Tomate",
+      "categorie": "Alimentation",
+      "unite": "kg",
+      "saison": "Saison fraiche",
+      "note": "Fragile - a vendre vite"
+    },
+    {
+      "nom": "Chou",
+      "categorie": "Alimentation",
+      "unite": "kg",
+      "saison": "Saison fraiche",
+      "note": "Legume courant"
     }
   ],
   "prix_reels": [],
