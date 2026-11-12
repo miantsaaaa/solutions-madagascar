@@ -14,5 +14,5 @@ echo "$DATE,05 Prevention,Je garde $RG regles - Si 0 client on survit ?" >> ~/BA
 echo "$DATE,06 Cyber,Je protege base - snapshot + 0 faux + dossier banque" >> ~/BASE/agents-evolution.csv
 echo "$DATE,07 Metier,Je prepare entreprise - JAMAIS faillite - Madagascar" >> ~/BASE/agents-evolution.csv
 echo "8 agents ont evolue - 8 traces ecrites"
-bash ~/generer-api-base-v6.sh | tail -1
+bash ~/generer-api-base-v7.sh | tail -1
 echo "=== FIN - Les 8 ont evolue ==="

@@ -634,6 +634,12 @@
       "qui": "Miantsa + Meta AI",
       "quoi": "Agents evoluent",
       "note": "8 agents niveau 2-3 - Base 15 produits 13 savoirs 7 projets 8 regles"
+    },
+    {
+      "date": "12-11-2026",
+      "qui": "Miantsa + Meta AI",
+      "quoi": "Projets par domaine",
+      "note": "7 domaines = 7 projets phares - tout evolue ensemble"
     }
   ],
   "preuves_a_apporter": [
@@ -807,5 +813,159 @@
     }
   ],
   "vision": "Creer l'entreprise petit a petit, pour qu'apres le lancement - peut-etre pret banque - elle n'entre JAMAIS en faillite et fasse vraiment evoluer Madagascar. Restaurants, Hopitaux, Laboratoires, Usines, Batisseurs routes, Ecoles, Energie.",
-  "but": "Preparer, pas vendre. Prouver, pas promettre."
+  "but": "Preparer, pas vendre. Prouver, pas promettre.",
+  "projets_par_domaine": [
+    {
+      "domaine": "Agriculture",
+      "projet_phare": "Usines Aitif - Transformer sur place",
+      "ville": "Toamasina",
+      "statut": "IDEE A PREPARER",
+      "ce_qu_il_fait_evoluer": "Transformer Riz Manioc Fruits a Madagascar",
+      "prochaine_etape": " pas exporter brut",
+      "null": [
+        "Lister 3 produits a transformer en 1er"
+      ]
+    },
+    {
+      "domaine": "Education",
+      "projet_phare": "Ecoles Aitif - 1 enfant 1 livre 1 avenir",
+      "ville": "Fianarantsoa + Toamasina",
+      "statut": "IDEE A PREPARER",
+      "ce_qu_il_fait_evoluer": "Enfants qui apprennent en malgache + francais",
+      "prochaine_etape": "Lister 3 savoirs a enseigner en 1er"
+    },
+    {
+      "domaine": "Sante",
+      "projet_phare": "Hopitaux / Cliniques Aitif",
+      "ville": "Fianarantsoa + Toamasina",
+      "statut": "IDEE A PREPARER",
+      "ce_qu_il_fait_evoluer": "Soigner avec eau propre + savoir vrai",
+      "prochaine_etape": "Ecrire 5 regles hopital Aitif"
+    },
+    {
+      "domaine": "Energie/Eau",
+      "projet_phare": "Energie Aitif - Soleil + Eau propre",
+      "ville": "Madagascar entier",
+      "statut": "IDEE A PREPARER",
+      "ce_qu_il_fait_evoluer": "Soleil gratuit + eau propre pour tous",
+      "prochaine_etape": "Compter combien de maisons sans eau propre a Fianarantsoa"
+    },
+    {
+      "domaine": "Environnement",
+      "projet_phare": "Batisseurs Aitif - Routes + Batiments",
+      "ville": "Madagascar entier",
+      "statut": "IDEE A PREPARER",
+      "ce_qu_il_fait_evoluer": "Routes solides + batiments solides",
+      "prochaine_etape": "Choisir 1 route a reparer en 1er - a observer"
+    },
+    {
+      "domaine": "Numerique",
+      "projet_phare": "Laboratoires Aitif - Tester avant de vendre",
+      "ville": "Fianarantsoa",
+      "statut": "IDEE A PREPARER",
+      "ce_qu_il_fait_evoluer": "Tester avant de vendre - preuve avant promesse",
+      "prochaine_etape": "Lister 3 tests a faire en 1er - Miel Riz Eau"
+    },
+    {
+      "domaine": "Commerce",
+      "projet_phare": "Restaurants Aitif - Manger sain prix juste",
+      "ville": "Fianarantsoa + Toamasina",
+      "statut": "IDEE A PREPARER",
+      "ce_qu_il_fait_evoluer": "Manger sain avec produits locaux - prix juste",
+      "prochaine_etape": "Repondre aux 7 questions Restaurant avant pret"
+    }
+  ],
+  "agents_evolution": [
+    {
+      "date": "12-11-2026",
+      "agent": "00 Memoire",
+      "ce_qu_il_a_appris": "Je me souviens de 15 produits + 13 savoirs + 7 projets + 8 regles"
+    },
+    {
+      "date": "12-11-2026",
+      "agent": "01 Prix",
+      "ce_qu_il_a_appris": "J'attends 1 vrai prix - outil pret - je n'invente rien"
+    },
+    {
+      "date": "12-11-2026",
+      "agent": "02 Surveillance",
+      "ce_qu_il_a_appris": "Je surveille 8/8 + API v6 + base propre + vision JAMAIS faillite"
+    },
+    {
+      "date": "12-11-2026",
+      "agent": "03 Apprentissage",
+      "ce_qu_il_a_appris": "J'ai appris 13 savoirs - je veux apprendre Restaurant + Hopital + Batisseurs"
+    },
+    {
+      "date": "12-11-2026",
+      "agent": "04 Data",
+      "ce_qu_il_a_appris": "Je compte vrai - jamais en dur - 15 13 7 8"
+    },
+    {
+      "date": "12-11-2026",
+      "agent": "05 Prevention",
+      "ce_qu_il_a_appris": "Je garde 8 regles anti-faillite - Si 0 client 1 jour on survit ?"
+    },
+    {
+      "date": "12-11-2026",
+      "agent": "06 Cyber",
+      "ce_qu_il_a_appris": "Je protege base - snapshot + 0 faux + dossier banque"
+    },
+    {
+      "date": "12-11-2026",
+      "agent": "07 Metier",
+      "ce_qu_il_a_appris": "Je prepare entreprise - vision JAMAIS faillite - faire evoluer Madagascar"
+    },
+    {
+      "date": "12-11-2026",
+      "agent": "00 Memoire",
+      "ce_qu_il_a_appris": "Je me souviens de 15 produits + 13 savoirs + 7 projets"
+    },
+    {
+      "date": "12-11-2026",
+      "agent": "05 Prevention",
+      "ce_qu_il_a_appris": "Je garde 8 regles - Si 0 client 1 jour on survit ?"
+    },
+    {
+      "date": "12-11-2026",
+      "agent": "00 Memoire",
+      "ce_qu_il_a_appris": "Je me souviens de 15 produits + 13 savoirs + 7 projets"
+    },
+    {
+      "date": "12-11-2026",
+      "agent": "01 Prix",
+      "ce_qu_il_a_appris": "J'attends 1 vrai prix - je n'invente rien"
+    },
+    {
+      "date": "12-11-2026",
+      "agent": "02 Surveillance",
+      "ce_qu_il_a_appris": "Je surveille 8/8 + API + base propre + vision"
+    },
+    {
+      "date": "12-11-2026",
+      "agent": "03 Apprentissage",
+      "ce_qu_il_a_appris": "J'ai appris 13 savoirs - je veux apprendre Restaurant + Hopital"
+    },
+    {
+      "date": "12-11-2026",
+      "agent": "04 Data",
+      "ce_qu_il_a_appris": "Je compte vrai - 15 13 7 8 - jamais en dur"
+    },
+    {
+      "date": "12-11-2026",
+      "agent": "05 Prevention",
+      "ce_qu_il_a_appris": "Je garde 8 regles - Si 0 client on survit ?"
+    },
+    {
+      "date": "12-11-2026",
+      "agent": "06 Cyber",
+      "ce_qu_il_a_appris": "Je protege base - snapshot + 0 faux + dossier banque"
+    },
+    {
+      "date": "12-11-2026",
+      "agent": "07 Metier",
+      "ce_qu_il_a_appris": "Je prepare entreprise - JAMAIS faillite - Madagascar"
+    }
+  ],
+  "systeme": "Vision + Agents + Base + Projets par domaine + Regles anti-faillite + Preuves - Tout evolue ensemble, jamais 1 seul."
 }
