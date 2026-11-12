@@ -8,7 +8,7 @@ cut -d, -f1 ~/BASE/savoirs.csv | tail -n +2 | sort | uniq -d | grep . && echo "A
 echo "--- 3. Doublons Projets par domaine ---"
 cut -d, -f1 ~/BASE/projets-par-domaine.csv | tail -n +2 | sort | uniq -d | grep . && echo "ALERTE : Doublon projet" || echo "OK : 0 doublon projet"
 echo "--- 4. Coherence Architecture V2 ---"
-grep -rn "projets-futurs\|generer-api-base" ~/*.sh 2>/dev/null && echo "ALERTE : appel archive" || echo "OK : 0 appel archive"
+grep -rn "projets-futurs\|generer-api-base" ~/*.sh --exclude=verifier-avant-faire.sh 2>/dev/null && echo "ALERTE : appel archive" || echo "OK : 0 appel archive"
 ls ~/generer-api-aitif.sh >/dev/null 2>&1 && echo "OK : 1 seul generateur API" || echo "ALERTE : generateur API manquant"
 ls ~/BASE/projets-par-domaine.csv >/dev/null 2>&1 && echo "OK : 1 seul fichier projets" || echo "ALERTE : fichier projets manquant"
 echo "--- 5. Faux prix ? ---"
