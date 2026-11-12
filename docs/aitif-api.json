@@ -91,6 +91,16 @@
       "unite": "kg",
       "saison": "Saison fraiche",
       "note": "Legume courant"
+    },
+    {
+      "nom": "Gingembre",
+      "categorie": "Epice",
+      "unite": "kg",
+      "saison": "Toute annee",
+      "note": "Produit local",
+      "null": [
+        " bon pour sante"
+      ]
     }
   ],
   "prix_reels": [],
@@ -479,6 +489,12 @@
       "null": [
         " menu 1-5"
       ]
+    },
+    {
+      "date": "12-11-2026",
+      "qui": "Miantsa + Meta AI",
+      "quoi": "Produit ajoute",
+      "note": "Gingembre - Epice"
     }
   ],
   "preuves_a_apporter": [
