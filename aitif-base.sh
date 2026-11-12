@@ -1,8 +1,14 @@
 #!/bin/bash
 echo "=== BASE AITIF - $(date +%d-%m-%Y_%H:%M) ==="
-echo "Produits : 12 - Savoirs : 9 - Domaines : 7 - Regions : 23"
-echo "Stock : 1L Miel, Fianarantsoa, en main"
-echo "Prix reels : 0 - Ventes : 0 - Faux : 0"
+P=$(tail -n +2 ~/BASE/produits.csv | wc -l)
+S=$(tail -n +2 ~/BASE/savoirs.csv | wc -l)
+D=$(tail -n +2 ~/BASE/domaines.csv | wc -l)
+R=$(tail -n +2 ~/BASE/regions.csv | wc -l)
+H=$(tail -n +2 ~/BASE/historique.csv | wc -l)
+PR=$(tail -n +2 ~/07-metier-digital/projets/prix-locaux/prix-locaux.csv 2>/dev/null | wc -l)
+echo "Produits : $P - Savoirs : $S - Domaines : $D - Regions : $R - Historique : $H"
+echo "Stock : $(tail -n +2 ~/BASE/stock.csv | cut -d, -f1,2,3 | tr ',' ' ')"
+echo "Prix reels : $PR - Ventes : $(tail -n +2 ~/BASE/ventes.csv | wc -l) - Faux : 0"
 echo "--- Preuves a apporter ---"
 tail -n +2 ~/BASE/preuves.csv | cut -d, -f2,3
 echo "--- API ---"
