@@ -434,5 +434,35 @@
       "quoi": "Base complete",
       "note": "12 produits + 9 savoirs + 7 domaines + 23 regions + historique"
     }
+  ],
+  "preuves_a_apporter": [
+    {
+      "id": "1",
+      "preuve": "1er vrai prix marche",
+      "statut": "EN ATTENTE",
+      "date": "",
+      "detail": "date + region + ville + lieu + produit + prix + source + vu_par"
+    },
+    {
+      "id": "2",
+      "preuve": "1ere vraie vente Miel 1L",
+      "statut": "EN ATTENTE",
+      "date": "",
+      "detail": "prix reel + marge reelle + acheteur"
+    },
+    {
+      "id": "3",
+      "preuve": "1 savoir partage a 1 personne",
+      "statut": "EN ATTENTE",
+      "date": "",
+      "detail": "date + qui + quel savoir"
+    },
+    {
+      "id": "4",
+      "preuve": "1ere application qui lit aitif-api.json",
+      "statut": "EN ATTENTE",
+      "date": "",
+      "detail": "application de demain - pas de deco aujourd'hui"
+    }
   ]
 }
