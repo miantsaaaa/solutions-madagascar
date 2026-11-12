@@ -860,8 +860,8 @@
       "ville": "Madagascar entier",
       "statut": "IDEE A PREPARER",
       "ce_qu_il_fait_evoluer": "Routes solides + batiments solides",
-      "prochaine_etape": "Choisir 1 route a reparer en 1er - a observer",
-      "detail_preparation": "Choisir 1 route a reparer en 1er - a observer"
+      "prochaine_etape": "Choisir 1 route sans inventer : 1) Observer 1 route Fianarantsoa ou Toamasina - trous, eau, passage, 2) Compter combien de personnes passent par jour - REEL = vu, 3) Si 0 passage, on ne repare pas - Regle anti-faillite, 0 cout invente tant que pas vu",
+      "detail_preparation": "Choisir 1 route sans inventer : 1) Observer 1 route Fianarantsoa ou Toamasina - trous, eau, passage, 2) Compter combien de personnes passent par jour - REEL = vu, 3) Si 0 passage, on ne repare pas - Regle anti-faillite, 0 cout invente tant que pas vu"
     },
     {
       "domaine": "Numerique",
