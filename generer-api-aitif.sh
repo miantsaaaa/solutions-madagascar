@@ -15,6 +15,7 @@ api = {
   "regle": "REEL = vu. SIMULATION = entraine. IDEE = a verifier.",
   "architecture": "V2 - 1 chose = 1 fichier, 1 appel = 1 sens, verifier avant de faire",
   "produits": lire("produits.csv"),
+  "prix_reels": lire("prix-reels.csv"),
   "stock": lire("stock.csv"),
   "ventes": lire("ventes.csv"),
   "savoirs": lire("savoirs.csv"),
@@ -31,5 +32,5 @@ api = {
 }
 out.parent.mkdir(parents=True, exist_ok=True)
 out.write_text(json.dumps(api, ensure_ascii=False, indent=2), encoding="utf-8")
-print(f"API V2 propre : Produits {len(api['produits'])} - Savoirs {len(api['savoirs'])} - Regions {len(api['regions'])} - Projets par domaine {len(api['projets_par_domaine'])} - Agents {len(api['agents'])} - 1 generateur, 0 chaine")
+print(f"API V2 propre : Produits {len(api['produits'])} - Savoirs {len(api['savoirs'])} - Regions {len(api['regions'])} - Projets par domaine {len(api["projets_par_domaine"])} - Prix reels {len(api["prix_reels"])} - Agents {len(api['agents'])} - 1 generateur, 0 chaine")
 PY

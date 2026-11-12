@@ -6,10 +6,10 @@ echo "Domaines : $(tail -n +2 ~/BASE/domaines.csv | wc -l)"
 echo "Regions : $(tail -n +2 ~/BASE/regions.csv | wc -l)"
 echo "Historique : $(tail -n +2 ~/BASE/historique.csv | wc -l)"
 echo "Stock : $(cat ~/BASE/stock.csv)"
-echo "Prix reels : $(tail -n +2 ~/07-metier-digital/projets/prix-locaux/prix-locaux.csv 2>/dev/null | wc -l)"
+echo "Prix reels : $(tail -n +2 ~/BASE/prix-reels.csv 2>/dev/null | wc -l)"
 # Regle d'or : pas de prix sans source
-if grep -q "TEST\|FAKE\|SIMULATION" ~/07-metier-digital/projets/prix-locaux/prix-locaux.csv 2>/dev/null; then
-  echo "ALERTE : faux prix detecte dans prix-locaux.csv - a nettoyer"
+if grep -q "TEST\|FAKE\|SIMULATION" ~/BASE/prix-reels.csv 2>/dev/null; then
+  echo "ALERTE : faux prix detecte dans prix-reels.csv - a nettoyer"
 else
   echo "OK : 0 faux prix - base propre"
 fi

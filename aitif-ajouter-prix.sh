@@ -10,7 +10,7 @@ read -p "Lieu exact (ex: Marche Anjoma) : " LIEU
 read -p "Source (ex: Vendeuse Anjoma) : " SOURCE
 read -p "Vu par (ex: Miantsa) : " VU
 DATE=$(date +%d-%m-%Y)
-FICHIER=~/07-metier-digital/projets/prix-locaux/prix-locaux.csv
+FICHIER=~/BASE/prix-reels.csv
 echo "$DATE,$REGION,$VILLE,$LIEU,$PRODUIT,$PRIX,$UNITE,$SOURCE,$VU" >> $FICHIER
 echo "Prix REEL ajoute : $PRODUIT $PRIX Ar / $UNITE - $VILLE - $LIEU - $DATE - vu par $VU"
 bash ~/generer-api-aitif.sh | tail -1

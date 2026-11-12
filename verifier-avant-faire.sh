@@ -12,7 +12,7 @@ grep -rn "projets-futurs\|generer-api-base" ~/*.sh --exclude=verifier-avant-fair
 ls ~/generer-api-aitif.sh >/dev/null 2>&1 && echo "OK : 1 seul generateur API" || echo "ALERTE : generateur API manquant"
 ls ~/BASE/projets-par-domaine.csv >/dev/null 2>&1 && echo "OK : 1 seul fichier projets" || echo "ALERTE : fichier projets manquant"
 echo "--- 5. Faux prix ? ---"
-grep -q "TEST\|FAKE\|SIMULATION" ~/07-metier-digital/projets/prix-locaux/prix-locaux.csv 2>/dev/null && echo "ALERTE : faux prix" || echo "OK : 0 faux prix"
+grep -q "TEST\|FAKE\|SIMULATION" ~/BASE/prix-reels.csv 2>/dev/null && echo "ALERTE : faux prix" || echo "OK : 0 faux prix"
 echo "--- 6. API en ligne ? ---"
 curl -s https://miantsaaaa.github.io/solutions-madagascar/aitif-api.json | grep -q '"entreprise"' && echo "OK : API en ligne" || echo "VEILLE : API pas en ligne"
 echo "--- 7. Proprete CSV projets ---"
