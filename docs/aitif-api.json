@@ -101,6 +101,13 @@
       "null": [
         " bon pour sante"
       ]
+    },
+    {
+      "nom": "Curcuma",
+      "categorie": "Epice",
+      "unite": "kg",
+      "saison": "Toute annee",
+      "note": "Produit local"
     }
   ],
   "prix_reels": [],
@@ -508,6 +515,12 @@
       "qui": "Miantsa + Meta AI",
       "quoi": "Savoir ajoute",
       "note": "Toamasina - Port et pluie - Environnement"
+    },
+    {
+      "date": "12-11-2026",
+      "qui": "Miantsa + Meta AI",
+      "quoi": "Produit ajoute",
+      "note": "Curcuma - Epice"
     }
   ],
   "preuves_a_apporter": [
