@@ -11,5 +11,5 @@ echo "$DATE,$QUI,$SAVOIR,$OU" >> ~/BASE/partages.csv 2>/dev/null || echo "date,q
 $DATE,$QUI,$SAVOIR,$OU" > ~/BASE/partages.csv
 echo "Partage enregistre : $DATE - $SAVOIR -> $QUI - $OU"
 echo "12-11-2026,Miantsa + Meta AI,Savoir partage,$SAVOIR -> $QUI" >> ~/BASE/historique.csv
-bash ~/generer-api-base-v7.sh | tail -1
+bash ~/generer-api-aitif.sh | tail -1
 echo "=== FIN - Savoir partage, base a jour ==="

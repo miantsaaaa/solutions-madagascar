@@ -7,6 +7,7 @@
   ],
   "principe": "On ne promet pas, on prouve. Petit a petit, toujours bien organise.",
   "regle": "REEL = vu. SIMULATION = entraine. IDEE = a verifier.",
+  "architecture": "V2 - 1 chose = 1 fichier, 1 appel = 1 sens, verifier avant de faire",
   "produits": [
     {
       "nom": "Riz",
@@ -120,7 +121,6 @@
       ]
     }
   ],
-  "prix_reels": [],
   "stock": [
     {
       "produit": "Miel",
@@ -286,87 +286,6 @@
       "agent_responsable": "Agent 01",
       "mission": "1 domaine / 7 - seulement si juste",
       "etat": "PRET - en attente vrai prix"
-    }
-  ],
-  "agents": [
-    {
-      "id": "00",
-      "nom": "Memoire",
-      "mission": "Se souvenir de tout - historique",
-      "niveau": " qui quoi quand",
-      "derniere_evolution": "Niveau 2 - Base + Historique",
-      "prochaine_evolution": "12-11-2026 - Historique 17 lignes",
-      "null": [
-        "Apprendre les projets futurs + regles anti-faillite"
-      ]
-    },
-    {
-      "id": "01",
-      "nom": "Prix",
-      "mission": "Voir les vrais prix - jamais de faux",
-      "niveau": "Niveau 2 - Outil ajouter prix",
-      "derniere_evolution": "Niveau 1 - Attendait un prix",
-      "prochaine_evolution": "12-11-2026 - Outil pret",
-      "null": [
-        "Apprendre les couts Restaurant + Batisseurs"
-      ]
-    },
-    {
-      "id": "02",
-      "nom": "Surveillance",
-      "mission": "Surveiller que tout reste vivant 8/8",
-      "niveau": "Niveau 3 - Auto-relance + Base auto-affichee",
-      "derniere_evolution": "12-11-2026 - Base s'affiche toute seule",
-      "prochaine_evolution": "Surveiller API v5 + projets futurs"
-    },
-    {
-      "id": "03",
-      "nom": "Apprentissage",
-      "mission": "Apprendre des savoirs - malgache + francais",
-      "niveau": "Niveau 2 - 13 savoirs",
-      "derniere_evolution": "Niveau 1 - 3 savoirs",
-      "prochaine_evolution": "12-11-2026 - Savoirs 13",
-      "null": [
-        "Apprendre les savoirs Restaurant + Hopital + Batisseurs"
-      ]
-    },
-    {
-      "id": "04",
-      "nom": "Data",
-      "mission": "Compter vrai - jamais de chiffre en dur",
-      "niveau": "Niveau 3 - aitif-base compte vrai",
-      "derniere_evolution": "Niveau 1 - Chiffres en dur",
-      "prochaine_evolution": "12-11-2026 - Compte vrai",
-      "null": [
-        "Compter projets + regles + preuves banque"
-      ]
-    },
-    {
-      "id": "05",
-      "nom": "Prevention",
-      "mission": "Prevenir la faillite - regles anti-faillite",
-      "niveau": "Niveau 2 - 8 regles anti-faillite",
-      "derniere_evolution": "12-11-2026 - Regles creees",
-      "prochaine_evolution": "Apprendre les 7 questions Restaurant avant pret"
-    },
-    {
-      "id": "06",
-      "nom": "Cyber",
-      "mission": "Proteger la base - snapshot + 0 faux",
-      "niveau": "Niveau 3 - Snapshot + Garde-fou",
-      "derniere_evolution": "12-11-2026 - Snapshot 12-11-2026",
-      "prochaine_evolution": "Proteger dossier banque - jamais perdre la base"
-    },
-    {
-      "id": "07",
-      "nom": "Metier",
-      "mission": "Preparer l'entreprise - pas vendre",
-      "niveau": " preparer",
-      "derniere_evolution": "Niveau 2 - Vision + Projets futurs",
-      "prochaine_evolution": "12-11-2026 - Vision clarifiee",
-      "null": [
-        "Preparer dossier banque - 1 projet detaille a la fois"
-      ]
     }
   ],
   "regions": [
@@ -642,7 +561,7 @@
       "note": "7 domaines = 7 projets phares - tout evolue ensemble"
     }
   ],
-  "preuves_a_apporter": [
+  "preuves": [
     {
       "id": "1",
       "preuve": "Dossier banque pret - base propre et prouvee",
@@ -673,206 +592,85 @@
     }
   ],
   "partages": [],
-  "projets_futurs": [
+  "agents": [
     {
-      "id": "1",
-      "projet": "Restaurants Aitif",
-      "domaine": "Commerce + Sante",
-      "ville_depart": "Fianarantsoa + Toamasina",
-      "statut": "IDEE A PREPARER",
-      "note": "Manger sain",
+      "id": "00",
+      "nom": "Memoire",
+      "mission": "Se souvenir de tout - historique",
+      "niveau": " qui quoi quand",
+      "derniere_evolution": "Niveau 2 - Base + Historique",
+      "prochaine_evolution": "12-11-2026 - Historique 17 lignes",
       "null": [
-        " prix juste",
-        " produits locaux",
-        " jamais de faux prix"
+        "Apprendre les projets futurs + regles anti-faillite"
       ]
     },
     {
-      "id": "2",
-      "projet": "Hopitaux / Cliniques Aitif",
-      "domaine": "Sante",
-      "ville_depart": "Fianarantsoa + Toamasina",
-      "statut": "IDEE A PREPARER",
-      "note": "Soigner avec eau propre",
+      "id": "01",
+      "nom": "Prix",
+      "mission": "Voir les vrais prix - jamais de faux",
+      "niveau": "Niveau 2 - Outil ajouter prix",
+      "derniere_evolution": "Niveau 1 - Attendait un prix",
+      "prochaine_evolution": "12-11-2026 - Outil pret",
       "null": [
-        " savoir vrai",
-        " jamais promettre ce qu'on ne peut pas faire"
+        "Apprendre les couts Restaurant + Batisseurs"
       ]
     },
     {
-      "id": "3",
-      "projet": "Laboratoires Aitif",
-      "domaine": "Sante + Numerique",
-      "ville_depart": "Fianarantsoa",
-      "statut": "IDEE A PREPARER",
-      "note": "Tester avant de vendre",
+      "id": "02",
+      "nom": "Surveillance",
+      "mission": "Surveiller que tout reste vivant 8/8",
+      "niveau": "Niveau 3 - Auto-relance + Base auto-affichee",
+      "derniere_evolution": "12-11-2026 - Base s'affiche toute seule",
+      "prochaine_evolution": "Surveiller API v5 + projets futurs"
+    },
+    {
+      "id": "03",
+      "nom": "Apprentissage",
+      "mission": "Apprendre des savoirs - malgache + francais",
+      "niveau": "Niveau 2 - 13 savoirs",
+      "derniere_evolution": "Niveau 1 - 3 savoirs",
+      "prochaine_evolution": "12-11-2026 - Savoirs 13",
       "null": [
-        " preuve avant promesse"
+        "Apprendre les savoirs Restaurant + Hopital + Batisseurs"
       ]
     },
     {
-      "id": "4",
-      "projet": "Usines Aitif - Transformation",
-      "domaine": "Commerce + Agriculture",
-      "ville_depart": "Toamasina",
-      "statut": "IDEE A PREPARER",
-      "note": "Transformer Riz Manioc Fruits sur place",
+      "id": "04",
+      "nom": "Data",
+      "mission": "Compter vrai - jamais de chiffre en dur",
+      "niveau": "Niveau 3 - aitif-base compte vrai",
+      "derniere_evolution": "Niveau 1 - Chiffres en dur",
+      "prochaine_evolution": "12-11-2026 - Compte vrai",
       "null": [
-        " pas exporter brut"
+        "Compter projets + regles + preuves banque"
       ]
     },
     {
-      "id": "5",
-      "projet": "Batisseurs Aitif - Routes + Batiments",
-      "domaine": "Environnement + Energie/Eau",
-      "ville_depart": "Madagascar entier",
-      "statut": "IDEE A PREPARER",
-      "note": "Reparer et creer routes",
+      "id": "05",
+      "nom": "Prevention",
+      "mission": "Prevenir la faillite - regles anti-faillite",
+      "niveau": "Niveau 2 - 8 regles anti-faillite",
+      "derniere_evolution": "12-11-2026 - Regles creees",
+      "prochaine_evolution": "Apprendre les 7 questions Restaurant avant pret"
+    },
+    {
+      "id": "06",
+      "nom": "Cyber",
+      "mission": "Proteger la base - snapshot + 0 faux",
+      "niveau": "Niveau 3 - Snapshot + Garde-fou",
+      "derniere_evolution": "12-11-2026 - Snapshot 12-11-2026",
+      "prochaine_evolution": "Proteger dossier banque - jamais perdre la base"
+    },
+    {
+      "id": "07",
+      "nom": "Metier",
+      "mission": "Preparer l'entreprise - pas vendre",
+      "niveau": " preparer",
+      "derniere_evolution": "Niveau 2 - Vision + Projets futurs",
+      "prochaine_evolution": "12-11-2026 - Vision clarifiee",
       "null": [
-        " batiments solides",
-        " jamais batir sans plan"
+        "Preparer dossier banque - 1 projet detaille a la fois"
       ]
-    },
-    {
-      "id": "6",
-      "projet": "Ecoles Aitif",
-      "domaine": "Education",
-      "ville_depart": "Fianarantsoa + Toamasina",
-      "statut": "IDEE A PREPARER",
-      "note": "1 enfant 1 livre 1 avenir",
-      "null": [
-        " apprendre en malgache + francais"
-      ]
-    },
-    {
-      "id": "7",
-      "projet": "Energie Aitif - Soleil + Eau",
-      "domaine": "Energie/Eau",
-      "ville_depart": "Madagascar entier",
-      "statut": "IDEE A PREPARER",
-      "note": "Soleil gratuit",
-      "null": [
-        " eau propre",
-        " jamais gaspiller"
-      ]
-    }
-  ],
-  "regles_anti_faillite": [
-    {
-      "id": "1",
-      "regle": "Ne jamais vendre sans vrai prix vu",
-      "pourquoi": "Sinon on vend a perte sans le savoir - comme le Riz simule -1200 Ar"
-    },
-    {
-      "id": "2",
-      "regle": "Ne jamais emprunter sans plan de remboursement",
-      "pourquoi": "Un pret sans plan = faillite. Un pret avec plan = lancement."
-    },
-    {
-      "id": "3",
-      "regle": "Ne jamais promettre ce qu'on ne peut pas prouver",
-      "pourquoi": "Promesse = dette de confiance. Preuve = capital de confiance."
-    },
-    {
-      "id": "4",
-      "regle": "Ne jamais mettre tous les oeufs dans 1 domaine",
-      "pourquoi": "Si 1 domaine tombe",
-      "null": [
-        " les 6 autres tiennent. 7 domaines = 7 piliers."
-      ]
-    },
-    {
-      "id": "5",
-      "regle": "Ne jamais depenser plus que ce qu'on a gagne",
-      "pourquoi": "Petit a petit",
-      "null": [
-        " toujours bien organise."
-      ]
-    },
-    {
-      "id": "6",
-      "regle": "Ne jamais melanger REEL / SIMULATION / IDEE",
-      "pourquoi": "REEL = vu. SIMULATION = entraine. IDEE = a verifier."
-    },
-    {
-      "id": "7",
-      "regle": "Toujours ecrire qui quoi quand",
-      "pourquoi": "Si on oublie",
-      "null": [
-        " on recommence. Si on ecrit",
-        " on avance."
-      ]
-    },
-    {
-      "id": "8",
-      "regle": "Toujours garder 1 photo de la base - snapshot",
-      "pourquoi": "Si la base casse",
-      "null": [
-        " on revient a hier."
-      ]
-    }
-  ],
-  "vision": "Creer l'entreprise petit a petit, pour qu'apres le lancement - peut-etre pret banque - elle n'entre JAMAIS en faillite et fasse vraiment evoluer Madagascar. Restaurants, Hopitaux, Laboratoires, Usines, Batisseurs routes, Ecoles, Energie.",
-  "but": "Preparer, pas vendre. Prouver, pas promettre.",
-  "projets_par_domaine": [
-    {
-      "domaine": "Agriculture",
-      "projet_phare": "Usines Aitif - Transformer sur place",
-      "ville": "Toamasina",
-      "statut": "IDEE A PREPARER",
-      "ce_qu_il_fait_evoluer": "Transformer Riz Manioc Fruits a Madagascar",
-      "prochaine_etape": " pas exporter brut",
-      "null": [
-        "Lister 3 produits a transformer en 1er"
-      ]
-    },
-    {
-      "domaine": "Education",
-      "projet_phare": "Ecoles Aitif - 1 enfant 1 livre 1 avenir",
-      "ville": "Fianarantsoa + Toamasina",
-      "statut": "IDEE A PREPARER",
-      "ce_qu_il_fait_evoluer": "Enfants qui apprennent en malgache + francais",
-      "prochaine_etape": "Lister 3 savoirs a enseigner en 1er"
-    },
-    {
-      "domaine": "Sante",
-      "projet_phare": "Hopitaux / Cliniques Aitif",
-      "ville": "Fianarantsoa + Toamasina",
-      "statut": "IDEE A PREPARER",
-      "ce_qu_il_fait_evoluer": "Soigner avec eau propre + savoir vrai",
-      "prochaine_etape": "Ecrire 5 regles hopital Aitif"
-    },
-    {
-      "domaine": "Energie/Eau",
-      "projet_phare": "Energie Aitif - Soleil + Eau propre",
-      "ville": "Madagascar entier",
-      "statut": "IDEE A PREPARER",
-      "ce_qu_il_fait_evoluer": "Soleil gratuit + eau propre pour tous",
-      "prochaine_etape": "Compter combien de maisons sans eau propre a Fianarantsoa"
-    },
-    {
-      "domaine": "Environnement",
-      "projet_phare": "Batisseurs Aitif - Routes + Batiments",
-      "ville": "Madagascar entier",
-      "statut": "IDEE A PREPARER",
-      "ce_qu_il_fait_evoluer": "Routes solides + batiments solides",
-      "prochaine_etape": "Choisir 1 route a reparer en 1er - a observer"
-    },
-    {
-      "domaine": "Numerique",
-      "projet_phare": "Laboratoires Aitif - Tester avant de vendre",
-      "ville": "Fianarantsoa",
-      "statut": "IDEE A PREPARER",
-      "ce_qu_il_fait_evoluer": "Tester avant de vendre - preuve avant promesse",
-      "prochaine_etape": "Lister 3 tests a faire en 1er - Miel Riz Eau"
-    },
-    {
-      "domaine": "Commerce",
-      "projet_phare": "Restaurants Aitif - Manger sain prix juste",
-      "ville": "Fianarantsoa + Toamasina",
-      "statut": "IDEE A PREPARER",
-      "ce_qu_il_fait_evoluer": "Manger sain avec produits locaux - prix juste",
-      "prochaine_etape": "Repondre aux 7 questions Restaurant avant pret"
     }
   ],
   "agents_evolution": [
@@ -967,5 +765,121 @@
       "ce_qu_il_a_appris": "Je prepare entreprise - JAMAIS faillite - Madagascar"
     }
   ],
-  "systeme": "Vision + Agents + Base + Projets par domaine + Regles anti-faillite + Preuves - Tout evolue ensemble, jamais 1 seul."
+  "projets_par_domaine": [
+    {
+      "domaine": "Agriculture",
+      "projet_phare": "Usines Aitif - Transformer sur place",
+      "ville": "Toamasina",
+      "statut": "IDEE A PREPARER",
+      "ce_qu_il_fait_evoluer": "Transformer Riz Manioc Fruits a Madagascar",
+      "prochaine_etape": " pas exporter brut",
+      "null": [
+        "Lister 3 produits a transformer en 1er"
+      ]
+    },
+    {
+      "domaine": "Education",
+      "projet_phare": "Ecoles Aitif - 1 enfant 1 livre 1 avenir",
+      "ville": "Fianarantsoa + Toamasina",
+      "statut": "IDEE A PREPARER",
+      "ce_qu_il_fait_evoluer": "Enfants qui apprennent en malgache + francais",
+      "prochaine_etape": "Lister 3 savoirs a enseigner en 1er"
+    },
+    {
+      "domaine": "Sante",
+      "projet_phare": "Hopitaux / Cliniques Aitif",
+      "ville": "Fianarantsoa + Toamasina",
+      "statut": "IDEE A PREPARER",
+      "ce_qu_il_fait_evoluer": "Soigner avec eau propre + savoir vrai",
+      "prochaine_etape": "Ecrire 5 regles hopital Aitif"
+    },
+    {
+      "domaine": "Energie/Eau",
+      "projet_phare": "Energie Aitif - Soleil + Eau propre",
+      "ville": "Madagascar entier",
+      "statut": "IDEE A PREPARER",
+      "ce_qu_il_fait_evoluer": "Soleil gratuit + eau propre pour tous",
+      "prochaine_etape": "Compter combien de maisons sans eau propre a Fianarantsoa"
+    },
+    {
+      "domaine": "Environnement",
+      "projet_phare": "Batisseurs Aitif - Routes + Batiments",
+      "ville": "Madagascar entier",
+      "statut": "IDEE A PREPARER",
+      "ce_qu_il_fait_evoluer": "Routes solides + batiments solides",
+      "prochaine_etape": "Choisir 1 route a reparer en 1er - a observer"
+    },
+    {
+      "domaine": "Numerique",
+      "projet_phare": "Laboratoires Aitif - Tester avant de vendre",
+      "ville": "Fianarantsoa",
+      "statut": "IDEE A PREPARER",
+      "ce_qu_il_fait_evoluer": "Tester avant de vendre - preuve avant promesse",
+      "prochaine_etape": "Lister 3 tests a faire en 1er - Miel Riz Eau"
+    },
+    {
+      "domaine": "Commerce",
+      "projet_phare": "Restaurants Aitif - Manger sain prix juste",
+      "ville": "Fianarantsoa + Toamasina",
+      "statut": "IDEE A PREPARER",
+      "ce_qu_il_fait_evoluer": "Manger sain avec produits locaux - prix juste",
+      "prochaine_etape": "Repondre aux 7 questions Restaurant avant pret"
+    }
+  ],
+  "regles_anti_faillite": [
+    {
+      "id": "1",
+      "regle": "Ne jamais vendre sans vrai prix vu",
+      "pourquoi": "Sinon on vend a perte sans le savoir - comme le Riz simule -1200 Ar"
+    },
+    {
+      "id": "2",
+      "regle": "Ne jamais emprunter sans plan de remboursement",
+      "pourquoi": "Un pret sans plan = faillite. Un pret avec plan = lancement."
+    },
+    {
+      "id": "3",
+      "regle": "Ne jamais promettre ce qu'on ne peut pas prouver",
+      "pourquoi": "Promesse = dette de confiance. Preuve = capital de confiance."
+    },
+    {
+      "id": "4",
+      "regle": "Ne jamais mettre tous les oeufs dans 1 domaine",
+      "pourquoi": "Si 1 domaine tombe",
+      "null": [
+        " les 6 autres tiennent. 7 domaines = 7 piliers."
+      ]
+    },
+    {
+      "id": "5",
+      "regle": "Ne jamais depenser plus que ce qu'on a gagne",
+      "pourquoi": "Petit a petit",
+      "null": [
+        " toujours bien organise."
+      ]
+    },
+    {
+      "id": "6",
+      "regle": "Ne jamais melanger REEL / SIMULATION / IDEE",
+      "pourquoi": "REEL = vu. SIMULATION = entraine. IDEE = a verifier."
+    },
+    {
+      "id": "7",
+      "regle": "Toujours ecrire qui quoi quand",
+      "pourquoi": "Si on oublie",
+      "null": [
+        " on recommence. Si on ecrit",
+        " on avance."
+      ]
+    },
+    {
+      "id": "8",
+      "regle": "Toujours garder 1 photo de la base - snapshot",
+      "pourquoi": "Si la base casse",
+      "null": [
+        " on revient a hier."
+      ]
+    }
+  ],
+  "systeme": "Vision + Agents + Base + Projets par domaine + Regles anti-faillite + Preuves - Tout evolue ensemble"
 }

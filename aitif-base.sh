@@ -9,7 +9,7 @@ PR=$(tail -n +2 ~/07-metier-digital/projets/prix-locaux/prix-locaux.csv 2>/dev/n
 V=$(tail -n +2 ~/BASE/ventes.csv 2>/dev/null | wc -l)
 PA=$(tail -n +2 ~/BASE/partages.csv 2>/dev/null | wc -l)
 AG=$(tail -n +2 ~/BASE/agents.csv 2>/dev/null | wc -l)
-PJ=$(tail -n +2 ~/BASE/projets-futurs.csv 2>/dev/null | wc -l)
+PJ=$(tail -n +2 ~/BASE/projets-par-domaine.csv 2>/dev/null | wc -l)
 RG=$(tail -n +2 ~/BASE/regles-anti-faillite.csv 2>/dev/null | wc -l)
 echo "Produits : $P - Savoirs : $S - Domaines : $D - Regions : $R - Historique : $H"
 echo "Agents : $AG - Projets futurs : $PJ - Regles anti-faillite : $RG"
