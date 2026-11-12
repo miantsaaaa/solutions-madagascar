@@ -7,6 +7,7 @@ echo "4) Partager 1 savoir"
 echo "5) Faire evoluer la base"
 echo "6) Ajouter 1 produit"
 echo "7) Voir plan demain"
+echo "8) Voir agents qui evoluent"
 echo "0) Quitter"
 read -p "Choix : " C
 case $C in
@@ -17,6 +18,7 @@ case $C in
   5) bash ~/aitif-evolue.sh ;;
   6) bash ~/aitif-ajouter-produit.sh ;;
   7) cat ~/PLAN-DEMAIN-13-11-2026.md ;;
+  8) bash ~/aitif-evoluer-agents.sh ;;
   0) echo "Aitif dort. Base sauvee." ;;
-  *) echo "Choix 0-7" ;;
+  *) echo "Choix 0-8" ;;
 esac
