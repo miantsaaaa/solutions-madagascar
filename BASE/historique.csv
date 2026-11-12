@@ -5,3 +5,4 @@ date,qui,quoi,note
 12-11-2026,Miantsa + Meta AI,Garde-fou base,verifier-base-aitif.sh - 0 faux prix, API en ligne, base propre
 12-11-2026,Miantsa + Meta AI,Base complete,12 produits + 9 savoirs + 7 domaines + 23 regions + historique
 12-11-2026,Miantsa + Meta AI,Commande aitif-base,1 commande = toute la base, plus jamais 10 commandes a retenir
+12-11-2026,Miantsa + Meta AI,Base auto-affichee,Termux 2) Aitif -> base s'affiche toute seule, 0 commande a retenir
