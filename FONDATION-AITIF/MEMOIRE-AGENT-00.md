@@ -27,3 +27,4 @@ Agent 00 a compris : Fondation + 7 domaines + 7 Masters. Il ne guide pas encore,
 - Commande : python3 ~/07-metier-digital/projets/prix-locaux/veille-auto.py
 - Si VEILLE A FAIRE : lancer les 4 requetes Riz / Cafe / Miel / Vanille avec Meta AI, mettre a jour TENDANCE-INTERNET-*.md, JAMAIS prix-locaux.csv avec Internet.
 - Si OK : ne rien refaire.
+12-11-2026 - Sante OK, Prix reels: 0, Agents vivants
