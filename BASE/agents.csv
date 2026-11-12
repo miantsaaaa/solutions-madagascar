@@ -1,0 +1,9 @@
+id,nom,mission,niveau,derniere_evolution,prochaine_evolution
+00,Memoire,Se souvenir de tout - historique, qui quoi quand,Niveau 2 - Base + Historique,12-11-2026 - Historique 17 lignes,Apprendre les projets futurs + regles anti-faillite
+01,Prix,Voir les vrais prix - jamais de faux,Niveau 2 - Outil ajouter prix,Niveau 1 - Attendait un prix,12-11-2026 - Outil pret,Apprendre les couts Restaurant + Batisseurs
+02,Surveillance,Surveiller que tout reste vivant 8/8,Niveau 3 - Auto-relance + Base auto-affichee,12-11-2026 - Base s'affiche toute seule,Surveiller API v5 + projets futurs
+03,Apprentissage,Apprendre des savoirs - malgache + francais,Niveau 2 - 13 savoirs,Niveau 1 - 3 savoirs,12-11-2026 - Savoirs 13,Apprendre les savoirs Restaurant + Hopital + Batisseurs
+04,Data,Compter vrai - jamais de chiffre en dur,Niveau 3 - aitif-base compte vrai,Niveau 1 - Chiffres en dur,12-11-2026 - Compte vrai,Compter projets + regles + preuves banque
+05,Prevention,Prevenir la faillite - regles anti-faillite,Niveau 2 - 8 regles anti-faillite,12-11-2026 - Regles creees,Apprendre les 7 questions Restaurant avant pret
+06,Cyber,Proteger la base - snapshot + 0 faux,Niveau 3 - Snapshot + Garde-fou,12-11-2026 - Snapshot 12-11-2026,Proteger dossier banque - jamais perdre la base
+07,Metier,Preparer l'entreprise - pas vendre, preparer,Niveau 2 - Vision + Projets futurs,12-11-2026 - Vision clarifiee,Preparer dossier banque - 1 projet detaille a la fois
