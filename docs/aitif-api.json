@@ -74,6 +74,48 @@
       "contenu_malgache": "Aza manary tavoahangy. Avereno ampiasaina.",
       "contenu_francais": "Ne jette pas le pot. Reutilise-le.",
       "date": "12-11-2026"
+    },
+    {
+      "titre": "Saison Riz - Planter au bon moment",
+      "domaine": "Agriculture",
+      "contenu_malgache": "Aza mamafy vary raha tsy fantatrao ny vanim-potoana. Jereo ny orana aloha.",
+      "contenu_francais": "Ne plante pas du Riz sans connaitre la saison. Regarde la pluie d'abord.",
+      "date": "12-11-2026"
+    },
+    {
+      "titre": "1 enfant 1 livre 1 avenir",
+      "domaine": "Education",
+      "contenu_malgache": "Ankizy iray mianatra = fianakaviana iray mandroso rahampitso.",
+      "contenu_francais": "1 enfant qui apprend = 1 famille qui avance demain.",
+      "date": "12-11-2026"
+    },
+    {
+      "titre": "Eau propre - Faire bouillir",
+      "domaine": "Sante",
+      "contenu_malgache": "Rano maloto = aretina. Ampangotray ny rano alohan'ny hisotroana.",
+      "contenu_francais": "Eau sale = maladie. Fais bouillir l'eau avant de boire.",
+      "date": "12-11-2026"
+    },
+    {
+      "titre": "Soleil - Economiser avec le soleil",
+      "domaine": "Energie/Eau",
+      "contenu_malgache": "Masoa ndra no maivana. Ampiasao ny masoandro hanamainana sy hanafanana.",
+      "contenu_francais": "Le soleil est gratuit. Utilise-le pour secher et chauffer.",
+      "date": "12-11-2026"
+    },
+    {
+      "titre": "Ne brule pas - Protege la terre",
+      "domaine": "Environnement",
+      "contenu_malgache": "Aza mandoro tanety. Ny tany may dia tsy mamoa intsony.",
+      "contenu_francais": "Ne brule pas la terre. Une terre brulee ne donne plus rien.",
+      "date": "12-11-2026"
+    },
+    {
+      "titre": "Telephone leger - 1 page < 50 Ko",
+      "domaine": "Numerique",
+      "contenu_malgache": "Pe jy maivana = olona maro afaka mamaky azy na dia 4G malemy aza.",
+      "contenu_francais": "Une page legere = beaucoup de gens peuvent la lire meme en 4G faible.",
+      "date": "12-11-2026"
     }
   ],
   "domaines": [
