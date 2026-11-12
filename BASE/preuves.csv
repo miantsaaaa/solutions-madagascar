@@ -1,5 +1,5 @@
 id,preuve,statut,date,detail
-1,1er vrai prix marche,EN ATTENTE,,date + region + ville + lieu + produit + prix + source + vu_par
-2,1ere vraie vente Miel 1L,EN ATTENTE,,prix reel + marge reelle + acheteur
-3,1 savoir partage a 1 personne,EN ATTENTE,,date + qui + quel savoir
-4,1ere application qui lit aitif-api.json,EN ATTENTE,,application de demain - pas de deco aujourd'hui
+1,Dossier banque pret - base propre et prouvee,EN PREPARATION,,BASE 0 faux + historique + API en ligne + regles anti-faillite
+2,1er projet futur detaille - Restaurants Aitif,EN PREPARATION,,menu + prix reels + lieu + cout + plan remboursement
+3,1er projet futur detaille - Batisseurs routes,EN PREPARATION,,route a reparer + cout + materiaux + plan
+4,1 savoir partage a 1 personne,EN ATTENTE,,date + qui + quel savoir

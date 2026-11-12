@@ -8,5 +8,5 @@ read -p "Note (ex: Produit local) : " NOTE
 echo "$NOM,$CAT,$UNITE,$SAISON,$NOTE" >> ~/BASE/produits.csv
 echo "Produit ajoute : $NOM - $CAT - $UNITE - $SAISON"
 echo "12-11-2026,Miantsa + Meta AI,Produit ajoute,$NOM - $CAT" >> ~/BASE/historique.csv
-bash ~/generer-api-base-v4.sh | tail -1
+bash ~/generer-api-base-v5.sh | tail -1
 echo "=== FIN - Produit dans la base ==="
