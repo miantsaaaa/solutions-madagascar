@@ -417,6 +417,22 @@
       "qui": "Miantsa + Meta AI",
       "quoi": "Auto-relance",
       "note": "Plus jamais de relance manuelle"
+    },
+    {
+      "date": "12-11-2026",
+      "qui": "Miantsa + Meta AI",
+      "quoi": "Garde-fou base",
+      "note": "verifier-base-aitif.sh - 0 faux prix",
+      "null": [
+        " API en ligne",
+        " base propre"
+      ]
+    },
+    {
+      "date": "12-11-2026",
+      "qui": "Miantsa + Meta AI",
+      "quoi": "Base complete",
+      "note": "12 produits + 9 savoirs + 7 domaines + 23 regions + historique"
     }
   ]
 }

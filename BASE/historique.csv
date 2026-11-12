@@ -2,3 +2,5 @@ date,qui,quoi,note
 12-11-2026,Miantsa + Meta AI,Creation BASE,Produits + Stock + Savoirs + Domaines + Regions
 12-11-2026,Miantsa + Meta AI,API aitif-api.json,1 fichier = toute la base pour l'application de demain
 12-11-2026,Miantsa + Meta AI,Auto-relance,Plus jamais de relance manuelle
+12-11-2026,Miantsa + Meta AI,Garde-fou base,verifier-base-aitif.sh - 0 faux prix, API en ligne, base propre
+12-11-2026,Miantsa + Meta AI,Base complete,12 produits + 9 savoirs + 7 domaines + 23 regions + historique
