@@ -13,6 +13,6 @@ DATE=$(date +%d-%m-%Y)
 FICHIER=~/07-metier-digital/projets/prix-locaux/prix-locaux.csv
 echo "$DATE,$REGION,$VILLE,$LIEU,$PRODUIT,$PRIX,$UNITE,$SOURCE,$VU" >> $FICHIER
 echo "Prix REEL ajoute : $PRODUIT $PRIX Ar / $UNITE - $VILLE - $LIEU - $DATE - vu par $VU"
-bash ~/generer-api-base-v3.sh | tail -1
+bash ~/generer-api-base-v4.sh | tail -1
 bash ~/verifier-base-aitif.sh | tail -3
 echo "=== FIN - Prix reel dans la base ==="
