@@ -825,7 +825,6 @@
       "statut": "IDEE A PREPARER",
       "ce_qu_il_fait_evoluer": "Transformer Riz Manioc Fruits a Madagascar",
       "prochaine_etape": "Manioc->sec/farine, Banane->sechee, Tomate->sechee/sauce - Tester 1 kg d'abord, 0 chiffre invente",
-      "": "['Lister 3 produits a transformer en 1er']",
       "detail_preparation": "Manioc->sec/farine, Banane->sechee, Tomate->sechee/sauce - Tester 1 kg d'abord, 0 chiffre invente"
     },
     {
@@ -835,7 +834,6 @@
       "statut": "IDEE A PREPARER",
       "ce_qu_il_fait_evoluer": "Enfants qui apprennent en malgache + francais",
       "prochaine_etape": "Lister 3 savoirs a enseigner en 1er",
-      "": "",
       "detail_preparation": "Lister 3 savoirs a enseigner en 1er"
     },
     {
@@ -845,7 +843,6 @@
       "statut": "IDEE A PREPARER",
       "ce_qu_il_fait_evoluer": "Soigner avec eau propre + savoir vrai",
       "prochaine_etape": "Ecrire 5 regles hopital Aitif",
-      "": "",
       "detail_preparation": "Ecrire 5 regles hopital Aitif"
     },
     {
@@ -855,7 +852,6 @@
       "statut": "IDEE A PREPARER",
       "ce_qu_il_fait_evoluer": "Soleil gratuit + eau propre pour tous",
       "prochaine_etape": "Compter combien de maisons sans eau propre a Fianarantsoa",
-      "": "",
       "detail_preparation": "Compter combien de maisons sans eau propre a Fianarantsoa"
     },
     {
@@ -865,7 +861,6 @@
       "statut": "IDEE A PREPARER",
       "ce_qu_il_fait_evoluer": "Routes solides + batiments solides",
       "prochaine_etape": "Choisir 1 route a reparer en 1er - a observer",
-      "": "",
       "detail_preparation": "Choisir 1 route a reparer en 1er - a observer"
     },
     {
@@ -875,7 +870,6 @@
       "statut": "IDEE A PREPARER",
       "ce_qu_il_fait_evoluer": "Tester avant de vendre - preuve avant promesse",
       "prochaine_etape": "Lister 3 tests a faire en 1er - Miel Riz Eau",
-      "": "",
       "detail_preparation": "Lister 3 tests a faire en 1er - Miel Riz Eau"
     },
     {
@@ -885,7 +879,6 @@
       "statut": "IDEE A PREPARER",
       "ce_qu_il_fait_evoluer": "Manger sain avec produits locaux - prix juste",
       "prochaine_etape": "Repondre aux 7 questions Restaurant avant pret - Manger sain prix juste, produits locaux",
-      "": "",
       "detail_preparation": "Repondre aux 7 questions Restaurant avant pret - Manger sain prix juste, produits locaux"
     }
   ],
