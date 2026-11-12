@@ -4,3 +4,4 @@ date,qui,quoi,note
 12-11-2026,Miantsa + Meta AI,Auto-relance,Plus jamais de relance manuelle
 12-11-2026,Miantsa + Meta AI,Garde-fou base,verifier-base-aitif.sh - 0 faux prix, API en ligne, base propre
 12-11-2026,Miantsa + Meta AI,Base complete,12 produits + 9 savoirs + 7 domaines + 23 regions + historique
+12-11-2026,Miantsa + Meta AI,Commande aitif-base,1 commande = toute la base, plus jamais 10 commandes a retenir
