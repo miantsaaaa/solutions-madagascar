@@ -224,6 +224,17 @@
         " fraiche. Bien pour legumes et fruits.",
         "12-11-2026"
       ]
+    },
+    {
+      "titre": "Manger des legumes chaque jour",
+      "domaine": "Sante",
+      "contenu_malgache": "Mihinana legioma isan'andro",
+      "contenu_francais": " mahasalama ny vantana.",
+      "date": "Manger les legumes chaque jour",
+      "null": [
+        " ca rend le corps fort.",
+        "12-11-2026"
+      ]
     }
   ],
   "domaines": [
@@ -554,6 +565,12 @@
       "qui": "Miantsa + Meta AI",
       "quoi": "Produit ajoute",
       "note": "Carotte - Alimentation"
+    },
+    {
+      "date": "12-11-2026",
+      "qui": "Miantsa + Meta AI",
+      "quoi": "Savoir ajoute",
+      "note": "Manger des legumes chaque jour - Sante"
     }
   ],
   "preuves_a_apporter": [
