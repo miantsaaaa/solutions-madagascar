@@ -1,42 +1,36 @@
-# BILAN BASE AITIF - 12 NOV 2026 - 09:00
+# BILAN BASE AITIF - 12 NOV 2026 - 09:15 - TEST OK
 
 Principe : On ne promet pas, on prouve. Petit a petit, toujours bien organise.
 Regle : REEL = vu. SIMULATION = entraine. IDEE = a verifier.
 
-## BASE - Chiffres vrais (comptes par aitif-base.sh, jamais en dur)
-- Produits : 12 - Riz Cafe Miel Vanille Haricot Manioc Patate douce Banane Oignon Ail Tomate Chou
-- Savoirs : 10 - Dont 1 ajoute par Miantsa : Miel - Ne pas trop chauffer - Sante
+## BASE - Chiffres vrais, comptes par aitif-base.sh
+- Produits : 13 - Dont Gingembre ajoute par Miantsa
+- Savoirs : 10 - Dont Miel Ne pas trop chauffer ajoute par Miantsa
 - Domaines : 7 - Agriculture Education Sante Energie/Eau Environnement Numerique Commerce
-- Regions : 23 - Tout Madagascar, Fianarantsoa + Toamasina en priorite
-- Historique : 9 lignes - Qui Quoi Quand
-- Stock : 1 L Miel, Fianarantsoa, en main, pot propre, etiquette Aitif prete
-- Prix reels : 0 - En attente du 1er vrai prix marche
-- Prix faux : 0 - Garde-fou actif
-- Ventes : 0 - Honnête, prete
-- Preuves : 4 EN ATTENTE - 1er prix / 1ere vente Miel / 1 savoir partage / 1ere appli qui lit API
+- Regions : 23 - Tout Madagascar
+- Historique : 11 lignes
+- Stock : 1 L Miel, Fianarantsoa, en main
+- Prix reels : 0 - Ventes : 0 - Partages : 0 - Faux : 0
+- Preuves : 4 EN ATTENTE
+- Fichiers BASE : 9 - Scripts Aitif : 19
 
-## API
-- Fichier : docs/aitif-api.json - 1 fichier = toute la base
-- Version : v3 - Produits + Prix + Stock + Ventes + Savoirs + Domaines + Regions + Historique + Preuves
-- En ligne : https://miantsaaaa.github.io/solutions-madagascar/aitif-api.json
-- Auto : aitif-evolue regenere API v3 + verifie base + ecrit historique
+## API v4
+- 1 fichier = toute la base, en ligne, auto-mise a jour
+- https://miantsaaaa.github.io/solutions-madagascar/aitif-api.json
+- Gingembre en ligne : OK
 
-## OUTILS - 0 commande a retenir
-- bash ~/aitif-base.sh - Voir toute la base en 1 coup
-- bash ~/aitif-ajouter-savoir.sh - Ajouter 1 savoir, 4 questions
-- bash ~/aitif-ajouter-prix.sh - Ajouter 1 vrai prix vu, 8 questions
-- bash ~/aitif-evolue.sh - Faire evoluer la base, tout seul
-- bash ~/verifier-base-aitif.sh - Verifier base, 0 faux prix
+## PORTE UNIQUE
+- bash ~/aitif.sh - Menu 1-6, 0 commande a retenir
+- 1 Voir base / 2 Ajouter savoir / 3 Ajouter prix / 4 Partager savoir / 5 Evoluer / 6 Ajouter produit
 
 ## AUTONOME
-- Termux -> Menu 1) $ 2) Aitif -> Proot Ubuntu -> Agents 8/8 auto-relances -> Base s'affiche toute seule
-- Plus jamais de relance manuelle
-- Plus jamais de commande a retenir
-- Snapshot BASE-SNAPSHOT-12-11-2026 - Photo de la base, ne se perd jamais
+- Termux 2) Aitif -> Ubuntu -> Agents 8/8 -> Base s'affiche toute seule
+- Snapshot BASE-SNAPSHOT-12-11-2026
+- Garde-fou verifier-base-aitif.sh - 0 faux prix
 
-## PROCHAINE PREUVE A APPORTER
-1. 1er vrai prix marche : bash ~/aitif-ajouter-prix.sh
-2. 1ere vraie vente Miel 1L : prix reel + marge reelle
-3. 1 savoir partage a 1 personne : date + qui
+## PROCHAINES PREUVES
+1. 1er vrai prix - bash ~/aitif.sh -> 3
+2. 1ere vente Miel - prix reel + marge reelle
+3. 1 savoir partage - bash ~/aitif.sh -> 4
 
 Aitif ne vend pas du reve. Aitif prouve, petit a petit.
