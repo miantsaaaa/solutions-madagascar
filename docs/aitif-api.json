@@ -203,6 +203,17 @@
       "contenu_malgache": "Toamasina orana matetika. Arovy ny entana amin'ny rano.",
       "contenu_francais": "A Toamasina il pleut souvent. Protege tes marchandises de la pluie.",
       "date": "12-11-2026"
+    },
+    {
+      "titre": "Fianarantsoa - Terre haute et fraiche",
+      "domaine": "Agriculture",
+      "contenu_malgache": "Fianarantsoa tany avo",
+      "contenu_francais": " mangatsika. Tsara hoan'ny legioma sy voankazo.",
+      "date": "Fianarantsoa terre haute",
+      "null": [
+        " fraiche. Bien pour legumes et fruits.",
+        "12-11-2026"
+      ]
     }
   ],
   "domaines": [
@@ -521,6 +532,12 @@
       "qui": "Miantsa + Meta AI",
       "quoi": "Produit ajoute",
       "note": "Curcuma - Epice"
+    },
+    {
+      "date": "12-11-2026",
+      "qui": "Miantsa + Meta AI",
+      "quoi": "Savoir ajoute",
+      "note": "Fianarantsoa - Terre haute et fraiche - Agriculture"
     }
   ],
   "preuves_a_apporter": [
