@@ -10,7 +10,7 @@ head -1 ~/07-metier-digital/projets/prix-locaux/prix-locaux.csv
 echo "--- 3. Veille ---"
 python3 ~/07-metier-digital/projets/prix-locaux/veille-auto.py | head -2
 echo "--- 4. Agents 01-07 ---"
-ps aux | grep -c "[a]gent0"
+for i in 00 01 02 03 04 05 06 07; do pgrep -f "agent${i}_loop" >/dev/null && echo 1; done | wc -l
 echo "--- 5. Git propre ? ---"
 git -C ~ status --short | grep -v "MESSAGE-AGENT\|DISCUSSION\|STATUS-AGENT\|__pycache__\|.bash_history\|agent0.*\.bak" | head -5 || echo "Propre (hors logs agents)"
 echo "--- 6. Poids pages (4G faible) ---"
