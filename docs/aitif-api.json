@@ -235,6 +235,13 @@
         " ca rend le corps fort.",
         "12-11-2026"
       ]
+    },
+    {
+      "titre": "Se laver les mains avant de toucher",
+      "domaine": "Sante",
+      "contenu_malgache": "Sasao ny tanana alohan'ny hikasika.",
+      "contenu_francais": "Lave-toi les mains avant de toucher.",
+      "date": "12-11-2026"
     }
   ],
   "domaines": [
