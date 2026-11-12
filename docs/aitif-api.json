@@ -172,6 +172,13 @@
       "contenu_malgache": "Pe jy maivana = olona maro afaka mamaky azy na dia 4G malemy aza.",
       "contenu_francais": "Une page legere = beaucoup de gens peuvent la lire meme en 4G faible.",
       "date": "12-11-2026"
+    },
+    {
+      "titre": "Miel - Ne pas trop chauffer",
+      "domaine": "Sante",
+      "contenu_malgache": "Aza manafana be ny tantely. Very ny heriny",
+      "contenu_francais": "Ne chauffe pas trop le miel. Il perd sa force",
+      "date": "12-11-2026"
     }
   ],
   "domaines": [
@@ -457,6 +464,12 @@
       "qui": "Miantsa + Meta AI",
       "quoi": "Snapshot base",
       "note": "Photo BASE 12-11-2026 08:30 - 12 produits 9 savoirs 7 domaines 23 regions"
+    },
+    {
+      "date": "12-11-2026",
+      "qui": "Miantsa + Meta AI",
+      "quoi": "Savoir ajoute",
+      "note": "Miel - Ne pas trop chauffer - Sante"
     }
   ],
   "preuves_a_apporter": [
