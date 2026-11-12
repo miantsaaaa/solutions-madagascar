@@ -189,6 +189,13 @@
       "contenu_malgache": "Aza manafana be ny tantely. Very ny heriny",
       "contenu_francais": "Ne chauffe pas trop le miel. Il perd sa force",
       "date": "12-11-2026"
+    },
+    {
+      "titre": "Toamasina - Port et pluie",
+      "domaine": "Environnement",
+      "contenu_malgache": "Toamasina orana matetika. Arovy ny entana amin'ny rano.",
+      "contenu_francais": "A Toamasina il pleut souvent. Protege tes marchandises de la pluie.",
+      "date": "12-11-2026"
     }
   ],
   "domaines": [
@@ -495,6 +502,12 @@
       "qui": "Miantsa + Meta AI",
       "quoi": "Produit ajoute",
       "note": "Gingembre - Epice"
+    },
+    {
+      "date": "12-11-2026",
+      "qui": "Miantsa + Meta AI",
+      "quoi": "Savoir ajoute",
+      "note": "Toamasina - Port et pluie - Environnement"
     }
   ],
   "preuves_a_apporter": [
