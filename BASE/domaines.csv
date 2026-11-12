@@ -1,0 +1,8 @@
+id,nom,agent_responsable,mission,etat
+1,Agriculture,Agent 03 + 04,Suivre saison + prix reel,PRET
+2,Education,Agent 00,1 savoir par jour en malgache + francais,PRET
+3,Sante,Agent 05, hygiene + conservation,PRET
+4,Energie/Eau,Agent 05,Capteur ESP - mesurer le reel,PRET - en attente materiel
+5,Environnement,Agent 04,0 gaspillage - 0 faux,PRET
+6,Numerique,Agent 07,Site < 50 Ko - 4G faible,PUISSANT
+7,Commerce,Agent 01,1 domaine / 7 - seulement si juste,PRET - en attente vrai prix

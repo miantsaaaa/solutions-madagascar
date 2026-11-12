@@ -1,0 +1,164 @@
+{
+  "entreprise": "AITIF",
+  "pays": "Madagascar",
+  "villes": [
+    "Fianarantsoa",
+    "Toamasina"
+  ],
+  "principe": "On ne promet pas, on prouve. Petit a petit, toujours bien organise.",
+  "regle": "REEL = vu. SIMULATION = entraine. IDEE = a verifier.",
+  "produits": [
+    {
+      "nom": "Riz",
+      "categorie": "Alimentation",
+      "unite": "kg",
+      "saison": "Toute annee",
+      "note": "Produit de base Madagascar"
+    },
+    {
+      "nom": "Cafe",
+      "categorie": "Alimentation",
+      "unite": "kg",
+      "saison": "Saison recolte",
+      "note": "Produit d'export"
+    },
+    {
+      "nom": "Miel",
+      "categorie": "Alimentation",
+      "unite": "L",
+      "saison": "Toute annee",
+      "note": "Produit Aitif VENTE 2"
+    },
+    {
+      "nom": "Vanille",
+      "categorie": "Epice",
+      "unite": "kg",
+      "saison": "Saison recolte",
+      "note": "Volatile - ne pas vendre sans vrai prix"
+    }
+  ],
+  "prix_reels": [],
+  "stock": [
+    {
+      "produit": "Miel",
+      "quantite": "1",
+      "unite": "L",
+      "lieu": "Fianarantsoa - en main",
+      "date_entree": "12-11-2026",
+      "note": "1 L en main",
+      "null": [
+        " pot propre",
+        " etiquette Aitif prete"
+      ]
+    }
+  ],
+  "ventes": [],
+  "savoirs": [
+    {
+      "titre": "Marge = Vente - Achat - Frais",
+      "domaine": "Commerce",
+      "contenu_malgache": "Aza mivarotra raha tsy mikajy. Tombony = Vidy - Vidy nividianana - Saran-dalana.",
+      "contenu_francais": "Ne vends jamais sans calculer. Marge = Vente - Achat - Frais.",
+      "date": "12-11-2026"
+    },
+    {
+      "titre": "Riz - Ne pas vendre a l'aveugle",
+      "domaine": "Agriculture",
+      "contenu_malgache": "Raha mivarotra Vary tsy mikajy ianao mety ho very vola.",
+      "contenu_francais": "Si tu vends du Riz sans calculer tu peux perdre.",
+      "date": "12-11-2026"
+    },
+    {
+      "titre": "Pot reutilisable",
+      "domaine": "Environnement",
+      "contenu_malgache": "Aza manary tavoahangy. Avereno ampiasaina.",
+      "contenu_francais": "Ne jette pas le pot. Reutilise-le.",
+      "date": "12-11-2026"
+    }
+  ],
+  "domaines": [
+    {
+      "id": "1",
+      "nom": "Agriculture",
+      "agent_responsable": "Agent 03 + 04",
+      "mission": "Suivre saison + prix reel",
+      "etat": "PRET"
+    },
+    {
+      "id": "2",
+      "nom": "Education",
+      "agent_responsable": "Agent 00",
+      "mission": "1 savoir par jour en malgache + francais",
+      "etat": "PRET"
+    },
+    {
+      "id": "3",
+      "nom": "Sante",
+      "agent_responsable": "Agent 05",
+      "mission": " hygiene + conservation",
+      "etat": "PRET"
+    },
+    {
+      "id": "4",
+      "nom": "Energie/Eau",
+      "agent_responsable": "Agent 05",
+      "mission": "Capteur ESP - mesurer le reel",
+      "etat": "PRET - en attente materiel"
+    },
+    {
+      "id": "5",
+      "nom": "Environnement",
+      "agent_responsable": "Agent 04",
+      "mission": "0 gaspillage - 0 faux",
+      "etat": "PRET"
+    },
+    {
+      "id": "6",
+      "nom": "Numerique",
+      "agent_responsable": "Agent 07",
+      "mission": "Site < 50 Ko - 4G faible",
+      "etat": "PUISSANT"
+    },
+    {
+      "id": "7",
+      "nom": "Commerce",
+      "agent_responsable": "Agent 01",
+      "mission": "1 domaine / 7 - seulement si juste",
+      "etat": "PRET - en attente vrai prix"
+    }
+  ],
+  "agents": [
+    {
+      "id": "00",
+      "etat": "VIVANT"
+    },
+    {
+      "id": "01",
+      "etat": "VIVANT"
+    },
+    {
+      "id": "02",
+      "etat": "VIVANT"
+    },
+    {
+      "id": "03",
+      "etat": "VIVANT"
+    },
+    {
+      "id": "04",
+      "etat": "VIVANT"
+    },
+    {
+      "id": "05",
+      "etat": "VIVANT"
+    },
+    {
+      "id": "06",
+      "etat": "VIVANT"
+    },
+    {
+      "id": "07",
+      "etat": "VIVANT"
+    }
+  ]
+}
