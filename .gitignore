@@ -1,10 +1,9 @@
-*.csv
-*.db
+# Bruit agents - jamais dans git
+*.bak
 *.log
-*.pem
 *.pid
-*.png
 *.pyc
+.bash_history
 .bashrc
 .cache/
 .config/
@@ -13,8 +12,10 @@
 .lesshst
 .profile
 AGENT-*-REPONSE.txt
+DISCUSSION-AGENT-*.txt
 MESSAGE-AGENT-*.txt
 RESULTAT-AGENT-*.txt
+STATUS-AGENT-*.txt
 __pycache__/
 agent*.log
 menu.sh
