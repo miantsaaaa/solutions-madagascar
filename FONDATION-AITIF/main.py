@@ -46,9 +46,10 @@ def comprendre():
         r = subprocess.run(["pgrep", "-f", f"agent0{i}_loop.py"], capture_output=True, text=True, timeout=5)
         print(f" - Agent 0{i} : {'VIVANT PID ' + r.stdout.strip().split()[0] if r.stdout.strip() else 'ARRETE'}")
     # 4. Memoire
-    memo_path = pathlib.Path("MEMOIRE-AGENT-00.md")
-    memo_path.write_text("# MEMOIRE AGENT 00 - V0.1 COMPRENDRE\n\n" + "\n".join(memo) + "\n\nAgent 00 a compris : Fondation + 7 domaines + 7 Masters. Il ne guide pas encore, il se raccorde d'abord.\n", encoding="utf-8")
-    print(f"\nMemoire ecrite : {memo_path} ({len(memo)} lignes)")
+    # CALME V2 : plus de MEMOIRE-AGENT-00.md dans FONDATION. 1 seule ecriture : BASE/agents-evolution.csv
+    memo_path = pathlib.Path("/root/BASE/agents-evolution.csv")
+    # memo_path.write_text("# MEMOIRE AGENT 00 - V0.1 COMPRENDRE\n\n" + "\n".join(memo) + "\n\nAgent 00 a compris : Fondation + 7 domaines + 7 Masters. Il ne guide pas encore, il se raccorde d'abord.\n", encoding="utf-8")
+    print(f"\nMemoire lue, pas ecrite - {len(memo)} lignes lues - BASE est la verite, on ne cree rien")
     print("\nBilan Comprendre : j'ai lu la Fondation + les 7 domaines + les 7 Masters - je suis raccorde, je peux guider petit a petit.")
     print("\n=== TERMINE - Agent 00 V0.1 Comprendre fini, Miantsa peut verifier ===")
 if __name__ == "__main__":
@@ -204,8 +205,8 @@ def veille_nouvelles_auto():
         for l in trouvees:
             if l.split(" | ")[1] not in txt:
                 txt += l + " | Impact : a relier aux 7 domaines par Agent 00\n"
-        f.write_text(txt, encoding="utf-8")
-        print(f"Nouvelles vraies rangees : {len(trouvees)} - dans NOUVELLES-DU-JOUR.md")
+        # CALME V2 : plus de NOUVELLES-DU-JOUR.md. On n'invente pas, on ne cree pas.
+        print(f"Nouvelles vraies trouvees : {len(trouvees)} - rangees nulle part, pas de fichier cree - BASE est la verite")
     else:
         print("0 nouvelle verifiee aujourd'hui - on n'invente pas.")
     print("Question : qu'est-ce que ca change pour nos 7 domaines ?")
@@ -257,6 +258,6 @@ def analyser_agents():
             lignes.append(f"00.{i} -> Agent 0{i} {domaines[i]} : {vivant} | {datetime.now().strftime('%Y-%m-%d')} | {prop}")
         except Exception as e:
             print(f"00.{i} -> Agent 0{i} : erreur analyse : {e}")
-    pathlib.Path("/root/FONDATION-AITIF/ANALYSE-AGENTS-00.txt").write_text("\n".join(lignes)+"\n", encoding="utf-8")
-    print("Analyse rangee dans ANALYSE-AGENTS-00.txt")
+    # CALME V2 : plus de ANALYSE-AGENTS-00.txt dans FONDATION. 1 seule ecriture : BASE/agents-evolution.csv
+    print("Analyse faite - rangee nulle part en FONDATION, BASE est la verite")
     print("=== TERMINE - Analyse V0.8 fini, Miantsa peut verifier ===")

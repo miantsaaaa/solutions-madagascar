@@ -1,0 +1,7 @@
+00.1 -> Agent 01 Qualite : VIVANT | 2026-11-13 | 1 petite evolution petit a petit dans Qualite, a decider par Miantsa + Meta AI
+00.2 -> Agent 02 Commerce : VIVANT | 2026-11-13 | 1 petite evolution petit a petit dans Commerce, a decider par Miantsa + Meta AI
+00.3 -> Agent 03 Sante : VIVANT | 2026-11-13 | 1 petite evolution petit a petit dans Sante, a decider par Miantsa + Meta AI
+00.4 -> Agent 04 Education : VIVANT | 2026-11-13 | 1 petite evolution petit a petit dans Education, a decider par Miantsa + Meta AI
+00.5 -> Agent 05 Capteur : VIVANT | 2026-11-13 | 1 petite evolution petit a petit dans Capteur, a decider par Miantsa + Meta AI
+00.6 -> Agent 06 Cyber : VIVANT | 2026-11-13 | 1 petite evolution petit a petit dans Cyber, a decider par Miantsa + Meta AI
+00.7 -> Agent 07 Portfolio : VIVANT | 2026-11-13 | 1 petite evolution petit a petit dans Portfolio, a decider par Miantsa + Meta AI

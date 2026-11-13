@@ -1,40 +1,19 @@
-# Export propre Aitif - V4.18
-# AITIF. - Data Aitif.
-# Exporte seulement les donnees verifiees, avec en-tetes claires
-import sqlite3, glob, os, csv
-from datetime import datetime
-
-DBS = glob.glob("/root/*/projets/**/commerce.db", recursive=True)  # V4.18 : scan projets seulement
-DB = DBS[0] if DBS else ""
-
+# Export propre Aitif - V4.19 CALME
+# Regle Aitif V2 : 1 chose = 1 fichier. BASE/stock.csv et BASE/ventes.csv sont la verite.
+# On ne cree plus ventes-propres-DATE.csv ni stock-propre-DATE.csv.
+# On lit BASE, on compte, on ne cree rien.
+import pathlib, csv
 def export():
-    print("=== EXPORT PROPRE AITIF. - V4.18 - MADAGASCAR ===")
-    if not DB or not os.path.exists(DB):
-        print("Pas de base trouvee.")
-        return
-    conn = sqlite3.connect(DB)
-    cur = conn.cursor()
-    date = datetime.now().strftime("%Y-%m-%d")
-    # Ventes propres : montant > 0, produit non vide
-    cur.execute("SELECT date, produit, montant FROM ventes WHERE montant > 0 AND produit != '' ORDER BY date")
-    ventes = cur.fetchall()
-    with open(f"ventes-propres-{date}.csv", "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
-        w.writerow(["Date", "Produit", "Montant (Ar)"])
-        w.writerows(ventes)
-    print(f"Ventes propres -> ventes-propres-{date}.csv ({len(ventes)} lignes)")
-    # Stock propre
-    cur.execute("SELECT produit, quantite, prix FROM stock WHERE quantite >= 0 AND prix > 0 ORDER BY produit")
-    stocks = cur.fetchall()
-    with open(f"stock-propre-{date}.csv", "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
-        w.writerow(["Produit", "Quantite", "Prix (Ar)"])
-        w.writerows(stocks)
-    print(f"Stock propre -> stock-propre-{date}.csv ({len(stocks)} lignes)")
-    conn.close()
-    print("\nExport propre : pas de lignes sales, pas de doublons fusionnes.")
-    print("Tu peux ouvrir dans Excel sans nettoyer a la main.")
-    print("\n=== TERMINE - Export Propre V4.18 fini, Miantsa peut verifier ===")
-
+    print("=== EXPORT PROPRE AITIF - V4.19 CALME ===")
+    base = pathlib.Path("/root/BASE")
+    for nom in ["stock.csv", "ventes.csv"]:
+        p = base / nom
+        if p.exists():
+            lignes = list(csv.DictReader(open(p, encoding="utf-8")))
+            print(f"{nom} : {len(lignes)} lignes dans BASE - pas de copie creee")
+        else:
+            print(f"{nom} : pas encore dans BASE")
+    print("BASE est la verite. Aucun fichier par jour cree.")
+    print("=== TERMINE - Export Propre V4.19 calme, Miantsa peut verifier ===")
 if __name__ == "__main__":
     export()
