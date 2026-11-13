@@ -2,7 +2,7 @@
 echo "=== AITIF - AGENTS EVOLUENT - TOUS LES 8 - $(date +%d-%m-%Y_%H:%M) ==="
 P=$(tail -n +2 ~/BASE/produits.csv | wc -l)
 S=$(tail -n +2 ~/BASE/savoirs.csv | wc -l)
-PR=$(tail -n +2 ~/BASE/projets-par-domaine.csv | wc -l)
+PR=$(tail -n +2 ~/BASE/projets.csv | wc -l)
 RG=$(tail -n +2 ~/BASE/regles-anti-faillite.csv | wc -l)
 DATE=$(date +%d-%m-%Y)
 echo "$DATE,00 Memoire,Je me souviens de $P produits + $S savoirs + $PR projets" >> ~/BASE/agents-evolution.csv

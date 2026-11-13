@@ -1,0 +1,8 @@
+id,secteur,ville_priorite,ce_qu_on_y_applique,statut
+1,Agriculture,Fianarantsoa + Toamasina,Data pour compter vrai + IoT pour mesurer vrai,TERRAIN A APPLIQUER
+2,Education,Fianarantsoa + Toamasina,Savoirs vrais en malgache + francais,TERRAIN A APPLIQUER
+3,Sante,Fianarantsoa + Toamasina,Hygiene + conservation + mesures vraies,TERRAIN A APPLIQUER
+4,Energie/Eau,Madagascar entier,Capteur + soleil + eau propre,TERRAIN A APPLIQUER
+5,Environnement,Madagascar entier,0 gaspillage - 0 faux - mesurer vrai,TERRAIN A APPLIQUER
+6,Numerique,Madagascar entier,Site leger + base propre + API,TERRAIN A APPLIQUER
+7,Commerce,Fianarantsoa + Toamasina,1 prix vrai a la fois - jamais invente,TERRAIN A APPLIQUER

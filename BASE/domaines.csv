@@ -1,8 +1,8 @@
-id,nom,agent_responsable,mission,etat
-1,Agriculture,Agent 03 + 04,Suivre saison + prix reel,PRET
-2,Education,Agent 00,1 savoir par jour en malgache + francais,PRET
-3,Sante,Agent 05, hygiene + conservation,PRET
-4,Energie/Eau,Agent 05,Capteur ESP - mesurer le reel,PRET - en attente materiel
-5,Environnement,Agent 04,0 gaspillage - 0 faux,PRET
-6,Numerique,Agent 07,Site < 50 Ko - 4G faible,PUISSANT
-7,Commerce,Agent 01,1 domaine / 7 - seulement si juste,PRET - en attente vrai prix
+id,nom,projet_actuel,mission,etat
+1,Genie logiciel et BDD,gestion-commerce-madagascar,Construire des outils qui comptent vrai,PRET
+2,Admin systeme et reseau,surveillance-redmi,Surveiller que tout reste vivant 8/8,PRET
+3,Intelligence artificielle,prediction-ventes,Apprendre sans inventer - prediction = entrainement,PRET
+4,Gouvernance et ingenierie Data,qualite-donnees,Compter vrai - jamais de chiffre en dur,PRET
+5,Objets connectes IoT,capteur-temperature,Mesurer le reel - temperature humidite,PRET
+6,Cybersecurite et audit,audit-mot-de-passe,Proteger la base - snapshot + 0 faux,PRET
+7,Metier digital,portfolio-entreprise,Preparer l'entreprise - pas vendre preparer,PRET

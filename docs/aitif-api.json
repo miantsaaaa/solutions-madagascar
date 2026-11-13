@@ -248,52 +248,52 @@
   "domaines": [
     {
       "id": "1",
-      "nom": "Agriculture",
-      "agent_responsable": "Agent 03 + 04",
-      "mission": "Suivre saison + prix reel",
+      "nom": "Genie logiciel et BDD",
+      "projet_actuel": "gestion-commerce-madagascar",
+      "mission": "Construire des outils qui comptent vrai",
       "etat": "PRET"
     },
     {
       "id": "2",
-      "nom": "Education",
-      "agent_responsable": "Agent 00",
-      "mission": "1 savoir par jour en malgache + francais",
+      "nom": "Admin systeme et reseau",
+      "projet_actuel": "surveillance-redmi",
+      "mission": "Surveiller que tout reste vivant 8/8",
       "etat": "PRET"
     },
     {
       "id": "3",
-      "nom": "Sante",
-      "agent_responsable": "Agent 05",
-      "mission": " hygiene + conservation",
+      "nom": "Intelligence artificielle",
+      "projet_actuel": "prediction-ventes",
+      "mission": "Apprendre sans inventer - prediction = entrainement",
       "etat": "PRET"
     },
     {
       "id": "4",
-      "nom": "Energie/Eau",
-      "agent_responsable": "Agent 05",
-      "mission": "Capteur ESP - mesurer le reel",
-      "etat": "PRET - en attente materiel"
+      "nom": "Gouvernance et ingenierie Data",
+      "projet_actuel": "qualite-donnees",
+      "mission": "Compter vrai - jamais de chiffre en dur",
+      "etat": "PRET"
     },
     {
       "id": "5",
-      "nom": "Environnement",
-      "agent_responsable": "Agent 04",
-      "mission": "0 gaspillage - 0 faux",
+      "nom": "Objets connectes IoT",
+      "projet_actuel": "capteur-temperature",
+      "mission": "Mesurer le reel - temperature humidite",
       "etat": "PRET"
     },
     {
       "id": "6",
-      "nom": "Numerique",
-      "agent_responsable": "Agent 07",
-      "mission": "Site < 50 Ko - 4G faible",
-      "etat": "PUISSANT"
+      "nom": "Cybersecurite et audit",
+      "projet_actuel": "audit-mot-de-passe",
+      "mission": "Proteger la base - snapshot + 0 faux",
+      "etat": "PRET"
     },
     {
       "id": "7",
-      "nom": "Commerce",
-      "agent_responsable": "Agent 01",
-      "mission": "1 domaine / 7 - seulement si juste",
-      "etat": "PRET - en attente vrai prix"
+      "nom": "Metier digital",
+      "projet_actuel": "portfolio-entreprise",
+      "mission": "Preparer l'entreprise - pas vendre preparer",
+      "etat": "PRET"
     }
   ],
   "regions": [
@@ -783,111 +783,122 @@
       "date": "12-11-2026",
       "agent": "07 Metier",
       "ce_qu_il_a_appris": "Je prepare entreprise - JAMAIS faillite - Madagascar"
-    },
-    {
-      "date": "12-11-2026",
-      "agent": "00 Memoire",
-      "ce_qu_il_a_appris": "Je me souviens de 15 produits + 13 savoirs + 0 projets"
-    },
-    {
-      "date": "12-11-2026",
-      "agent": "01 Prix",
-      "ce_qu_il_a_appris": "J'attends 1 vrai prix - je n'invente rien"
-    },
-    {
-      "date": "12-11-2026",
-      "agent": "02 Surveillance",
-      "ce_qu_il_a_appris": "Je surveille 8/8 + API + base propre + vision"
-    },
-    {
-      "date": "12-11-2026",
-      "agent": "03 Apprentissage",
-      "ce_qu_il_a_appris": "J'ai appris 13 savoirs - je veux apprendre Restaurant + Hopital"
-    },
-    {
-      "date": "12-11-2026",
-      "agent": "04 Data",
-      "ce_qu_il_a_appris": "Je compte vrai - 15 13 0 8 - jamais en dur"
-    },
-    {
-      "date": "12-11-2026",
-      "agent": "05 Prevention",
-      "ce_qu_il_a_appris": "Je garde 8 regles - Si 0 client on survit ?"
-    },
-    {
-      "date": "12-11-2026",
-      "agent": "06 Cyber",
-      "ce_qu_il_a_appris": "Je protege base - snapshot + 0 faux + dossier banque"
-    },
-    {
-      "date": "12-11-2026",
-      "agent": "07 Metier",
-      "ce_qu_il_a_appris": "Je prepare entreprise - JAMAIS faillite - Madagascar"
     }
   ],
-  "projets_par_domaine": [
+  "projets": [
     {
-      "domaine": "Agriculture",
-      "projet_phare": "Usines Aitif - Transformer sur place",
-      "ville": "Toamasina",
-      "statut": "IDEE A PREPARER",
-      "ce_qu_il_fait_evoluer": "Transformer Riz Manioc Fruits a Madagascar",
-      "prochaine_etape": "Manioc->sec/farine, Banane->sechee, Tomate->sechee/sauce - Tester 1 kg d'abord, 0 chiffre invente",
-      "detail_preparation": "Manioc->sec/farine, Banane->sechee, Tomate->sechee/sauce - Tester 1 kg d'abord, 0 chiffre invente"
-    },
-    {
-      "domaine": "Education",
-      "projet_phare": "Ecoles Aitif - 1 enfant 1 livre 1 avenir",
+      "domaine_id": "1",
+      "domaine": "Genie logiciel et BDD",
+      "projet": "gestion-commerce-madagascar",
+      "secteur_aide": "Commerce",
       "ville": "Fianarantsoa + Toamasina",
-      "statut": "IDEE A PREPARER",
-      "ce_qu_il_fait_evoluer": "Enfants qui apprennent en malgache + francais",
-      "prochaine_etape": "3 savoirs a enseigner en 1er : 1) Eau propre - faire bouillir, 2) Miel - ne pas trop chauffer, 3) Legumes chaque jour - corps fort",
-      "detail_preparation": "3 savoirs a enseigner en 1er : 1) Eau propre - faire bouillir, 2) Miel - ne pas trop chauffer, 3) Legumes chaque jour - corps fort"
+      "statut": "EN COURS",
+      "ce_qu_il_fait": "Gerer commerce sans inventer - compter vrai"
     },
     {
-      "domaine": "Sante",
-      "projet_phare": "Hopitaux / Cliniques Aitif",
-      "ville": "Fianarantsoa + Toamasina",
-      "statut": "IDEE A PREPARER",
-      "ce_qu_il_fait_evoluer": "Soigner avec eau propre + savoir vrai",
-      "prochaine_etape": "5 regles Hopital Aitif : 1) Eau propre - faire bouillir, 2) Se laver les mains avant de toucher, 3) Miel - ne pas trop chauffer, 4) Legumes chaque jour - corps fort, 5) Ne jamais servir ce qu'on ne mangerait pas soi-meme",
-      "detail_preparation": "5 regles Hopital Aitif : 1) Eau propre - faire bouillir, 2) Se laver les mains avant de toucher, 3) Miel - ne pas trop chauffer, 4) Legumes chaque jour - corps fort, 5) Ne jamais servir ce qu'on ne mangerait pas soi-meme"
-    },
-    {
-      "domaine": "Energie/Eau",
-      "projet_phare": "Energie Aitif - Soleil + Eau propre",
+      "domaine_id": "2",
+      "domaine": "Admin systeme et reseau",
+      "projet": "surveillance-redmi",
+      "secteur_aide": "Numerique",
       "ville": "Madagascar entier",
-      "statut": "IDEE A PREPARER",
-      "ce_qu_il_fait_evoluer": "Soleil gratuit + eau propre pour tous",
-      "prochaine_etape": "Compter sans inventer : 1) Choisir 1 quartier Fianarantsoa a observer, 2) Compter maisons vues avec eau propre / sans eau propre - REEL = vu, 3) Soleil gratuit - secher et chauffer avec soleil, 0 chiffre invente tant que pas vu",
-      "detail_preparation": "Compter sans inventer : 1) Choisir 1 quartier Fianarantsoa a observer, 2) Compter maisons vues avec eau propre / sans eau propre - REEL = vu, 3) Soleil gratuit - secher et chauffer avec soleil, 0 chiffre invente tant que pas vu"
+      "statut": "EN COURS",
+      "ce_qu_il_fait": "Surveiller que tout reste vivant 8/8"
     },
     {
-      "domaine": "Environnement",
-      "projet_phare": "Batisseurs Aitif - Routes + Batiments",
-      "ville": "Madagascar entier",
-      "statut": "IDEE A PREPARER",
-      "ce_qu_il_fait_evoluer": "Routes solides + batiments solides",
-      "prochaine_etape": "Choisir 1 route sans inventer : 1) Observer 1 route Fianarantsoa ou Toamasina - trous, eau, passage, 2) Compter combien de personnes passent par jour - REEL = vu, 3) Si 0 passage, on ne repare pas - Regle anti-faillite, 0 cout invente tant que pas vu",
-      "detail_preparation": "Choisir 1 route sans inventer : 1) Observer 1 route Fianarantsoa ou Toamasina - trous, eau, passage, 2) Compter combien de personnes passent par jour - REEL = vu, 3) Si 0 passage, on ne repare pas - Regle anti-faillite, 0 cout invente tant que pas vu"
-    },
-    {
-      "domaine": "Numerique",
-      "projet_phare": "Laboratoires Aitif - Tester avant de vendre",
-      "ville": "Fianarantsoa",
-      "statut": "IDEE A PREPARER",
-      "ce_qu_il_fait_evoluer": "Tester avant de vendre - preuve avant promesse",
-      "prochaine_etape": "3 tests a faire en 1er : 1) Miel - ne pas trop chauffer, gout + proprete pot, 2) Riz - propre, sans cailloux, bien sec, 3) Eau - faire bouillir avant de boire, 0 resultat invente tant que pas teste",
-      "detail_preparation": "3 tests a faire en 1er : 1) Miel - ne pas trop chauffer, gout + proprete pot, 2) Riz - propre, sans cailloux, bien sec, 3) Eau - faire bouillir avant de boire, 0 resultat invente tant que pas teste"
-    },
-    {
-      "domaine": "Commerce",
-      "projet_phare": "Restaurants Aitif - Manger sain prix juste",
+      "domaine_id": "3",
+      "domaine": "Intelligence artificielle",
+      "projet": "prediction-ventes",
+      "secteur_aide": "Commerce",
       "ville": "Fianarantsoa + Toamasina",
-      "statut": "IDEE A PREPARER",
-      "ce_qu_il_fait_evoluer": "Manger sain avec produits locaux - prix juste",
-      "prochaine_etape": "Repondre aux 7 questions Restaurant avant pret - Manger sain prix juste, produits locaux",
-      "detail_preparation": "Repondre aux 7 questions Restaurant avant pret - Manger sain prix juste, produits locaux"
+      "statut": "ENTRAINEMENT",
+      "ce_qu_il_fait": "Prediction = entrainement - jamais REEL tant que pas vu"
+    },
+    {
+      "domaine_id": "4",
+      "domaine": "Gouvernance et ingenierie Data",
+      "projet": "qualite-donnees",
+      "secteur_aide": "Agriculture",
+      "ville": "Fianarantsoa + Toamasina",
+      "statut": "EN COURS",
+      "ce_qu_il_fait": "Compter vrai - export propre sans copie par jour"
+    },
+    {
+      "domaine_id": "5",
+      "domaine": "Objets connectes IoT",
+      "projet": "capteur-temperature",
+      "secteur_aide": "Sante",
+      "ville": "Fianarantsoa + Toamasina",
+      "statut": "EN COURS",
+      "ce_qu_il_fait": "Mesurer temperature humidite - reel"
+    },
+    {
+      "domaine_id": "6",
+      "domaine": "Cybersecurite et audit",
+      "projet": "audit-mot-de-passe",
+      "secteur_aide": "Numerique",
+      "ville": "Madagascar entier",
+      "statut": "EN COURS",
+      "ce_qu_il_fait": "Proteger base - snapshot + 0 faux"
+    },
+    {
+      "domaine_id": "7",
+      "domaine": "Metier digital",
+      "projet": "portfolio-entreprise",
+      "secteur_aide": "Commerce",
+      "ville": "Fianarantsoa + Toamasina",
+      "statut": "EN COURS",
+      "ce_qu_il_fait": "Preparer entreprise - vision + base propre"
+    }
+  ],
+  "secteurs_madagascar": [
+    {
+      "id": "1",
+      "secteur": "Agriculture",
+      "ville_priorite": "Fianarantsoa + Toamasina",
+      "ce_qu_on_y_applique": "Data pour compter vrai + IoT pour mesurer vrai",
+      "statut": "TERRAIN A APPLIQUER"
+    },
+    {
+      "id": "2",
+      "secteur": "Education",
+      "ville_priorite": "Fianarantsoa + Toamasina",
+      "ce_qu_on_y_applique": "Savoirs vrais en malgache + francais",
+      "statut": "TERRAIN A APPLIQUER"
+    },
+    {
+      "id": "3",
+      "secteur": "Sante",
+      "ville_priorite": "Fianarantsoa + Toamasina",
+      "ce_qu_on_y_applique": "Hygiene + conservation + mesures vraies",
+      "statut": "TERRAIN A APPLIQUER"
+    },
+    {
+      "id": "4",
+      "secteur": "Energie/Eau",
+      "ville_priorite": "Madagascar entier",
+      "ce_qu_on_y_applique": "Capteur + soleil + eau propre",
+      "statut": "TERRAIN A APPLIQUER"
+    },
+    {
+      "id": "5",
+      "secteur": "Environnement",
+      "ville_priorite": "Madagascar entier",
+      "ce_qu_on_y_applique": "0 gaspillage - 0 faux - mesurer vrai",
+      "statut": "TERRAIN A APPLIQUER"
+    },
+    {
+      "id": "6",
+      "secteur": "Numerique",
+      "ville_priorite": "Madagascar entier",
+      "ce_qu_on_y_applique": "Site leger + base propre + API",
+      "statut": "TERRAIN A APPLIQUER"
+    },
+    {
+      "id": "7",
+      "secteur": "Commerce",
+      "ville_priorite": "Fianarantsoa + Toamasina",
+      "ce_qu_on_y_applique": "1 prix vrai a la fois - jamais invente",
+      "statut": "TERRAIN A APPLIQUER"
     }
   ],
   "regles_anti_faillite": [

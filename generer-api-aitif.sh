@@ -26,11 +26,12 @@ api = {
   "partages": lire("partages.csv"),
   "agents": lire("agents.csv"),
   "agents_evolution": lire("agents-evolution.csv"),
-  "projets_par_domaine": lire("projets-par-domaine.csv"),
+  "projets": lire("projets.csv"),
+  "secteurs_madagascar": lire("secteurs-madagascar.csv"),
   "regles_anti_faillite": lire("regles-anti-faillite.csv"),
   "systeme": "Vision + Agents + Base + Projets par domaine + Regles anti-faillite + Preuves - Tout evolue ensemble",
 }
 out.parent.mkdir(parents=True, exist_ok=True)
 out.write_text(json.dumps(api, ensure_ascii=False, indent=2), encoding="utf-8")
-print(f"API V2 propre : Produits {len(api['produits'])} - Savoirs {len(api['savoirs'])} - Regions {len(api['regions'])} - Projets par domaine {len(api["projets_par_domaine"])} - Prix reels {len(api["prix_reels"])} - Agents {len(api['agents'])} - 1 generateur, 0 chaine")
+print(f"API V2 propre : Produits {len(api['produits'])} - Savoirs {len(api['savoirs'])} - Regions {len(api['regions'])} - Projets {len(api["projets"])} - Secteurs {len(api["secteurs_madagascar"])} - Prix reels {len(api["prix_reels"])} - Agents {len(api['agents'])} - 1 generateur, 0 chaine")
 PY

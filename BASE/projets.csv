@@ -1,0 +1,8 @@
+domaine_id,domaine,projet,secteur_aide,ville,statut,ce_qu_il_fait
+1,Genie logiciel et BDD,gestion-commerce-madagascar,Commerce,Fianarantsoa + Toamasina,EN COURS,Gerer commerce sans inventer - compter vrai
+2,Admin systeme et reseau,surveillance-redmi,Numerique,Madagascar entier,EN COURS,Surveiller que tout reste vivant 8/8
+3,Intelligence artificielle,prediction-ventes,Commerce,Fianarantsoa + Toamasina,ENTRAINEMENT,Prediction = entrainement - jamais REEL tant que pas vu
+4,Gouvernance et ingenierie Data,qualite-donnees,Agriculture,Fianarantsoa + Toamasina,EN COURS,Compter vrai - export propre sans copie par jour
+5,Objets connectes IoT,capteur-temperature,Sante,Fianarantsoa + Toamasina,EN COURS,Mesurer temperature humidite - reel
+6,Cybersecurite et audit,audit-mot-de-passe,Numerique,Madagascar entier,EN COURS,Proteger base - snapshot + 0 faux
+7,Metier digital,portfolio-entreprise,Commerce,Fianarantsoa + Toamasina,EN COURS,Preparer entreprise - vision + base propre
